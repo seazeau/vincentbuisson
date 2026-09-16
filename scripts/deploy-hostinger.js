@@ -115,9 +115,38 @@ async function deploy(options = {}) {
     }
 
     console.log("✅ Connexion FTP réussie !");
-    console.log(`📂 Synchronisation vers '${config.remoteDir}'...`);
 
-    await client.ensureDir(config.remoteDir);
+    // Auto-détection intelligente du dossier de destination sur Hostinger
+    let targetDir = config.remoteDir;
+    try {
+      const rootList = await client.list();
+      console.log("📁 Fichiers/Dossiers racine détectés :", rootList.map(item => item.name).join(", "));
+      const hasDomains = rootList.some(item => item.name.toLowerCase() === "domains");
+      if (hasDomains) {
+        console.log("📂 Dossier 'domains/' détecté sur Hostinger.");
+        await client.cd("domains");
+        const domainList = await client.list();
+        console.log("🌐 Domaines trouvés :", domainList.map(d => d.name).join(", "));
+        const match = domainList.find(d => d.name.toLowerCase().includes("vincentbuisson")) || domainList[0];
+        if (match) {
+          targetDir = `domains/${match.name}/public_html`;
+          console.log(`🎯 Cible Hostinger détectée automatiquement : '${targetDir}'`);
+        }
+        await client.cd("/");
+      }
+    } catch (detectErr) {
+      console.warn("Auto-détection non bloquante :", detectErr.message);
+    }
+
+    console.log(`📂 Synchronisation vers '${targetDir}'...`);
+    await client.ensureDir(targetDir);
+
+    // Supprimer default.php d'Hostinger si présent pour ne pas masquer index.html
+    try {
+      await client.remove(`${targetDir}/default.php`);
+      console.log("🗑️ Fichier default.php de Hostinger supprimé.");
+    } catch (e) {}
+
     await client.uploadFromDir(OUT_DIR);
 
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
