@@ -143,6 +143,16 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const BLOG_ARTICLES: Article[] = [
   {
+    id: "marathon-paris-2026",
+    title: "Préparation Marathon de Paris 2026 : Parcours, Allures et Plan Nolio",
+    desc: "Analyse experte du parcours (quais, tunnels, Boulogne), temps de passage AS42 et méthode pour vaincre le mur.",
+    tag: "MARATHON DE PARIS • GUIDE",
+    date: "17 MARS 2026",
+    readTime: "10 MIN",
+    image: "/images/marathon-finish.webp",
+    href: "/blog/preparation-marathon-de-paris-2026-parcours-allures-plan/",
+  },
+  {
     id: "endurance-fondamentale",
     title: "L'Endurance Fondamentale : Pourquoi courir lentement fait courir plus vite",
     desc: "Fréquence cardiaque, Zone 2 et calcul d'allure : comment la filière aérobie crée les adaptations biologiques indispensables pour performer.",
