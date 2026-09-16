@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="52" height="52">
+  <rect width="52" height="52" rx="12" fill="#0c0c0b"/>
+  <!-- Runner head as speed dot -->
+  <circle cx="36" cy="9" r="4.5" fill="#d4ff00"/>
+  <!-- Left stem of V -->
+  <path d="M 12 14 L 23 40" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <!-- Right stem of V rising to become the spine of B -->
+  <path d="M 23 40 L 26 14" stroke="#d4ff00" stroke-width="5" stroke-linecap="round"/>
+  <!-- Top loop of B (forward chest drive) -->
+  <path d="M 26 14 H 36 C 41 14 42 19 39 23 C 37 26 32 27 26 27" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bottom loop of B (propulsion drive) -->
+  <path d="M 26 27 H 37 C 42 27 43 33 40 37 C 37 40 31 40 23 40" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

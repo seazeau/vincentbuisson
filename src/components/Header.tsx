@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, ArrowRight, Activity } from "lucide-react";
+import VBLogo from "@/components/VBLogo";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -47,8 +48,11 @@ export default function Header() {
           {/* Left Island: White Brand Badge */}
           <Link
             href="/"
-            className="pointer-events-auto bg-white text-black px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-1.5 sm:gap-2 group hover:scale-[1.02]"
+            className="pointer-events-auto bg-white text-black pl-2 sm:pl-2.5 pr-3.5 sm:pr-4 py-1.5 sm:py-2 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2 group hover:scale-[1.02]"
           >
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#0c0c0b] flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+              <VBLogo size={18} variant="dark" />
+            </div>
             <span className="font-black text-xs sm:text-sm tracking-tight uppercase whitespace-nowrap">
               <span className="sm:hidden">VB COACHING</span>
               <span className="hidden sm:inline">VB COACHING RUNNING</span>

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowUpRight, MessageCircle, Mail } from "lucide-react";
+import VBLogo from "@/components/VBLogo";
 
 export default function Footer() {
   return (
@@ -10,9 +11,14 @@ export default function Footer() {
           
           {/* Left: Massive Stacked Brand Title (matching Boxer Shorts frame 18s) */}
           <div className="lg:col-span-7 space-y-6">
-            <p className="font-hand text-3xl sm:text-4xl text-white font-normal -rotate-2 mb-[-10px] lowercase">
-              vincent buisson
-            </p>
+            <div className="flex items-center gap-3">
+              <div className="w-11 h-11 rounded-2xl bg-[#141412] border border-white/10 flex items-center justify-center shadow-lg">
+                <VBLogo size={26} variant="dark" />
+              </div>
+              <p className="font-hand text-3xl sm:text-4xl text-white font-normal -rotate-2 lowercase">
+                vincent buisson
+              </p>
+            </div>
             <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-tight leading-[0.85] text-white">
               VB <br />
               COACHING <br />
