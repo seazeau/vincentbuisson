@@ -1,0 +1,37 @@
+name: Déploiement Hostinger Automatique
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch: # Permet de lancer le déploiement manuellement depuis GitHub
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Récupération du code source
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Configuration de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: 📦 Installation des dépendances
+        run: npm ci
+
+      - name: 🔨 Compilation statique Next.js (Export out/)
+        run: npm run build
+
+      - name: 🚀 Déploiement FTPS vers Hostinger (public_html)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.HOSTINGER_FTP_HOST }}
+          username: ${{ secrets.HOSTINGER_FTP_USER }}
+          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          server-dir: ${{ secrets.HOSTINGER_REMOTE_DIR || 'public_html/' }}
+          local-dir: ./out/
+          dangerous-clean-slate: false
