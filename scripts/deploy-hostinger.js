@@ -48,6 +48,16 @@ function loadConfig() {
     }
   }
 
+  if (config.host) {
+    config.host = config.host.replace(/^ftps?:\/\//i, "").replace(/\/.*$/, "").trim();
+  }
+  if (config.user) {
+    config.user = config.user.trim();
+  }
+  if (config.password) {
+    config.password = config.password.trim();
+  }
+
   return config;
 }
 
@@ -58,11 +68,11 @@ async function deploy(options = {}) {
   if (!config.host || !config.user || !config.password) {
     throw new Error(
       "Identifiants Hostinger manquants !\n" +
-      "Veuillez renseigner vos identifiants FTP dans le fichier .env.local ou via le panneau d'administration (localhost:3002) :\n" +
-      "- Hôte FTP (ex: ftp.votredomaine.fr ou accessXXXXX.webspace-hosti.net)\n" +
-      "- Utilisateur FTP (ex: u123456789)\n" +
-      "- Mot de passe FTP\n" +
-      "- Dossier distant (défaut: public_html)\n"
+      "Veuillez renseigner vos identifiants FTP dans le fichier .env.local ou via les Secrets GitHub :\n" +
+      "- HOSTINGER_FTP_HOST (ex: ftp.vincentbuisson.fr ou accessXXXXX.webspace-hosti.net)\n" +
+      "- HOSTINGER_FTP_USER (ex: u123456789)\n" +
+      "- HOSTINGER_FTP_PASSWORD\n" +
+      "- HOSTINGER_REMOTE_DIR (défaut: public_html)\n"
     );
   }
 
@@ -75,19 +85,34 @@ async function deploy(options = {}) {
     throw new Error("Le dossier out/ n'existe pas. Le build statique a échoué.");
   }
 
-  console.log(`\n🚀 2/2 — Connexion à Hostinger (${config.host}) via FTP...`);
-  const client = new ftp.Client();
+  console.log(`\n🚀 2/2 — Connexion à Hostinger (${config.host}:${config.port}) via FTP...`);
+  const client = new ftp.Client(30000);
   client.ftp.verbose = options.verbose || false;
 
   try {
-    await client.access({
-      host: config.host,
-      user: config.user,
-      password: config.password,
-      port: config.port,
-      secure: config.secure,
-      secureOptions: { rejectUnauthorized: false }
-    });
+    try {
+      await client.access({
+        host: config.host,
+        user: config.user,
+        password: config.password,
+        port: config.port,
+        secure: config.secure,
+        secureOptions: { rejectUnauthorized: false }
+      });
+    } catch (tlsErr) {
+      if (config.secure) {
+        console.warn("⚠️ TLS explicite échoué, tentative en FTP standard...");
+        await client.access({
+          host: config.host,
+          user: config.user,
+          password: config.password,
+          port: config.port,
+          secure: false
+        });
+      } else {
+        throw tlsErr;
+      }
+    }
 
     console.log("✅ Connexion FTP réussie !");
     console.log(`📂 Synchronisation vers '${config.remoteDir}'...`);
