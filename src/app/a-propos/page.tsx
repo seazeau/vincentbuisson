@@ -226,15 +226,13 @@ export default function AProposPage() {
                 </p>
               </Tilt3DCard>
             </div>
+
+            {/* Directement sous les 3 piliers : Petites cartes Partenaires & Structures */}
+            <div className="mt-14 sm:mt-16 pt-10 border-t border-[#262622]">
+              <TrustSection />
+            </div>
           </div>
-        </div>
 
-        {/* Section Confiance & Partenaires */}
-        <div className="my-16 sm:my-20">
-          <TrustSection />
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Bottom CTA */}
           <div className="bg-[#141412] border border-[#2a2a26] rounded-3xl p-8 sm:p-14 text-center">
             <h2 className="text-3xl sm:text-5xl font-black uppercase text-white mb-3">

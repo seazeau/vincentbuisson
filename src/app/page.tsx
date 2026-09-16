@@ -134,14 +134,18 @@ export default function HomePage() {
         {/* 1. Hero: Clouds Background, Giant Volt Letters, Slogan & Vertical List */}
         <Hero />
 
-        {/* 2. Ils nous font confiance (Le Footing, My Running Club, FF Sport d'Entreprise, Nutripure) */}
-        <TrustSection />
-
-        {/* 3. Philosophie & Légitimité du Coach (Vincent Buisson, Photo 3D, Science & Bitume) */}
+        {/* 2. Philosophie & Légitimité du Coach (Vincent Buisson, Photo 3D, Science & Bitume) */}
         <About3DSection />
 
         {/* 3. Bénéfices Concrets vs Caractéristiques (Tableau de transformation sans blabla) */}
         <BenefitsTableSection />
+
+        {/* 3b. Partenaires & Structures de Confiance (Directement sous les 3 piliers) */}
+        <section className="py-12 sm:py-16 bg-[#0c0c0b] border-b border-white/5 relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <TrustSection />
+          </div>
+        </section>
 
         {/* 4. Témoignages des Athlètes en Cylindre 3D Spatial (Antoine, Léo, Patrizia, Thomas, Sarah, Camille) */}
         <TestimonialsSection />
