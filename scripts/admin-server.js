@@ -1645,6 +1645,35 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // POST /api/git-push (Commit and push to GitHub)
+  if (url.pathname === "/api/git-push" && req.method === "POST") {
+    let body = "";
+    req.on("data", chunk => (body += chunk));
+    req.on("end", () => {
+      try {
+        const payload = body ? JSON.parse(body) : {};
+        const commitMsg = payload.message || "feat(blog): mise à jour des articles et du site";
+        const cmd = `git add . && git commit -m "${commitMsg.replace(/"/g, '\\"')}" && git push`;
+        console.log("Executing git push:", cmd);
+        exec(cmd, { cwd: PROJECT_ROOT }, (error, stdout, stderr) => {
+          if (error) {
+            console.error("Git error:", stderr || error.message);
+            res.writeHead(500, { "Content-Type": "application/json" });
+            res.end(JSON.stringify({ success: false, error: stderr || error.message }));
+          } else {
+            console.log("Git push successful!");
+            res.writeHead(200, { "Content-Type": "application/json" });
+            res.end(JSON.stringify({ success: true, output: stdout }));
+          }
+        });
+      } catch (err) {
+        res.writeHead(500, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ success: false, error: err.message }));
+      }
+    });
+    return;
+  }
+
   // Serve Static images from public/
   if (url.pathname.startsWith("/images/")) {
     const filePath = path.join(PROJECT_ROOT, "public", url.pathname);
