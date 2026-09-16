@@ -10,6 +10,7 @@ import PricingSection from "@/components/PricingSection";
 import BenefitsTableSection from "@/components/BenefitsTableSection";
 import FreeAuditBanner from "@/components/FreeAuditBanner";
 import FAQSection from "@/components/FAQSection";
+import TrustSection from "@/components/TrustSection";
 import StickyMobileBar from "@/components/StickyMobileBar";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
@@ -133,7 +134,10 @@ export default function HomePage() {
         {/* 1. Hero: Clouds Background, Giant Volt Letters, Slogan & Vertical List */}
         <Hero />
 
-        {/* 2. Philosophie & Légitimité du Coach (Vincent Buisson, Photo 3D, Science & Bitume) */}
+        {/* 2. Ils nous font confiance (Le Footing, My Running Club, FF Sport d'Entreprise, Nutripure) */}
+        <TrustSection />
+
+        {/* 3. Philosophie & Légitimité du Coach (Vincent Buisson, Photo 3D, Science & Bitume) */}
         <About3DSection />
 
         {/* 3. Bénéfices Concrets vs Caractéristiques (Tableau de transformation sans blabla) */}

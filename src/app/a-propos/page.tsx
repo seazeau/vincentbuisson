@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ArrowUpRight, GraduationCap } from "lucide-react";
 import { SITE_CONFIG } from "@/data/siteContent";
 import Tilt3DCard from "@/components/Tilt3DCard";
+import TrustSection from "@/components/TrustSection";
 
 export const metadata: Metadata = {
   title: "Coach Course à Pied & Spécialiste Performance sur Route",
@@ -226,7 +227,14 @@ export default function AProposPage() {
               </Tilt3DCard>
             </div>
           </div>
+        </div>
 
+        {/* Section Confiance & Partenaires */}
+        <div className="my-16 sm:my-20">
+          <TrustSection />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Bottom CTA */}
           <div className="bg-[#141412] border border-[#2a2a26] rounded-3xl p-8 sm:p-14 text-center">
             <h2 className="text-3xl sm:text-5xl font-black uppercase text-white mb-3">
