@@ -7,8 +7,8 @@
     "category": "Physiologie & Allures",
     "readTime": "7 MIN",
     "date": "14 MARS 2026",
-    "publishedAt": "2026-03-14",
-    "image": "/images/runner-1.webp",
+    "publishedAt": "2026-09-16",
+    "image": "/images/upload-coach-1789562542386.jpg",
     "summary": "Près de 80 % des coureurs amateurs commettent la même erreur : courir trop vite lors de leurs footings réguliers. Pourtant, tous les athlètes de haut niveau consacrent l'écrasante majorité de leur entraînement à l'endurance fondamentale (la fameuse Zone 2). Découvrez pourquoi courir lentement est le moyen le plus efficace pour progresser durablement et exploser vos chronos.",
     "keyTakeaways": [
       "L'endurance fondamentale se court en aisance respiratoire totale : vous devez être capable de tenir une conversation sans essoufflement.",
@@ -19,7 +19,7 @@
     ],
     "sections": [
       {
-        "id": "qu-est-ce-que-l-ef",
+        "id": "1-qu-est-ce-que-l-endurance-fondamentale-zone-2-",
         "heading": "1. Qu'est-ce que l'Endurance Fondamentale (Zone 2) ?",
         "body": [
           "L'endurance fondamentale (EF) correspond à l'allure à laquelle votre organisme fonctionne en parfaite harmonie aérobie. Vos poumons et votre cœur apportent tout l'oxygène nécessaire à vos muscles sans créer d'acidité ni de déchet gênant.",
@@ -32,7 +32,7 @@
         }
       },
       {
-        "id": "pourquoi-courir-lentement-rend-rapide",
+        "id": "2-pourquoi-courir-lentement-vous-fait-progresser-en-vitesse-",
         "heading": "2. Pourquoi courir lentement vous fait progresser en vitesse ?",
         "body": [
           "Pour beaucoup de coureurs, ralentir ressemble à une perte de temps. Pourtant, les adaptations biologiques de la Zone 2 sont totalement irremplaçables :",
@@ -43,7 +43,7 @@
         ]
       },
       {
-        "id": "la-regle-du-80-20",
+        "id": "3-la-regle-d-or-du-80-20-la-methode-des-champions-",
         "heading": "3. La Règle d'Or du 80/20 (La Méthode des Champions)",
         "body": [
           "Le physiologiste Stephen Seiler a étudié pendant des années les plans d'entraînement des meilleurs marathoniens et demi-fondeurs mondiaux (notamment les Kényans et les Éthiopiens). Son constat a fait l'effet d'une bombe dans le monde de l'athlétisme :",
@@ -52,7 +52,7 @@
         ]
       },
       {
-        "id": "le-piege-de-la-zone-grise",
+        "id": "4-le-piege-de-la-zone-grise-qui-bride-vos-chronos",
         "heading": "4. Le Piège de la 'Zone Grise' qui Bride vos Chronos",
         "body": [
           "La zone grise, c'est cette allure 'bâtarde' où vous n'êtes ni vraiment lent, ni vraiment vite. Vous transpirez bien, vous avez l'impression d'avoir fait une bonne séance, mais vous n'êtes plus en endurance fondamentale.",
@@ -61,7 +61,7 @@
         ]
       },
       {
-        "id": "comment-calculer-sa-zone",
+        "id": "5-comment-calculer-precisement-sa-zone-d-endurance-fondamentale-",
         "heading": "5. Comment Calculer Précisément sa Zone d'Endurance Fondamentale ?",
         "body": [
           "Deux méthodes simples vous permettent de verrouiller votre zone d'allure :",
@@ -71,7 +71,7 @@
         ]
       },
       {
-        "id": "conseils-du-coach",
+        "id": "6-les-3-regles-d-or-du-coach-pour-reussir-ses-footings",
         "heading": "6. Les 3 Règles d'Or du Coach pour Réussir ses Footings",
         "body": [
           "1. Marchez dans les côtes si nécessaire : Si votre cardio s'emballe dès que la route s'élève, passez à la marche rapide pendant quelques secondes. C'est l'intensité interne qui compte, pas votre vitesse GPS instantanée.",
@@ -87,24 +87,10 @@
       "cooldown": "5 lignes droites de 80 mètres en accélération progressive (foulée aérienne, épaules basses) + 5 min de marche.",
       "coachTips": "Si vous courez en groupe, parlez ! Si vous ne pouvez plus raconter votre journée sans couper vos phrases, demandez à tout le monde de ralentir."
     },
-    "faqs": [
-      {
-        "question": "J'ai l'impression de me traîner en endurance fondamentale, est-ce normal au début ?",
-        "answer": "Oui, c'est tout à fait normal ! Quand on a l'habitude de courir trop vite, courir en vraie Zone 2 donne l'impression de ne rien faire. Rassurez-vous : en 4 à 6 semaines, à fréquence cardiaque identique, votre vitesse augmentera naturellement."
-      },
-      {
-        "question": "Dois-je regarder ma montre en permanence ?",
-        "answer": "Non, apprenez à écouter vos sensations respiratoires. Réglez une alerte sonore sur votre montre si votre cœur dépasse 75 % de votre FC Max, et pour le reste, profitez du paysage !"
-      },
-      {
-        "question": "Combien de sorties en endurance fondamentale dois-je faire par semaine ?",
-        "answer": "Si vous courez 3 fois par semaine, faites 2 séances d'endurance fondamentale (dont votre sortie longue) et 1 séance de fractionné/seuil. Si vous courez 4 fois, faites 3 séances en EF et 1 séance de qualité."
-      }
-    ],
+    "faqs": [],
     "relatedSlugs": [
-      "seuil-lactique-course-a-pied-sv1-sv2",
-      "courir-10km-moins-40-minutes",
-      "preparation-marathon-sub-3h-allure-as42"
+      "endurance-fondamentale-zone-2-running",
+      "courir-10km-moins-40-minutes"
     ],
     "relatedServiceUrl": "/calculateur-allures/",
     "relatedServiceLabel": "Calculer vos allures d'EF et de VMA"
@@ -331,8 +317,8 @@
     "category": "Marathon",
     "readTime": "9 MIN",
     "date": "06 MARS 2026",
-    "publishedAt": "2026-03-06",
-    "image": "/images/marathon-finish.webp",
+    "publishedAt": "2026-09-16",
+    "image": "/images/upload-dsc05866-1789562560012.jpg",
     "summary": "Passer sous la barre mythique des 3 heures sur marathon (2h59'59, soit une allure de 4'15 au kilomètre) est le Graal du coureur amateur passionné. Mais courir 42,195 km à 14,1 km/h ne s'improvise pas : cela demande une préparation chirurgicale, une gestion millimétrée de l'énergie et des séances spécifiques ciblées.",
     "keyTakeaways": [
       "L'allure cible est de 4'15/km (14,1 km/h) avec une régularité absolue pendant 180 minutes.",
@@ -343,7 +329,7 @@
     ],
     "sections": [
       {
-        "id": "l-equation-du-sub3",
+        "id": "1-l-equation-du-sub-3h-4-15-au-kilometre-pendant-42-2-km",
         "heading": "1. L'Équation du Sub-3h : 4'15 au Kilomètre Pendant 42,2 km",
         "body": [
           "Courir un marathon en 2h59'59, c'est passer le semi-marathon en 1h29'59 et être capable de refaire exactement la même chose sur la deuxième moitié de course.",
@@ -354,7 +340,7 @@
         ]
       },
       {
-        "id": "la-verite-sur-le-mur",
+        "id": "2-la-verite-sur-le-mur-du-marathon-au-32e-kilometre",
         "heading": "2. La Vérité sur le 'Mur du Marathon' au 32e Kilomètre",
         "body": [
           "Tout le monde craint le fameux mur des 30-32 km. On l'attribue souvent à un manque de mental. En réalité, c'est un phénomène 100 % biochimique !",
@@ -368,7 +354,7 @@
         }
       },
       {
-        "id": "strategie-nutrition-course",
+        "id": "3-le-protocole-de-ravitaillement-60g-de-glucides-par-heure",
         "heading": "3. Le Protocole de Ravitaillement : 60g de Glucides par Heure",
         "body": [
           "Pour viser moins de 3 heures, vous devez consommer entre 50 et 70 grammes de glucides par heure de course :",
@@ -378,7 +364,7 @@
         ]
       },
       {
-        "id": "les-sorties-longues-specifiques",
+        "id": "4-les-sorties-longues-modernes-fini-les-footings-mous-de-3-heures",
         "heading": "4. Les Sorties Longues Modernes : Fini les Footings Mous de 3 Heures",
         "body": [
           "L'erreur des anciennes méthodes d'entraînement était de faire des sorties longues de 3 heures très lentes le dimanche. Cela fatiguait énormément les muscles sans jamais préparer à l'allure de course.",
@@ -389,7 +375,7 @@
         ]
       },
       {
-        "id": "preparer-ses-cuisses-aux-impacts",
+        "id": "5-preparer-ses-cuisses-aux-35-000-impacts",
         "heading": "5. Préparer ses Cuisses aux 35 000 Impacts",
         "body": [
           "Sur 42 kilomètres, vous effectuez environ 35 000 foulées. À chaque pas, vos quadriceps doivent amortir 2,5 à 3 fois le poids de votre corps.",
@@ -400,7 +386,7 @@
         ]
       },
       {
-        "id": "gestion-de-course-marathon",
+        "id": "6-la-strategie-de-course-la-regularite-d-une-horloge-suisse",
         "heading": "6. La Stratégie de Course : La Régularité d'une Horloge Suisse",
         "body": [
           "Sur marathon, le 'temps d'avance' pris au départ est toujours du temps perdu avec des intérêts astronomiques à l'arrivée.",
@@ -417,24 +403,10 @@
       "cooldown": "2 km de footing très souple pour relâcher les tensions.",
       "coachTips": "Prenez un gel énergétique au km 9 et au km 19 exactement comme le jour du marathon pour valider votre protocole de ravitaillement en conditions réelles."
     },
-    "faqs": [
-      {
-        "question": "Combien de kilomètres par semaine faut-il courir pour faire moins de 3h ?",
-        "answer": "La plupart des marathoniens sub-3h tournent entre 65 et 85 kilomètres par semaine au pic de leur préparation (sur 4 à 5 sorties hebdomadaires). La régularité prime sur les sorties records isolées."
-      },
-      {
-        "question": "Faut-il courir plus de 32 km à l'entraînement ?",
-        "answer": "Non, c'est inutile et contre-productif. Dépasser 32 à 34 km (ou plus de 2h35 d'effort) génère des microtraumatismes musculaires dont la récupération prendrait 2 à 3 semaines, pénalisant tout le reste du plan."
-      },
-      {
-        "question": "Que faire si la météo annonce de la chaleur le jour du marathon ?",
-        "answer": "La chaleur augmente le travail cardiaque et la déshydratation. Au-delà de 18°C, adaptez immédiatement votre objectif de 3 à 5 secondes par kilomètre (viser 4'18 au lieu de 4'15) et buvez dès le premier ravitaillement."
-      }
-    ],
+    "faqs": [],
     "relatedSlugs": [
-      "affutage-marathon-tapering-3-semaines",
       "endurance-fondamentale-zone-2-running",
-      "allure-cible-semi-marathon-pacing"
+      "courir-10km-moins-40-minutes"
     ],
     "relatedServiceUrl": "/coaching-marathon/",
     "relatedServiceLabel": "Découvrir la préparation marathon sub-3h"
@@ -447,8 +419,8 @@
     "category": "Marathon",
     "readTime": "8 MIN",
     "date": "24 FÉVRIER 2026",
-    "publishedAt": "2026-02-24",
-    "image": "/images/hero-stride-sharp.webp",
+    "publishedAt": "2026-09-16",
+    "image": "/images/upload-img-9731-1789562594584.jpg",
     "summary": "Après 12 semaines d'efforts intenses, les 21 derniers jours avant votre marathon peuvent faire basculer votre course dans le triomphe ou le désastre. L'affûtage (le 'tapering') n'est pas une période de paresse : c'est une phase stratégique qui permet à vos muscles de cicatriser et à votre énergie d'atteindre son pic maximal. Mode d'emploi.",
     "keyTakeaways": [
       "Un affûtage réussi améliore votre performance de 2 à 3 % (soit un gain direct de 3 à 5 minutes sur marathon).",
@@ -459,7 +431,7 @@
     ],
     "sections": [
       {
-        "id": "qu-est-ce-que-l-affutage",
+        "id": "1-qu-est-ce-que-l-affutage-et-pourquoi-est-ce-magique-",
         "heading": "1. Qu'est-ce que l'Affûtage et Pourquoi est-ce Magique ?",
         "body": [
           "Pendant des mois, vous avez accumulé de la fatigue dans vos fibres musculaires, vos tendons et votre système nerveux. Le jour du marathon, votre performance dépendra d'une équation simple :",
@@ -468,7 +440,7 @@
         ]
       },
       {
-        "id": "la-regle-d-or-de-l-intensite",
+        "id": "2-la-regle-d-or-reduire-le-volume-mais-garder-l-intensite-",
         "heading": "2. La Règle d'Or : Réduire le Volume, mais Garder l'Intensité !",
         "body": [
           "C'est l'erreur numéro 1 commise par les coureurs : sous prétexte de se reposer, ils arrêtent complètement de courir vite et ne font que des footings lents pendant 3 semaines.",
@@ -482,7 +454,7 @@
         }
       },
       {
-        "id": "le-programme-semaine-par-semaine",
+        "id": "3-le-programme-ideal-semaine-par-semaine",
         "heading": "3. Le Programme Idéal Semaine par Semaine",
         "body": [
           "Voici le protocole de réduction kilométrique recommandé :",
@@ -492,7 +464,7 @@
         ]
       },
       {
-        "id": "le-syndrome-des-jambes-lourdes",
+        "id": "4-pourquoi-avez-vous-les-jambes-lourdes-a-j-10-",
         "heading": "4. Pourquoi avez-vous les Jambes Lourdes à J-10 ?",
         "body": [
           "Presque tous les marathoniens traversent une phase de doute panique à 10 jours de l'épreuve : 'Mes jambes sont en plomb, je n'avance plus, j'ai tout perdu !'.",
@@ -502,7 +474,7 @@
         ]
       },
       {
-        "id": "les-trois-derniers-jours",
+        "id": "5-les-3-derniers-jours-sommeil-glucides-et-zero-stress",
         "heading": "5. Les 3 Derniers Jours : Sommeil, Glucides et Zéro Stress",
         "body": [
           "• Côté assiette (J-3 à J-1) : Inutile de vous gaver à vous faire exploser l'estomac. Augmentez simplement la part de féculents faciles à digérer (riz blanc, pâtes, pommes de terre à la vapeur) et réduisez les fibres irritantes (légumes crus, sauces grasses).",
@@ -511,7 +483,7 @@
         ]
       },
       {
-        "id": "la-veille-et-le-matin",
+        "id": "6-la-veille-et-le-matin-de-course",
         "heading": "6. La Veille et le Matin de Course",
         "body": [
           "• La veille : Évitez de piétiner toute la journée sur le village marathon ! Prenez votre dossard rapidement et reposez vos jambes l'après-midi devant un film.",
@@ -527,24 +499,10 @@
       "cooldown": "5 min de trot de décélération + marche.",
       "coachTips": "Vous devez terminer cette séance avec la sensation de n'avoir presque pas transpiré. Le but est de calibrer le tempo, pas de dépenser des calories !"
     },
-    "faqs": [
-      {
-        "question": "J'ai mal à un genou ou au mollet pendant l'affûtage, est-ce une blessure ?",
-        "answer": "Très souvent, ce sont des 'douleurs fantômes'. Quand le corps relâche la pression et que le niveau de stress baisse, le cerveau devient hypersensible aux petits bobos musculaires. Si la douleur disparaît au bout de 5 minutes de marche, ne vous inquiétez pas."
-      },
-      {
-        "question": "Combien de poids peut-on prendre pendant l'affûtage ?",
-        "answer": "Prendre entre 1 et 1,5 kg sur la balance entre le mercredi et le dimanche est tout à fait normal. C'est le poids du stock d'eau et de glycogène intracellulaire qui vous portera jusqu'au bout des 42 km."
-      },
-      {
-        "question": "Peut-on faire une sortie vélo pendant l'affûtage ?",
-        "answer": "Une balade très tranquille de 45 minutes sur le plat sans forcer est possible à J-12, mais évitez toute sortie longue ou intense qui fatiguerait les quadriceps."
-      }
-    ],
+    "faqs": [],
     "relatedSlugs": [
-      "preparation-marathon-sub-3h-allure-as42",
-      "allure-cible-semi-marathon-pacing",
-      "endurance-fondamentale-zone-2-running"
+      "endurance-fondamentale-zone-2-running",
+      "courir-10km-moins-40-minutes"
     ],
     "relatedServiceUrl": "/coaching-marathon/",
     "relatedServiceLabel": "Optimiser votre plan marathon avec Vincent Buisson"
@@ -558,7 +516,7 @@
     "readTime": "8 MIN",
     "date": "18 FÉVRIER 2026",
     "publishedAt": "2026-09-16",
-    "image": "/images/vincent-running.jpg",
+    "image": "/images/upload-dewatermark-ai-1733149762784-1789562684608.png",
     "summary": "Avec ses 21,097 kilomètres, le semi-marathon est l'une des courses les plus populaires et les plus gratifiantes de la course à pied. Ni sprint comme le 10 km, ni épreuve d'usure comme le marathon, il exige un dosage millimétré de votre allure. Découvrez comment déterminer votre vitesse cible et la stratégie de pacing pour ne jamais craquer après le 15e kilomètre.",
     "keyTakeaways": [
       "Le semi-marathon se court à une intensité située entre 83 % et 86 % de votre VMA (environ 88 % à 92 % de votre FC Max).",
