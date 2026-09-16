@@ -116,37 +116,35 @@ async function deploy(options = {}) {
 
     console.log("✅ Connexion FTP réussie !");
 
-    // Auto-détection intelligente du dossier de destination sur Hostinger
-    let targetDir = config.remoteDir;
-    try {
-      const rootList = await client.list();
-      console.log("📁 Fichiers/Dossiers racine détectés :", rootList.map(item => item.name).join(", "));
-      const hasDomains = rootList.some(item => item.name.toLowerCase() === "domains");
-      if (hasDomains) {
-        console.log("📂 Dossier 'domains/' détecté sur Hostinger.");
-        await client.cd("domains");
-        const domainList = await client.list();
-        console.log("🌐 Domaines trouvés :", domainList.map(d => d.name).join(", "));
-        const match = domainList.find(d => d.name.toLowerCase().includes("vincentbuisson")) || domainList[0];
-        if (match) {
-          targetDir = `domains/${match.name}/public_html`;
-          console.log(`🎯 Cible Hostinger détectée automatiquement : '${targetDir}'`);
-        }
-        await client.cd("/");
-      }
-    } catch (detectErr) {
-      console.warn("Auto-détection non bloquante :", detectErr.message);
+    // Diagnostic et détection de la racine web Hostinger
+    const rootList = await client.list();
+    console.log("📁 Éléments trouvés dans le dossier FTP initial :", rootList.map(item => item.name).join(", "));
+    
+    const hasDefaultPhp = rootList.some(item => item.name.toLowerCase() === "default.php");
+    const hasPublicHtmlDir = rootList.some(item => item.name.toLowerCase() === "public_html" && item.isDirectory);
+
+    if (hasDefaultPhp) {
+      console.log("🎯 Racine web détectée directement dans le dossier FTP actuel.");
+      try {
+        await client.remove("default.php");
+        console.log("🗑️ Ancien default.php Hostinger supprimé avec succès !");
+      } catch (e) {}
+      
+      // Nettoyer l'éventuel sous-dossier public_html créé précédemment par erreur
+      try {
+        await client.removeDir("public_html");
+        console.log("🧹 Sous-dossier 'public_html' redondant nettoyé.");
+      } catch (e) {}
+    } else if (hasPublicHtmlDir) {
+      console.log("🎯 Entrée dans le sous-dossier 'public_html'...");
+      await client.cd("public_html");
+      try {
+        await client.remove("default.php");
+        console.log("🗑️ Ancien default.php Hostinger supprimé avec succès !");
+      } catch (e) {}
     }
 
-    console.log(`📂 Synchronisation vers '${targetDir}'...`);
-    await client.ensureDir(targetDir);
-
-    // Supprimer default.php d'Hostinger si présent pour ne pas masquer index.html
-    try {
-      await client.remove(`${targetDir}/default.php`);
-      console.log("🗑️ Fichier default.php de Hostinger supprimé.");
-    } catch (e) {}
-
+    console.log("📂 Téléversement des fichiers du site vers la racine web...");
     await client.uploadFromDir(OUT_DIR);
 
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
