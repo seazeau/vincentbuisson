@@ -17,8 +17,7 @@ export default function Preloader() {
       }
     }
 
-    // Disable body scroll while preloader is active
-    document.body.style.overflow = "hidden";
+
 
     let current = 0;
     const interval = setInterval(() => {

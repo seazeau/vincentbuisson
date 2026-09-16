@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
-import Preloader from "@/components/Preloader";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import About3DSection from "@/components/About3DSection";
@@ -119,9 +118,6 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#0c0c0b] text-[#f2eee4]">
-      {/* Entrance Animated Preloader */}
-      <Preloader />
-
       {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
