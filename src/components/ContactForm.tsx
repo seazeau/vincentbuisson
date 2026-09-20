@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useCallback, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { MessageCircle, Send, CheckCircle, ShieldCheck, Clock, UserCheck, ArrowUpRight, Copy, Check } from "lucide-react";
+import { MessageCircle, Send, CheckCircle, ShieldCheck, Clock, UserCheck, ArrowUpRight, Copy, Check, Loader2 } from "lucide-react";
 import { SITE_CONFIG } from "@/data/siteContent";
 import Tilt3DCard from "./Tilt3DCard";
 
@@ -71,6 +71,8 @@ export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submissionType, setSubmissionType] = useState<"whatsapp" | "email">("whatsapp");
   const [submitMode, setSubmitMode] = useState<"whatsapp" | "email">("whatsapp");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
 
   const generateSummary = () => {
@@ -96,12 +98,91 @@ export default function ContactForm() {
     window.open(`https://wa.me/33614838634?text=${text}`, "_blank");
   };
 
-  const handleSendEmail = (e?: React.FormEvent) => {
+  const handleSendEmail = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
-    setSubmissionType("email");
-    setSubmitted(true);
-    const summaryText = encodeURIComponent(generateSummary());
-    window.location.href = `mailto:${SITE_CONFIG.email}?subject=Candidature Coaching - ${formData.name || "Nouveau Coureur"} (${formData.distance})&body=${summaryText}`;
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    const payload = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone || "Non renseigné",
+      distance: formData.distance,
+      plan: formData.plan,
+      currentRecord: formData.currentRecord || "Non renseigné",
+      targetGoal: formData.targetGoal || "Non renseigné",
+      weeklyRuns: formData.weeklyRuns,
+      message: formData.message || "Aucune remarque",
+      _subject: `Candidature Coaching : ${formData.name || "Nouveau Coureur"} (${formData.distance})`,
+      _replyto: formData.email,
+      _template: "table",
+    };
+
+    let sentSuccessfully = false;
+
+    // 1. Tenter l'envoi direct via le script PHP Hostinger
+    try {
+      const phpRes = await fetch("/send-candidature.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (phpRes.ok) {
+        const phpData = await phpRes.json();
+        if (phpData.success) {
+          sentSuccessfully = true;
+        }
+      }
+    } catch {
+      // Échec ou environnement statique, bascule vers FormSubmit
+    }
+
+    // 2. Si le script PHP n'a pas répondu ou a échoué, relais FormSubmit vers contact@runpassion.fr
+    if (!sentSuccessfully) {
+      try {
+        const fsRes = await fetch("https://formsubmit.co/ajax/contact@runpassion.fr", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+          },
+          body: JSON.stringify({
+            ...payload,
+            "Nom": formData.name,
+            "Email": formData.email,
+            "Téléphone": formData.phone || "Non renseigné",
+            "Distance Cible": formData.distance,
+            "Formule": formData.plan,
+            "Niveau / VMA": formData.currentRecord || "Non renseigné",
+            "Objectif": formData.targetGoal || "Non renseigné",
+            "Séances / Semaine": formData.weeklyRuns,
+            "Remarques": formData.message || "Aucune",
+          }),
+        });
+
+        const fsData = await fsRes.json();
+        if (fsData.success === "true" || fsData.success === true || fsData.message?.includes("Activate")) {
+          sentSuccessfully = true;
+        }
+      } catch {
+        // En cas d'erreur réseau
+      }
+    }
+
+    setIsSubmitting(false);
+
+    if (sentSuccessfully) {
+      setSubmissionType("email");
+      setSubmitted(true);
+    } else {
+      setSubmitError(
+        "L'envoi automatique a rencontré une anomalie réseau. Vous pouvez transmettre directement votre candidature via WhatsApp ou ouvrir votre messagerie."
+      );
+    }
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -137,7 +218,7 @@ export default function ContactForm() {
           <p className="text-[#a0a095] text-sm max-w-md mx-auto leading-relaxed">
             {submissionType === "whatsapp"
               ? "Votre conversation WhatsApp s'est ouverte avec Vincent. Vous recevrez une réponse personnalisée sous 24h."
-              : "Votre messagerie s'est ouverte avec votre récapitulatif. Vous pouvez aussi échanger directement sur WhatsApp."}
+              : "Votre candidature a été transmise directement à Vincent Buisson (contact@runpassion.fr). Vous recevrez une réponse personnalisée sous 24h."}
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -355,11 +436,24 @@ export default function ContactForm() {
               />
             </div>
 
+            {submitError && (
+              <div className="p-4 rounded-xl bg-red-950/40 border border-red-500/30 text-xs font-mono-tech text-red-300 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <span>{submitError}</span>
+                <a
+                  href={`mailto:${SITE_CONFIG.email}?subject=Candidature Coaching - ${encodeURIComponent(formData.name || "Nouveau Coureur")}&body=${encodeURIComponent(generateSummary())}`}
+                  className="underline hover:text-white flex-shrink-0"
+                >
+                  Ouvrir ma messagerie
+                </a>
+              </div>
+            )}
+
             <div className="space-y-3 pt-2">
               <button
                 type="submit"
+                disabled={isSubmitting}
                 onClick={() => setSubmitMode("whatsapp")}
-                className="w-full flex items-center justify-center px-8 py-4 rounded-2xl text-xs sm:text-sm font-black uppercase tracking-wider bg-[#d4ff00] text-black hover:bg-white transition-all shadow-xl shadow-[#d4ff00]/20 cursor-pointer group"
+                className="w-full flex items-center justify-center px-8 py-4 rounded-2xl text-xs sm:text-sm font-black uppercase tracking-wider bg-[#d4ff00] text-black hover:bg-white transition-all shadow-xl shadow-[#d4ff00]/20 cursor-pointer group disabled:opacity-50"
               >
                 <MessageCircle className="w-4 h-4 mr-2 fill-current" />
                 Envoyer ma candidature via WhatsApp
@@ -368,11 +462,21 @@ export default function ContactForm() {
 
               <button
                 type="submit"
+                disabled={isSubmitting}
                 onClick={() => setSubmitMode("email")}
-                className="w-full flex items-center justify-center px-6 py-3 rounded-xl text-xs font-mono-tech uppercase tracking-wider bg-[#1a1a18] text-[#a0a095] hover:text-white hover:bg-[#252522] border border-[#2e2e28] transition-all cursor-pointer"
+                className="w-full flex items-center justify-center px-6 py-3.5 rounded-xl text-xs font-mono-tech uppercase tracking-wider bg-[#1a1a18] text-[#a0a095] hover:text-white hover:bg-[#252522] border border-[#2e2e28] transition-all cursor-pointer disabled:opacity-50"
               >
-                <Send className="w-3.5 h-3.5 mr-2" />
-                Ou envoyer par Email direct
+                {isSubmitting && submitMode === "email" ? (
+                  <>
+                    <Loader2 className="w-3.5 h-3.5 mr-2 animate-spin text-[#d4ff00]" />
+                    Envoi direct à contact@runpassion.fr...
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-3.5 h-3.5 mr-2" />
+                    Transmettre directement à contact@runpassion.fr
+                  </>
+                )}
               </button>
             </div>
           </form>
