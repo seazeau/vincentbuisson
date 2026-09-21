@@ -8,14 +8,14 @@ import Tilt3DCard from "@/components/Tilt3DCard";
 import FAQSection from "@/components/FAQSection";
 
 export const metadata: Metadata = {
-  title: "Prépa 10 km : Plan d'Entraînement Personnalisé sur Route",
+  title: "Coaching 10 km Personnalisé : Viser Sub-40', 45' ou 50' sur Nolio",
   description:
-    "Plan de prépa 10 km sur-mesure avec un coach sub-35'. Développement de la VMA, allure spécifique AS10 et suivi d'entraînement complet sur Nolio.",
+    "Plan d'entraînement 10 km sur-mesure avec un coach sub-35'. Développement VMA, allures spécifiques AS10, séances de seuil et bilan offert sous 24h.",
   alternates: {
     canonical: "https://vincentbuisson.fr/coaching-10km/",
   },
   openGraph: {
-    title: "Prépa 10 km : Plan d'Entraînement Personnalisé sur Route",
+    title: "Coaching 10 km Personnalisé : Viser Sub-40', 45' ou 50' sur Nolio",
     description:
       "Plan de prépa 10 km sur-mesure sur Nolio : VMA, allure spécifique AS10 et optimisation de foulée avec un coach expérimenté sub-35'.",
     url: "https://vincentbuisson.fr/coaching-10km/",
