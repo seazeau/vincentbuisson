@@ -145,6 +145,142 @@
     "relatedServiceLabel": "Rejoindre la prépa marathon personnalisée"
   },
   {
+    "slug": "test-vma-demi-cooper-vameval-calcul",
+    "title": "Test VMA en Course à Pied : Demi-Cooper ou Vameval, Comment Calculer sa Vraie VMA ?",
+    "seoTitle": "Test VMA Running : Demi-Cooper, Vameval & Calcul des Allures",
+    "seoDescription": "Comment calculer sa VMA avec précision ? Comparatif du test Demi-Cooper (6 min) et Vameval sur piste, formule de calcul et étalonnage des allures sur Nolio.",
+    "category": "Physiologie & Allures",
+    "readTime": "8 MIN",
+    "date": "22 MARS 2026",
+    "publishedAt": "2026-09-21",
+    "image": "/images/vincent-sprint-sharp.webp",
+    "summary": "La Vitesse Maximale Aérobie (VMA) est le chiffre magique de tout coureur à pied : c'est la clé de voûte qui permet de calculer avec précision vos allures d'entraînement (Endurance Fondamentale, seuils, AS10, AS21 et marathon). Pourtant, entre montres GPS imprécises, départs trop rapides et protocoles inadaptés, plus d'un coureur sur deux sous-estime ou surestime sa cylindrée réelle. Test Demi-Cooper de 6 minutes ou test par paliers Vameval : découvrez comment réaliser un test fiable, calculer votre VMA exacte et l'exploiter pour franchir un palier chronométrique.",
+    "keyTakeaways": [
+      "La VMA est la vitesse de course à laquelle votre consommation d'oxygène (VO2max) atteint 100 %. Elle peut être soutenue entre 4 et 7 minutes selon votre niveau d'entraînement.",
+      "Le test Demi-Cooper (6 minutes d'effort continu régulier) est le protocole de terrain le plus simple et accessible : la distance parcourue en mètres divisée par 100 donne directement votre VMA en km/h.",
+      "Le test Vameval (progressif par paliers de 0,5 km/h toutes les minutes avec bips sonores) est le protocole de référence des clubs FFA, car il élimine totalement l'erreur de gestion d'allure.",
+      "Ne réalisez jamais votre test VMA sur une route sinueuse ou uniquement au GPS : les erreurs de triangulation faussent les allures de 0,5 à 1 km/h. Privilégiez une piste d'athlétisme de 400 mètres étalonnée.",
+      "Une fois votre VMA connue, vous pouvez calibrer vos zones cibles : Endurance Fondamentale (60-70 % VMA), Seuil Anaérobie (85-90 % VMA) et Allure Marathon (75-80 % VMA)."
+    ],
+    "sections": [
+      {
+        "id": "1-qu-est-ce-que-la-vma-et-pourquoi-est-elle-capitale",
+        "heading": "1. Qu'est-ce que la VMA et Pourquoi est-elle Capitale ?",
+        "body": [
+          "La Vitesse Maximale Aérobie (VMA) désigne la vitesse de déplacement à laquelle un athlète sollicite 100 % de sa consommation maximale d'oxygène (la fameuse VO2max).",
+          "Pour faire une analogie avec le sport automobile, la VMA représente la cylindrée brute de votre moteur :",
+          "• Plus votre VMA est élevée, plus votre 'moteur' est puissant.",
+          "• Toutes vos allures de compétition sont des fractions directes de cette VMA : un 10 km se court entre 88 % et 92 % de la VMA, un semi-marathon entre 82 % et 87 %, et un marathon entre 73 % et 80 %.",
+          "Sans connaître votre VMA réelle, vous vous entraînez à l'aveugle : vous risquez de courir vos footings de récupération trop vite (dans la fatigue) et vos séances de fractionné pas assez vite pour provoquer des adaptations biologiques."
+        ],
+        "callout": {
+          "title": "La règle du coach",
+          "text": "La VMA n'est pas votre vitesse de sprint maximal ! C'est une vitesse aérobie que vous êtes capable de maintenir entre 4 et 7 minutes avant que l'acidité musculaire ne vous oblige à ralentir."
+        }
+      },
+      {
+        "id": "2-le-test-demi-cooper-le-protocole-le-plus-accessible",
+        "heading": "2. Le Test Demi-Cooper (6 minutes) : Le Protocole le Plus Accessible",
+        "body": [
+          "Créé comme une alternative plus pertinente au vieux test de Cooper (qui durait 12 minutes et faisait trop intervenir l'endurance), le Demi-Cooper consiste à parcourir la plus grande distance possible en exactement 6 minutes.",
+          "Pourquoi 6 minutes ? Parce que la durée moyenne pendant laquelle un être humain peut soutenir 100 % de sa VO2max se situe précisément autour de 6 minutes.",
+          "La formule de calcul est d'une simplicité enfantine :",
+          "VMA (km/h) = Distance parcourue en mètres / 100",
+          "Exemples concrets :",
+          "• Vous parcourez 1 500 mètres en 6 minutes ➔ Votre VMA est de 15,0 km/h.",
+          "• Vous parcourez 1 650 mètres en 6 minutes ➔ Votre VMA est de 16,5 km/h.",
+          "• Vous parcourez 1 800 mètres en 6 minutes ➔ Votre VMA est de 18,0 km/h.",
+          "Le principal piège du Demi-Cooper réside dans le départ : 80 % des coureurs partent beaucoup trop vite sur les 500 premiers mètres (en sur-régime anaérobie) et s'effondrent sur les 2 dernières minutes. Le secret : visez une régularité absolue au tour de piste."
+        ]
+      },
+      {
+        "id": "3-le-test-vameval-la-reference-scientifique",
+        "heading": "3. Le Test Vameval : La Référence des Entraîneurs et Clubs FFA",
+        "body": [
+          "Le Vameval est un test triangulaire et progressif par paliers, inventé par le physiologiste Georges Cazorla. C'est le protocole le plus précis utilisé par la Fédération Française d'Athlétisme :",
+          "• Le test débute à une allure très lente : 8,5 km/h.",
+          "• La vitesse augmente de 0,5 km/h toutes les minutes.",
+          "• Des plots sont disposés tous les 20 mètres sur la piste d'athlétisme. À chaque bip sonore diffusé par une bande audio ou une application, vous devez impérativement vous trouver au niveau du plot suivant.",
+          "• Dès que vous ne parvenez plus à ajuster votre foulée au bip avec un retard supérieur à 2 mètres sur deux plots consécutifs, le test s'arrête.",
+          "Le dernier palier complété correspond exactement à votre VMA.",
+          "Avantage majeur du Vameval : il ne demande aucune compétence de gestion d'allure. Vous n'avez qu'à suivre le rythme imposé jusqu'à l'épuisement complet."
+        ],
+        "callout": {
+          "title": "Vameval vs Demi-Cooper : Lequel choisir ?",
+          "text": "Si vous êtes seul avec un chronomètre sur piste, optez pour le Demi-Cooper. Si vous êtes en club ou disposez de la bande sonore Vameval sur votre téléphone avec oreillette, le Vameval donnera un résultat encore plus clinique."
+        }
+      },
+      {
+        "id": "4-piste-vs-montre-gps-les-erreurs-qui-faussent-le-test",
+        "heading": "4. Piste d'Athlétisme vs Montre GPS : Les Pièges à Éviter",
+        "body": [
+          "C'est l'erreur la plus fréquente des coureurs modernes : faire un test VMA en se fiant uniquement à la distance mesurée par sa montre GPS dans la rue ou sur un chemin forestier.",
+          "Pourquoi est-ce une mauvaise idée ?",
+          "1. La précision GPS instantanée oscille généralement entre 2 % et 5 % d'erreur. Sur un effort court de 6 minutes, 50 mètres d'erreur GPS faussent votre VMA de 0,5 km/h, ce qui dérègle complètement vos allures au seuil et au 10 km !",
+          "2. Le vent, les virages serrés, les trottoirs et les micro-dénivelés faussent l'intensité physiologique.",
+          "3. La piste de 400 mètres étalonnée (couloir 1) est le seul juge de paix neutre : 1 tour = 400 m, 2 tours = 800 m, etc. Vous connaissez votre distance exacte au mètre près, indépendamment de tout signal satellite."
+        ]
+      },
+      {
+        "id": "5-tableau-de-conversion-vma-vers-allures-de-course",
+        "heading": "5. De la VMA aux Allures de Course : Le Tableau des Pourcentages",
+        "body": [
+          "Une fois votre VMA validée sur piste, comment l'utiliser au quotidien dans votre programmation Nolio ?",
+          "Voici les ratios physiologiques de référence pour chaque type de séance :",
+          "• Endurance Fondamentale (Zone 2) : 60 % à 70 % de la VMA | Aisance respiratoire totale, travail aérobie de fond.",
+          "• Seuil Aérobie (SV1 / Tempo) : 75 % à 80 % de la VMA | Allure marathon pour les coureurs entraînés.",
+          "• Seuil Anaérobie (SV2) : 85 % à 90 % de la VMA | Allure 10 km à semi-marathon, recyclage du lactate.",
+          "• VMA Courte (30/30, 200m, 300m) : 100 % à 105 % de la VMA | Puissance aérobie et relances dynamiques.",
+          "• VMA Longue (800m, 1000m) : 95 % à 100 % de la VMA | Maintien du VO2max sous fatigue lactique."
+        ]
+      },
+      {
+        "id": "6-pourquoi-la-vma-ne-fait-pas-tout-l-indice-d-endurance",
+        "heading": "6. Pourquoi la VMA ne Fait pas Tout : L'Indice d'Endurance",
+        "body": [
+          "Deux coureurs peuvent avoir exactement la même VMA de 16 km/h, mais réaliser des chronos totalement différents sur marathon : l'un franchira la ligne en 3h15, tandis que l'autre peinera à boucler en 3h45. Pourquoi ?",
+          "C'est la différence entre la cylindrée brute (VMA) et l'indice d'endurance :",
+          "• L'économie de course : La capacité à dépenser le moins d'énergie possible pour chaque foulée à allure cible.",
+          "• La puissance lipidique : L'aptitude de vos muscles à utiliser les graisses comme carburant pour préserver le glycogène.",
+          "• La tolérance mentale et neuromusculaire à la fatigue prolongée.",
+          "C'est précisément là qu'intervient le coaching individualisé sur Nolio : nous ne nous contentons pas d'appliquer des pourcentages théoriques, nous analysons vos courbes de dérive cardiaque et vos sensations réelles pour ajuster chaque séance à votre physiologie propre."
+        ]
+      }
+    ],
+    "workoutExample": {
+      "title": "Protocole Officiel : Séance Test Demi-Cooper 6 Minutes sur Piste",
+      "warmup": "20 min d'échauffement progressif en endurance fondamentale (Zone 2) + 5 min d'éducatifs (montées de genoux, talons-fesses, pas chassés) + 3 lignes droites de 80 m en accélération progressive.",
+      "mainSet": "Prenez 3 minutes de récupération passive. Placez-vous sur la ligne de départ du couloir 1 d'une piste de 400m. Déclenchez votre chrono pour exactement 6 minutes d'effort à vitesse maximale régulière. Notez votre distance exacte à l'arrêt du chrono.",
+      "cooldown": "10 min de trot très lent de décélération + réhydratation immédiate.",
+      "coachTips": "Divisez votre distance par 100 : vous obtenez votre VMA en km/h. Entrez ce chiffre dans notre calculateur d'allures gratuit pour obtenir instantanément vos temps de passage sur 10 km, semi et marathon !"
+    },
+    "faqs": [
+      {
+        "question": "Quelle est la différence entre le test Cooper (12 min) et le Demi-Cooper (6 min) ?",
+        "answer": "Le test de Cooper original dure 12 minutes, ce qui fait intervenir une composante d'endurance musculaire trop importante pour mesurer la VMA pure. Le Demi-Cooper (6 minutes) correspond exactement au temps de soutien maximal à 100 % de VO2max, ce qui en fait un outil beaucoup plus précis pour évaluer la vitesse aérobie maximale."
+      },
+      {
+        "question": "Peut-on faire un test VMA seul avec sa montre GPS sans piste ?",
+        "answer": "C'est possible en dépannage sur une route parfaitement plate, droite et dégagée, mais la marge d'erreur satellite (2 à 5 %) peut fausser votre VMA de 0,5 à 1 km/h. Pour un étalonnage fiable de votre saison, l'idéal reste une piste d'athlétisme de 400 mètres au couloir intérieur."
+      },
+      {
+        "question": "À quelle fréquence faut-il refaire un test VMA ?",
+        "answer": "Nous recommandons de réévaluer sa VMA 2 à 3 fois par an : une première fois en début de saison ou de macrocycle (septembre/octobre), une deuxième fois après le cycle de développement aérobie (janvier/février), et éventuellement avant d'attaquer la prépa spécifique d'une course majeure."
+      },
+      {
+        "question": "Peut-on augmenter sa VMA à tout âge ?",
+        "answer": "Oui ! Si la progression de la VMA est spectaculaire chez le débutant (+15 % à +25 % en un an de travail régulier), un coureur de 40, 50 ou 60 ans peut encore gagner 0,5 à 1,5 km/h de VMA grâce à des séances de fractionné bien calibrées, du renforcement musculaire et un travail d'économie de foulée."
+      }
+    ],
+    "relatedSlugs": [
+      "endurance-fondamentale-zone-2-running",
+      "seuil-lactique-course-a-pied-sv1-sv2",
+      "courir-10km-moins-40-minutes"
+    ],
+    "relatedServiceUrl": "/calculateur-allures/",
+    "relatedServiceLabel": "Tester le calculateur d'allures gratuit"
+  },
+  {
     "slug": "endurance-fondamentale-zone-2-running",
     "title": "L'Endurance Fondamentale : Le Secret pour Courir Plus Vite en Courant Lentement",
     "seoTitle": "Endurance Fondamentale : Allure, Cardio & Zone 2 Running",
