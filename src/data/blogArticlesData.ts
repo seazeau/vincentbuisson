@@ -33,6 +33,7 @@ export interface BlogArticle {
   date: string;
   publishedAt: string;
   image: string;
+  imagePosition?: string;
   summary: string;
   keyTakeaways: string[];
   sections: ContentSection[];

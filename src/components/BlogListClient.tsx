@@ -95,6 +95,7 @@ export default function BlogListClient({ articles }: BlogListClientProps) {
                   fill
                   priority
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  style={{ objectPosition: heroArticle.imagePosition || "center center" }}
                 />
               </Link>
             </div>
@@ -117,6 +118,7 @@ export default function BlogListClient({ articles }: BlogListClientProps) {
                   alt={article.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  style={{ objectPosition: article.imagePosition || "center center" }}
                 />
                 <span className="absolute top-3 right-3 text-[10px] font-mono-tech font-bold uppercase tracking-wider bg-black/80 backdrop-blur-md text-white px-2.5 py-1 rounded-full">
                   {article.readTime}

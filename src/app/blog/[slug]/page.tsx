@@ -222,13 +222,14 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
 
             {/* Featured Image */}
-            <div className="relative w-full h-72 sm:h-96 rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 shadow-2xl">
+            <div className="relative w-full h-80 sm:h-[480px] md:h-[540px] rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 shadow-2xl">
               <Image
                 src={article.image}
                 alt={article.title}
                 fill
                 priority
                 className="object-cover"
+                style={{ objectPosition: article.imagePosition || "center center" }}
               />
             </div>
           </header>
@@ -462,6 +463,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                         alt={rel.title}
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        style={{ objectPosition: rel.imagePosition || "center center" }}
                       />
                     </div>
                     <div className="text-[10px] font-mono-tech text-[#d4ff00] uppercase font-bold mb-1">
