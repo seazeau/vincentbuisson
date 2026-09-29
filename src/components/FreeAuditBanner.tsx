@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles, MessageCircle } from "lucide-react";
+import { SITE_CONFIG } from "@/data/siteContent";
 import Tilt3DCard from "./Tilt3DCard";
 
 export default function FreeAuditBanner() {
@@ -56,7 +57,7 @@ export default function FreeAuditBanner() {
               </Link>
 
               <a
-                href="https://wa.me/33614838634?text=Bonjour%20Vincent%2C%20je%20souhaite%20b%C3%A9n%C3%A9ficier%20du%20bilan%20running%20offert%20pour%20analyser%20mon%20profil%20d%27entra%C3%AEnement."
+                href={`https://wa.me/${SITE_CONFIG.whatsappNumber}?text=Bonjour%20Vincent%2C%20je%20souhaite%20b%C3%A9n%C3%A9ficier%20du%20bilan%20running%20offert%20pour%20analyser%20mon%20profil%20d%27entra%C3%AEnement.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-5 py-3 rounded-full bg-white/5 hover:bg-white/10 text-neutral-300 hover:text-white border border-white/15 text-xs font-mono-tech uppercase tracking-wider transition-colors text-center"

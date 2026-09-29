@@ -50,7 +50,7 @@ export default function HomePage() {
         "name": "VB Coaching Running - Vincent Buisson",
         "url": "https://vincentbuisson.fr/",
         "image": "https://vincentbuisson.fr/images/vincent-buisson.jpg",
-        "telephone": "+33614838634",
+        "telephone": "+33602658414",
         "email": "contact@runpassion.fr",
         "priceRange": "70€ - 90€",
         "address": {

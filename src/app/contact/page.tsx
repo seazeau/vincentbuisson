@@ -50,7 +50,7 @@ export default function ContactPage() {
           "@type": "Person",
           "name": "Vincent Buisson",
           "email": "contact@runpassion.fr",
-          "telephone": "+33614838634"
+          "telephone": "+33602658414"
         }
       }
     ]

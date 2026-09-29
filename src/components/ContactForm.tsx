@@ -95,7 +95,7 @@ export default function ContactForm() {
     setSubmissionType("whatsapp");
     setSubmitted(true);
     const text = encodeURIComponent(generateSummary());
-    window.open(`https://wa.me/33614838634?text=${text}`, "_blank");
+    window.open(`https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${text}`, "_blank");
   };
 
   const handleSendEmail = async (e?: React.FormEvent) => {
@@ -223,7 +223,7 @@ export default function ContactForm() {
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href={`https://wa.me/33614838634?text=${encodeURIComponent(generateSummary())}`}
+              href={`https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(generateSummary())}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3.5 rounded-2xl bg-[#d4ff00] text-black font-black text-xs uppercase tracking-wider hover:bg-white transition-colors shadow-lg"
