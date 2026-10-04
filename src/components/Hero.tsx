@@ -49,7 +49,7 @@ export default function Hero() {
       ref={heroRef}
       className="relative min-h-[100dvh] w-full flex flex-col justify-between overflow-x-hidden pt-16 sm:pt-20 pb-4 sm:pb-6 select-none perspective-[1200px]"
     >
-      {/* 1. Ultra-HD 4K Clouds Background with 3D Mouse Parallax & Vintage Grain */}
+      {/* 1. Vincent Buisson Running Background with 3D Mouse Parallax & Cinematic Lighting */}
       <div
         className="absolute inset-0 z-0 transition-transform duration-100 ease-out scale-105 pointer-events-none"
         style={{
@@ -57,17 +57,17 @@ export default function Hero() {
         }}
       >
         <Image
-          src="/images/hero-clouds.webp"
-          alt="Nuages cinématiques vintage - VB Coaching Running"
+          src="/images/hero-vincent.webp"
+          alt="Vincent Buisson en course à pied - Coach Running"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center contrast-[1.05] brightness-[0.98]"
+          className="object-cover object-[center_28%] contrast-[1.05] brightness-[0.82]"
         />
         {/* Authentic 35mm Vintage Analog Film Grain */}
-        <div className="absolute inset-0 bg-vintage-grain opacity-25 mix-blend-overlay pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/10 to-[#0c0c0b] pointer-events-none" />
-        <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#0c0c0b] via-[#0c0c0b]/85 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-vintage-grain opacity-20 mix-blend-overlay pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/35 to-[#0c0c0b] pointer-events-none" />
+        <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-[#0c0c0b] via-[#0c0c0b]/90 to-transparent pointer-events-none" />
       </div>
 
       {/* 2. Centerpiece Bold Typography with 3D Spatial Tilt (Scaled down to pull everything up) */}
