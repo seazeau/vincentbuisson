@@ -1,5 +1,353 @@
 [
   {
+    "slug": "calculer-zones-frequence-cardiaque-running-karvonen",
+    "title": "Calculer ses Zones de Fréquence Cardiaque en Running : FC Max vs Formule de Karvonen",
+    "seoTitle": "Zones Fréquence Cardiaque Running : Calcul FC Max & Karvonen",
+    "seoDescription": "Guide complet pour calculer vos zones cardiaques en course à pied : test terrain de FC Max, formule de Karvonen (FC de réserve), Zone 2 et pièges cardio.",
+    "category": "Physiologie & Allures",
+    "readTime": "9 MIN",
+    "date": "07 OCTOBRE 2026",
+    "publishedAt": "2026-10-07",
+    "image": "/images/runner-1.webp",
+    "summary": "S'entraîner à la fréquence cardiaque est l'un des moyens les plus puissants pour progresser en running... à condition d'avoir des zones fiables. Trop de coureurs utilisent encore la formule archaïque « 220 - âge » et se retrouvent à courir leurs footings en surrégime permanent. Découvrez comment déterminer votre véritable FC Max sur le terrain, comment utiliser la formule de Karvonen (FC de réserve) et comment programmer vos 5 zones d'entraînement sur votre montre GPS et sur Nolio.",
+    "keyTakeaways": [
+      "La formule d'Astrand (220 - âge) comporte une marge d'erreur de ±12 battements : elle est inadaptée pour calibrer un entraînement sérieux.",
+      "La formule de Karvonen se base sur la FC de Réserve (FCR = FC Max - FC Repos), ce qui prend en compte votre niveau d'entraînement réel.",
+      "L'Endurance Fondamentale (Zone 2) se situe entre 60 et 70 % de la FC de réserve, ou 65 à 75 % de la FC Max.",
+      "Le test terrain en côte (3 x 2 minutes ascendantes) est la méthode la plus accessible et précise pour mesurer sa FC Max réelle.",
+      "Pour mesurer précisément vos variations cardiaques en fractionné, privilégiez une ceinture thoracique ou un brassard optique plutôt que le capteur montre."
+    ],
+    "sections": [
+      {
+        "id": "1-pourquoi-la-formule-220-moins-age-est-une-erreur",
+        "heading": "1. Pourquoi la Formule « 220 - Âge » Freine Votre Progression",
+        "body": [
+          "Publiée dans les années 1970, la formule d'Astrand-Ryhming (FC Max = 220 - âge) est une simple moyenne statistique établie sur une population sédentaire.",
+          "Dans la réalité du terrain, deux coureurs du même âge (par exemple 35 ans) peuvent avoir des cœurs totalement différents : l'un peut plafonner à 172 bpm, tandis que l'autre monte facilement à 198 bpm sans la moindre anomalie.",
+          "Si le coureur avec une FC Max à 198 bpm applique la formule standard (220 - 35 = 185 bpm), toutes ses zones d'entraînement seront sous-estimées de 10 à 15 pulsations ! Il passera son temps à brider ses allures inutilement.",
+          "À l'inverse, pour un coureur à FC Max basse, s'entraîner selon cette formule le poussera à courir tous ses footings au seuil sans s'en rendre compte."
+        ],
+        "callout": {
+          "title": "L'œil du coach Vincent Buisson",
+          "text": "La fréquence cardiaque maximale est une donnée génétique : avoir une FC Max élevée ou basse ne préjuge en rien de votre niveau de performance. Ce qui compte, c'est la façon dont vous modulez vos zones."
+        }
+      },
+      {
+        "id": "2-le-protocole-terrain-pour-mesurer-sa-vraie-fc-max",
+        "heading": "2. Le Protocole Terrain pour Mesurer sa Vraie FC Max",
+        "body": [
+          "Pour obtenir votre fréquence cardiaque maximale sans passer par un test d'effort en laboratoire, réalisez ce protocole sur une côte régulière (pente à 5-7 %) :",
+          "1. Échauffement préalable : 20 à 25 minutes en endurance très souple sur le plat, suivies de quelques gammes athlétiques et 3 accélérations progressives.",
+          "2. Montée n°1 (2 minutes) : Montez à votre allure de 10 km (effort soutenu mais contrôlé). Redescendez en trottinant très lentement jusqu'au point de départ.",
+          "3. Montée n°2 (2 minutes) : Montez à fond (allure VMA). Redescendez immédiatement en marchant et trottinant.",
+          "4. Montée n°3 (2 minutes) : Partez vite et sprintez les 45 dernières secondes jusqu'à l'épuisement aérobie complet.",
+          "La valeur maximale affichée sur votre montre lors des 20 dernières secondes correspond à votre FC Max réelle à 1 ou 2 pulsations près."
+        ]
+      },
+      {
+        "id": "3-la-methode-de-karvonen-la-puissance-de-la-fc-de-reserve",
+        "heading": "3. La Méthode de Karvonen : Pourquoi la FC de Réserve Change Tout",
+        "body": [
+          "Contrairement au simple pourcentage de FC Max, la formule de Karvonen intègre votre Fréquence Cardiaque de Repos (FCR), mesurée le matin au réveil :",
+          "• FC de Réserve (FCR) = FC Max - FC Repos",
+          "• FC Cible = FC Repos + (% Intensité x FC Réserve)",
+          "Exemple concret pour un coureur avec FC Max = 190 bpm et FC Repos = 50 bpm (FC Réserve = 140 bpm) :",
+          "• Pour un effort à 70 % (Endurance Fondamentale) : 50 + (0,70 x 140) = 148 bpm.",
+          "• Avec la méthode classique (% direct FC Max) : 70 % de 190 = 133 bpm.",
+          "La formule de Karvonen évite de sous-évaluer les allures faciles des coureurs ayant un cœur très économique au repos !"
+        ]
+      },
+      {
+        "id": "4-tableau-recapitulatif-des-5-zones-cardiaques",
+        "heading": "4. Tableau Récapitulatif des 5 Zones Cardiaques en Running",
+        "body": [
+          "Voici la cartographie des 5 zones d'intensité physiologiques :",
+          "• Zone 1 (50-60% FCR / <68% FCM) — Récupération active : footings de décrassage au lendemain d'une course ou d'une grosse séance.",
+          "• Zone 2 (60-70% FCR / 68-75% FCM) — Endurance Fondamentale (EF) : le socle de tout coureur (80 % du volume total). Développement du réseau capillaire et oxydation des lipides.",
+          "• Zone 3 (70-80% FCR / 76-85% FCM) — Tempo / Allure Marathon (AS42) : effort aérobie dense, travail de l'économie de course.",
+          "• Zone 4 (80-90% FCR / 86-92% FCM) — Seuil Anaérobie (SV2 / AS21 & AS10) : recyclage des ions hydrogène et des lactates.",
+          "• Zone 5 (90-100% FCR / >93% FCM) — VMA et Capacité Anaérobie : développement de la consommation maximale d'oxygène (VO2 Max)."
+        ]
+      },
+      {
+        "id": "5-derive-cardiaque-et-facteurs-parasites",
+        "heading": "5. Dérive Cardiaque, Chaleur et Fatigue : Attention aux Pièges",
+        "body": [
+          "La fréquence cardiaque est une mesure de la charge interne de votre organisme, et elle est sensible à plusieurs facteurs externes :",
+          "• La Dérive Cardiaque (Cardiac Drift) : Au-delà de 45 minutes de course, même à allure constante, le cœur bat de 5 à 10 pulsations plus vite en raison de la déshydratation et de la thermorégulation.",
+          "• La Chaleur et l'Humidité : Par temps chaud, le sang est dévié vers la peau pour évacuer la chaleur, ce qui oblige le cœur à battre plus vite.",
+          "• La Fatigue et le Stress : Un manque de sommeil ou un pic de stress professionnel fait grimper la FC de repos de 5 à 8 bpm le matin.",
+          "Sur Nolio, nous analysons la relation entre votre allure (charge externe) et votre cardio (charge interne) pour détecter les signes avant-coureurs de surentraînement."
+        ]
+      }
+    ],
+    "workoutExample": {
+      "title": "Sortie Fondamentale Calibrée au Cardio (Zone 2 Stricte)",
+      "warmup": "5 min de marche active pour laisser le cœur s'adapter sans à-coup.",
+      "mainSet": "50 minutes en course continue en maintenant strictement la fréquence cardiaque sous 72 % de votre FC Max (ou sous 68 % de FC Réserve). Si la fréquence cardiaque dépasse la limite dans un faux-plat montant, ralentissez ou marchez 30 secondes pour faire redescendre le cardio.",
+      "cooldown": "5 min de marche de retour au calme et étirements légers.",
+      "coachTips": "Ne regardez pas votre allure kilométrique lors de cette sortie : seule compte la réponse cardiaque de votre corps. Apprendre à courir lentement est la condition sine qua non pour courir vite le jour J."
+    },
+    "faqs": [
+      {
+        "question": "Comment mesurer sa fréquence cardiaque de repos avec précision ?",
+        "answer": "Mesurez-la au réveil, encore allongé dans votre lit, pendant 3 minutes consécutives. Répétez l'opération 3 jours d'affilée et faites la moyenne des valeurs les plus basses."
+      },
+      {
+        "question": "Le capteur optique au poignet de ma montre GPS est-il suffisant ?",
+        "answer": "Pour les footings réguliers à allure stable (Zone 2), oui. En revanche, pour les séances de fractionné court (VMA) ou par temps froid, le capteur poignet souffre d'un temps de latence important. Une ceinture cardiaque pectorale (type Garmin HRM ou Polar H10) reste la référence absolue."
+      },
+      {
+        "question": "Pourquoi mon cœur monte-t-il très vite dans les premières minutes ?",
+        "answer": "C'est souvent le signe d'un échauffement trop abrupt ou d'une déshydratation. Prenez l'habitude de commencer vos sorties par 10 minutes très lentes (1 à 2 km/h plus lentement que votre vitesse de footing habituelle) pour laisser le temps au système cardiovasculaire de se dilater."
+      }
+    ],
+    "relatedSlugs": [
+      "endurance-fondamentale-zone-2-running",
+      "seuil-lactique-course-a-pied-sv1-sv2",
+      "test-vma-demi-cooper-vameval-calcul",
+      "allure-cible-semi-marathon-pacing"
+    ],
+    "relatedServiceUrl": "/calculateur-allures/",
+    "relatedServiceLabel": "Calculer mes zones d'entraînement sur le calculateur"
+  },
+  {
+    "slug": "courir-10km-moins-45-minutes-allure-plan",
+    "title": "Comment Courir le 10 km en Moins de 45 Minutes : Allure, Séances et Plan d'Entraînement",
+    "seoTitle": "Courir le 10 km en Moins de 45 Min : Allure 4'30/km & Plan",
+    "seoDescription": "Guide complet pour passer sous les 45 minutes au 10 km : allure 4'30/km, séances fractionné et seuil incontournables, volume d'entraînement et plan de coaching.",
+    "category": "10 km",
+    "readTime": "9 MIN",
+    "date": "06 OCTOBRE 2026",
+    "publishedAt": "2026-10-06",
+    "image": "/images/hero-race-sharp.webp",
+    "summary": "Franchir la barre symbolique des 45 minutes sur 10 km (44'59\" ou moins) est le premier grand cap des coureurs réguliers. Courir à 13,33 km/h de moyenne, soit un rythme régulier de 4 minutes et 30 secondes au kilomètre, sépare le peloton loisir des coureurs expérimentés. Pour briser ce plafond, découvrez les allures au tour de piste, les séances spécifiques AS10 et la stratégie pour ne jamais exploser au 7e kilomètre.",
+    "keyTakeaways": [
+      "L'allure cible requise pour le sub-45' est de 4'30 au kilomètre (13,33 km/h), soit 1'48 aux 400 m et 4'30 au km.",
+      "Le profil physiologique cible : une VMA de 15,0 à 15,5 km/h et une capacité à soutenir 88 à 90 % de sa FCM pendant 45 minutes.",
+      "Un volume hebdomadaire de 30 à 45 km réparti sur 3 à 4 séances hebdomadaires suffit pour passer ce cap mythique.",
+      "La séance étalon à réussir à J-14 : 4 x 2 000 m à 4'30/km avec 1'45 de récupération active.",
+      "L'erreur fatale : courir les 2 premiers kilomètres en 4'15/km sous l'effet de la foule et exploser brutalement entre le 6e et le 8e km."
+    ],
+    "sections": [
+      {
+        "id": "1-le-defi-du-10km-en-45-minutes-analyse-et-profil",
+        "heading": "1. Le Défi du 10 km en 45 Minutes : Analyse et Profil Requis",
+        "body": [
+          "Le 10 kilomètres est une épreuve intense où le système aérobie est sollicité à plus de 95 %. Casser les 45 minutes signifie courir à 13,33 km/h sans le moindre relâchement pendant trois quarts d'heure.",
+          "Pour réussir ce défi, il est nécessaire de posséder :",
+          "• Une VMA minimale de 15,0 km/h, idéalement 15,5 km/h. Si votre VMA est de 14 km/h, courir à 13,33 km/h demanderait de maintenir 95 % de votre vitesse maximale aérobie, ce qui est physiologiquement intenable au-delà de 15 minutes.",
+          "• Un indice d'endurance correct : être capable de tenir 88 à 90 % de votre VMA sur la distance.",
+          "• Un bon calibrage des allures d'entraînement pour éviter de courir les footings trop vite et les séances de fractionné trop lentement."
+        ],
+        "callout": {
+          "title": "L'œil du coach Vincent Buisson",
+          "text": "La plupart des coureurs qui bloquent à 47 ou 48 minutes font l'erreur de courir tous leurs footings à 5'00/km. Pour courir vite le jour de la course, il faut apprendre à courir très lentement (5'45-6'00/km) lors des footings d'assimilation."
+        }
+      },
+      {
+        "id": "2-tableau-des-temps-de-passage-allure-4-30-km",
+        "heading": "2. Tableau des Temps de Passage : La Règle du Métronome à 4'30/km",
+        "body": [
+          "Sur 10 km, chaque seconde d'écart compte. Voici le tableau de passage précis pour valider votre chrono en 44'50\" :",
+          "• Km 1 : 4'32\" — Prise de trajectoire propre, placement sans bousculade.",
+          "• Km 3 : 13'30\" — Rythme calé, respiration rythmée en 2 temps / 2 temps.",
+          "• Km 5 : 22'30\" — Mi-course exacte. Vous devez vous sentir encore lucide et maître de votre foulée.",
+          "• Km 7 : 31'30\" — Le point dur psychologique. C'est ici que l'effort devient difficile et qu'il faut maintenir la fréquence de pas.",
+          "• Km 9 : 40'30\" — Il ne reste qu'un kilomètre : relancez avec les bras !",
+          "• Km 10 : 44'50\" — Objectif atteint avec 10 secondes de marge de sécurité !"
+        ]
+      },
+      {
+        "id": "3-les-3-seances-cles-pour-progresser-vers-45-minutes",
+        "heading": "3. Les 3 Séances Clés pour Valider le Sub-45'",
+        "body": [
+          "Pour construire une vitesse tenable sur 10 kilomètres, votre programme doit intégrer trois types de séances complémentaires :",
+          "1. La séance de VMA courte (développer la cylindrée) : 10 à 12 x 400 m à 100 % VMA (soit 1'34 à 1'36 par 400 m) avec 50 secondes de récupération au trot.",
+          "2. La séance spécifique AS10 (ancrer l'allure cible) : 5 x 1 500 m à 4'30/km (6'45 par 1 500 m) avec 1'45 de récupération active en trottinant.",
+          "3. Le tempo au Seuil SV1/SV2 : 2 x 12 minutes à 4'45/km en continu, permettant d'élever la vitesse sans produire de dette d'oxygène toxique."
+        ]
+      },
+      {
+        "id": "4-la-semaine-type-sur-3-a-4-seances",
+        "heading": "4. La Semaine Type d'Entraînement Sub-45' (3 à 4 Séances)",
+        "body": [
+          "Voici l'organisation recommandée pour concilier progression et récupération :",
+          "• Mardi : Séance de qualité VMA / Seuil (ex: 6 x 1 000 m à 4'25/km, r=1'30 trot).",
+          "• Jeudi : Footing en endurance fondamentale de 45 minutes (allure 5'40 à 6'00/km, FC < 75% FCM).",
+          "• Samedi (optionnel) : Footing régénération de 40 min avec 5 lignes droites de 80 m dynamiques.",
+          "• Dimanche : Sortie longue de 1h15 à 1h20 avec 15 minutes finales à allure tempo 4'40/km."
+        ]
+      },
+      {
+        "id": "5-gestion-de-course-la-strategie-des-trois-tiers",
+        "heading": "5. Gestion de Course le Jour J : La Stratégie des Trois Tiers",
+        "body": [
+          "Sur 10 km, l'énergie dépensée dans les 3 premiers kilomètres dicte votre capacité à tenir dans les 3 derniers. Découpez votre course en 3 tiers mentaux :",
+          "• Tiers 1 (Km 1 à 3) : Courir avec la tête. Ne dépassez personne frénétiquement. Verrouillez l'allure entre 4'30 et 4'33/km.",
+          "• Tiers 2 (Km 4 à 7) : Courir avec la technique. Concentrez-vous sur votre posture, allongez légèrement la foulée vers l'arrière et gardez le buste droit.",
+          "• Tiers 3 (Km 8 à 10) : Courir avec le cœur. Les cuisses brûlent, c'est tout à fait normal : concentrez-vous sur chaque centaine de mètres pour arracher votre record !"
+        ]
+      }
+    ],
+    "workoutExample": {
+      "title": "Séance Test Clé AS10 : 4 x 2000 m à Allure Cible",
+      "warmup": "20 min de footing progressif + éducatifs (talons-fesses, pas chassés, montées de genoux) + 3 accélérations.",
+      "mainSet": "4 x 2 000 m à 4'30/km (soit 9'00 au 2 000 m), récupération 2'00 au trot souple.",
+      "cooldown": "10 min de trot très lent de décélération.",
+      "coachTips": "Surveillez votre montre tous les 500 m : vous devez passer en 2'15\" à chaque demi-kilomètre. La régularité absolue est la clé de la réussite."
+    },
+    "faqs": [
+      {
+        "question": "Quelle VMA minimale pour courir 10 km en moins de 45 min ?",
+        "answer": "Une VMA de 15,0 km/h est le seuil strict. Une VMA de 15,5 km/h offre une réelle sécurité pour maintenir les 13,33 km/h sur l'ensemble des 10 kilomètres."
+      },
+      {
+        "question": "Peut-on passer sous les 45 min avec seulement 3 entraînements par semaine ?",
+        "answer": "Oui, parfaitement ! 3 entraînements bien structurés (1 VMA/seuil, 1 footing aérobie, 1 sortie longue rythmée) sont amplement suffisants s'ils sont respectés avec constance sur un cycle de 8 à 10 semaines."
+      },
+      {
+        "question": "Faut-il s'alimenter pendant un 10 km ?",
+        "answer": "Non, les réserves de glycogène sont largement suffisantes pour 45 minutes d'effort. En revanche, prenez une gorgée d'eau au ravitaillement du 5e kilomètre pour vous rincer la bouche si la température dépasse 18°C."
+      }
+    ],
+    "relatedSlugs": [
+      "courir-10km-moins-40-minutes",
+      "test-vma-demi-cooper-vameval-calcul",
+      "endurance-fondamentale-zone-2-running",
+      "seuil-lactique-course-a-pied-sv1-sv2"
+    ],
+    "relatedServiceUrl": "/coaching-10km/",
+    "relatedServiceLabel": "Rejoindre le coaching 10 km personnalisé"
+  },
+  {
+    "slug": "semi-marathon-moins-1h30-allure-seances-plan",
+    "title": "Comment Courir le Semi-Marathon en Moins de 1h30 : Allure, Plan et Séances Clés",
+    "seoTitle": "Semi-Marathon en Moins d'1h30 : Allure 4'15/km, Plan & Séances",
+    "seoDescription": "Guide complet pour courir le semi-marathon en sub-1h30 : analyse de l'allure cible 4'15/km, prérequis VMA, séances spécifiques AS21 et méthode Nolio.",
+    "category": "Semi-Marathon",
+    "readTime": "10 MIN",
+    "date": "05 OCTOBRE 2026",
+    "publishedAt": "2026-10-05",
+    "image": "/images/hero-speed-sharp.webp",
+    "summary": "Casser la barre mythique de l'heure et demie sur semi-marathon (1h29'59\" ou moins) est le rêve de tout coureur sur route expérimenté. Avec une vitesse moyenne requise de 14,07 km/h, soit exactement 4'15 au kilomètre sur les 21,097 km, ce chrono ne laisse aucune place à l'improvisation. Pour y parvenir, il ne suffit pas de forcer à chaque séance : il faut développer une VMA solide de 16,5 à 17 km/h, repousser son seuil anaérobie (SV2) et appliquer une stratégie de course millimétrée le jour J.",
+    "keyTakeaways": [
+      "L'allure cible précise pour réussir le sub-1h30 est de 4'15 au kilomètre (14,07 km/h), permettant de boucler les 21,1 km en 1h29'40\" avec une marge de sécurité.",
+      "Les prérequis physiologiques conseillés : une VMA de 16,5 à 17,0 km/h et un temps de référence sous les 41 minutes sur 10 km (idéalement 40'30\").",
+      "Le facteur déterminant est la fraction de VMA tenue au seuil lactique SV2 : visez à soutenir 84 à 86 % de votre VMA pendant 90 minutes sans accumulation excessive de lactates.",
+      "La séance de référence indispensable : 3 x 3 000 m ou 3 x 4 000 m à allure 4'15/km avec 2 minutes de récupération active au trot.",
+      "La règle d'or du pacing : interdiction de partir plus vite que 4'15/km sur les 3 premiers kilomètres sous peine d'effondrement musculaire au km 16."
+    ],
+    "sections": [
+      {
+        "id": "1-les-prerequis-physiologiques-du-sub-1h30",
+        "heading": "1. Les Prérequis Physiologiques : Êtes-vous Prêt pour le Sub-1h30 ?",
+        "body": [
+          "Courir un semi-marathon en moins de 1h30 place un coureur dans le top 5 à 10 % des pelotons sur route. Ce n'est plus une simple épreuve d'endurance fondamentale : c'est un effort prolongé à la frontière exacte du seuil ventilatoire 2 (SV2).",
+          "Pour aborder une préparation spécifique sub-1h30 avec de réelles chances de succès, voici les repères chronométriques et physiologiques de référence :",
+          "• Une VMA (Vitesse Maximale Aérobie) minimale de 16,5 km/h, idéalement 17,0 km/h (testée sur un demi-Cooper de 6 minutes ou un Vameval).",
+          "• Un chrono de référence récent sur 10 km sous les 41'15\", idéalement sous les 40'30\". Si votre record sur 10 km est de 43 minutes, votre cylindrée aérobie sera trop juste pour tenir 4'15/km pendant 21 kilomètres.",
+          "• Un volume hebdomadaire régulier d'au moins 45 à 60 kilomètres par semaine, courus sur 4 à 5 sorties hebdomadaires depuis plusieurs mois."
+        ],
+        "callout": {
+          "title": "L'œil du coach Vincent Buisson",
+          "text": "Vouloir préparer un semi en moins de 1h30 sans avoir validé un 10 km en moins de 41 minutes est la cause n°1 d'échec et de blessure. La vitesse de base est votre plafond de verre : si elle est trop basse, le seuil ne passe pas."
+        }
+      },
+      {
+        "id": "2-l-allure-cible-4-15-km-tableau-des-temps-de-passage",
+        "heading": "2. L'Allure Cible 4'15/km et les Temps de Passage Stratégiques",
+        "body": [
+          "Un semi-marathon mesure précisément 21,0975 kilomètres officiellement mesurés. Si vous courez exactement à 4'15/km (14,12 km/h), vous franchissez la ligne en 1h29'39\".",
+          "Voici la grille des temps de passage intermédiaires indispensables pour sécuriser votre chrono le jour de la course :",
+          "• Km 5 : 21'15\" — Départ prudent, le peloton se décante, souffle calme et épaules relâchées.",
+          "• Km 10 : 42'30\" — Vous êtes à mi-course sur le plan temporel, le rythme cardiaque doit rester parfaitement stabilisé sous 87-88 % FCM.",
+          "• Km 15 : 1h03'45\" — Le vrai début du semi-marathon. C'est ici que les jambes commencent à durcir et que le mental prend le relais.",
+          "• Km 20 : 1h25'00\" — Il ne reste que 1 097 mètres. Vous disposez de près de 5 minutes pour franchir l'arche sous les 1h30 !",
+          "• Km 21,1 (Arrivée) : 1h29'40\" — Félicitations, vous êtes officiellement sous la barre de l'heure et demie !"
+        ]
+      },
+      {
+        "id": "3-les-3-seances-cles-pour-casser-la-barre-des-1h30",
+        "heading": "3. Les 3 Séances Clés d'une Préparation Semi-Marathon Réussie",
+        "body": [
+          "Une préparation semi-marathon efficace ne repose pas sur une accumulation désordonnée de kilomètres. Elle s'articule autour de 3 piliers complémentaires :",
+          "1. La séance spécifique AS21 (Allure Semi) : L'objectif est d'habituer l'organisme à recycler l'acide lactique à la vitesse de course. Exemple classique : 3 x 3 000 m à 4'15/km (r = 2 min trot) ou 2 x 5 000 m à 4'15/km (r = 2'30 trot).",
+          "2. La séance au Seuil Anaérobie (SV2 / Allure 10k) : Courir légèrement plus vite que l'allure semi (entre 4'00 et 4'05/km) permet de surdimensionner votre moteur. Exemple : 4 x 1 500 m à allure 10 km (r = 1'45 trot).",
+          "3. La Sortie Longue avec Blocs d'Allure : Une sortie longue de 1h35 à 1h45 ne doit pas être un simple footing monotone. Elle intègre par exemple 15 km en endurance fondamentale puis 2 x 15 minutes à 4'15/km pour travailler sur la fatigue musculaire accumulée."
+        ],
+        "callout": {
+          "title": "Conseil Pacing",
+          "text": "En séance AS21, ne cherchez JAMAIS à courir en 4'08 ou 4'10 sous prétexte que vous êtes en forme. Le but de l'AS21 est la rentabilité neuromusculaire et énergétique à 4'15 précis."
+        }
+      },
+      {
+        "id": "4-la-semaine-type-d-entrainement-sub-1h30",
+        "heading": "4. Exemple d'une Semaine Type d'Entraînement Sub-1h30 (Cycle Spécifique)",
+        "body": [
+          "Voici la structure d'une semaine type recommandée au milieu d'un cycle de 8 à 10 semaines préparant au sub-1h30 :",
+          "• Mardi : VMA courte ou entretien aérobie — 20 min échauffement + gammes + 2 séries de 8 x (300m à 17,5 km/h / r=45s trot) + 10 min retour au calme.",
+          "• Mercredi : Footing de régénération — 45 à 50 min en pure endurance fondamentale (Zone 2, allure 5'15 à 5'30/km, FC < 75% FCM).",
+          "• Vendredi : Séance clé Allure Semi (AS21) — 20 min échauffement + 3 x 3 000 m à 4'15/km (r=2 min trot souple) + 10 min retour au calme.",
+          "• Samedi : Repos complet ou 45 min de vélo décontracté / mobilité articulaire.",
+          "• Dimanche : Sortie longue rythmée — 1h35 totale comprenant 50 min en Zone 2 + 20 min à allure tempo (4'25/km) + 15 min à 4'15/km + 10 min souple."
+        ]
+      },
+      {
+        "id": "5-strategie-de-course-nutrition-et-ravitaillement",
+        "heading": "5. Stratégie de Course, Nutrition et Ravitaillement sur le Semi",
+        "body": [
+          "Même avec une préparation physique irréprochable, une erreur de gestion de course ou un manque d'hydratation peut anéantir votre objectif sub-1h30 :",
+          "• Le piège du km 1 au km 4 : Ne vous laissez pas emporter par l'euphorie du peloton. Partir en 4'05/km pour 'prendre de l'avance' est un suicide métabolique qui se paiera au centuple dès le km 14. Démarrez en 4'17 sur le premier kilomètre, puis posez votre métronome à 4'15.",
+          "• Stratégie glucidique : Un effort de 90 minutes à 85 % de FCM consomme une part massive de glycogène. Consommez un premier gel énergétique au km 7 et un second gel au km 14, immédiatement accompagnés d'une gorgée d'eau.",
+          "• Hydratation : Prenez un gobelet d'eau à chaque ravitaillement officiel (km 5, 10, 15). Buvez 2 à 3 gorgées sans vous arrêter pour maintenir votre volume sanguin et éviter la dérive cardiaque."
+        ]
+      },
+      {
+        "id": "6-individualiser-sa-preparation-sur-nolio-avec-vincent-buisson",
+        "heading": "6. Individualiser sa Préparation sur Nolio avec Vincent Buisson",
+        "body": [
+          "Chaque coureur possède un profil métabolique unique : profil plutôt typé 'vitesse' (bonne VMA mais indice d'endurance moyen) ou profil 'diesel' (très endurant mais vitesse brute limitée).",
+          "En tant que coach, j'utilise la plateforme Nolio pour analyser en temps réel chaque sortie, synchroniser vos données GPS et cardio, ajuster vos charges d'entraînement et adapter vos allures au millième de seconde près.",
+          "Grâce à un plan sur-mesure et à des bilans réguliers, vous éliminez les incertitudes et arrivez le jour J avec la certitude que vos jambes et votre cardio sont prêts à tenir 4'15 au kilomètre jusqu'à l'arche d'arrivée."
+        ]
+      }
+    ],
+    "workoutExample": {
+      "title": "Séance Pilière AS21 : 3 x 4000 m au Métronome Sub-1h30",
+      "warmup": "20 min de footing progressif en endurance fondamentale (5'30 vers 5'05/km) + 4 lignes droites de 80 m dynamiques.",
+      "mainSet": "3 x 4 000 m à 4'15/km précis (soit 17'00 par répétition). Récupération active de 2 minutes en trot lent (autour de 5'50/km).",
+      "cooldown": "10 min de retour au calme en footing très relâché + hydratation.",
+      "coachTips": "Sur le 3ème bloc, concentrez-vous sur le relâchement de vos trapèzes et le travail des bras. Si vous terminez avec la sensation de pouvoir faire un 4e bloc, vous êtes prêt pour le sub-1h30 !"
+    },
+    "faqs": [
+      {
+        "question": "Quelle VMA faut-il pour espérer courir le semi-marathon en moins de 1h30 ?",
+        "answer": "Une VMA d'au moins 16,5 km/h est indispensable, 17,0 km/h étant la valeur idéale pour bénéficier d'une marge de confort musculaire. À 16,5 km/h de VMA, vous devrez tenir 85,2 % de votre VMA pendant 1h30, ce qui demande un excellent indice d'endurance."
+      },
+      {
+        "question": "Quel chrono sur 10 km permet d'envisager le sub-1h30 au semi ?",
+        "answer": "Il est fortement conseillé d'avoir un record récent sous les 41'15 sur 10 km, idéalement autour de 40'30. Cela garantit que l'allure 4'15/km est suffisamment éloignée de votre vitesse maximale aérobie."
+      },
+      {
+        "question": "Combien d'entraînements par semaine sont nécessaires ?",
+        "answer": "Pour franchir ce palier, 4 séances par semaine constituent le standard minimal (1 séance de qualité seuil/AS21, 1 séance VMA ou tempo, 1 footing d'endurance fondamentale et 1 sortie longue). 5 séances offrent encore plus de régularité sans surcharger les séances individuelles."
+      },
+      {
+        "question": "Faut-il obligatoirement des chaussures carbone pour faire 1h30 ?",
+        "answer": "Non, le sub-1h30 se construit avant tout sur la physiologie et l'entraînement. Cependant, une paire de running moderne à mousse réactive ou plaque carbone (super shoes) offre un gain d'économie de course de 2 à 4 %, ce qui peut vous faire gagner entre 45 secondes et 1 minute 30 sur 21 km."
+      }
+    ],
+    "relatedSlugs": [
+      "allure-cible-semi-marathon-pacing",
+      "courir-10km-moins-40-minutes",
+      "seuil-lactique-course-a-pied-sv1-sv2",
+      "endurance-fondamentale-zone-2-running"
+    ],
+    "relatedServiceUrl": "/coaching-semi-marathon/",
+    "relatedServiceLabel": "Découvrir le coaching Semi-Marathon sur Nolio"
+  },
+  {
     "slug": "preparation-marathon-de-paris-2026-parcours-allures-plan",
     "title": "Préparation Marathon de Paris 2026 : Parcours, Allures et Plan Nolio",
     "seoTitle": "Préparation Marathon de Paris 2026 : Parcours, Allures & Plan Nolio",

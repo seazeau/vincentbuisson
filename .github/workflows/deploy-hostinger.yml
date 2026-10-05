@@ -1,6 +1,8 @@
 name: Déploiement Hostinger Automatique
 
 on:
+  schedule:
+    - cron: '0 6 * * *' # Déploiement quotidien automatique à 06:00 UTC (08:00 heure française)
   push:
     branches:
       - main

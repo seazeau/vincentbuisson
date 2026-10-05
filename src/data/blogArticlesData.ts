@@ -44,4 +44,20 @@ export interface BlogArticle {
   relatedServiceLabel: string;
 }
 
-export const BLOG_ARTICLES_DATA: BlogArticle[] = rawArticles as BlogArticle[];
+const allArticles = rawArticles as BlogArticle[];
+
+export const isArticlePublished = (article: BlogArticle): boolean => {
+  if (process.env.NODE_ENV === "development" && process.env.NEXT_PUBLIC_SHOW_DRAFTS === "true") {
+    return true;
+  }
+  const today = new Date().toISOString().split("T")[0];
+  return !article.publishedAt || article.publishedAt <= today;
+};
+
+export const BLOG_ARTICLES_DATA: BlogArticle[] = allArticles
+  .filter(isArticlePublished)
+  .sort((a, b) => (b.publishedAt || "").localeCompare(a.publishedAt || ""));
+export const ALL_ARTICLES_DATA: BlogArticle[] = [...allArticles].sort((a, b) =>
+  (b.publishedAt || "").localeCompare(a.publishedAt || "")
+);
+

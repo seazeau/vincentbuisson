@@ -47,13 +47,15 @@ function updateSitemap(articles) {
       xml += `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>\n`;
     }
 
-    for (const art of articles) {
-      xml += `  <url>\n    <loc>https://vincentbuisson.fr/blog/${art.slug}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.85</priority>\n  </url>\n`;
+    const publishedArticles = articles.filter(a => !a.publishedAt || a.publishedAt <= today);
+
+    for (const art of publishedArticles) {
+      xml += `  <url>\n    <loc>https://vincentbuisson.fr/blog/${art.slug}/</loc>\n    <lastmod>${art.publishedAt || today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.85</priority>\n  </url>\n`;
     }
 
     xml += `</urlset>\n`;
     fs.writeFileSync(SITEMAP_PATH, xml, "utf-8");
-    console.log("Sitemap updated with", articles.length, "articles.");
+    console.log("Sitemap updated with", publishedArticles.length, "published articles (out of", articles.length, ").");
   } catch (err) {
     console.error("Error updating sitemap:", err);
   }

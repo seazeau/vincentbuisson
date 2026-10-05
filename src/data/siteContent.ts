@@ -1,3 +1,5 @@
+import { BLOG_ARTICLES_DATA } from "./blogArticlesData";
+
 export interface Plan {
   id: string;
   name: string;
@@ -143,48 +145,16 @@ export const TESTIMONIALS: Testimonial[] = [
   },
 ];
 
-export const BLOG_ARTICLES: Article[] = [
-  {
-    id: "marathon-paris-2026",
-    title: "Préparation Marathon de Paris 2026 : Parcours, Allures et Plan Nolio",
-    desc: "Analyse experte du parcours (quais, tunnels, Boulogne), temps de passage AS42 et méthode pour vaincre le mur.",
-    tag: "MARATHON DE PARIS • GUIDE",
-    date: "17 MARS 2026",
-    readTime: "10 MIN",
-    image: "/images/marathon-finish.webp",
-    href: "/blog/preparation-marathon-de-paris-2026-parcours-allures-plan/",
-  },
-  {
-    id: "endurance-fondamentale",
-    title: "L'Endurance Fondamentale : Pourquoi courir lentement fait courir plus vite",
-    desc: "Fréquence cardiaque, Zone 2 et calcul d'allure : comment la filière aérobie crée les adaptations biologiques indispensables pour performer.",
-    tag: "PHYSIOLOGIE • ZONE 2",
-    date: "14 MARS 2026",
-    readTime: "7 MIN",
-    image: "/images/runner-1.webp",
-    href: "/blog/endurance-fondamentale-zone-2-running/",
-  },
-  {
-    id: "marathon-sub-3h",
-    title: "Préparation Marathon Sub-3h : Les séances clés et l'allure AS42",
-    desc: "Comment calibrer ses sorties longues avec blocs d'allure 4'15/km et construire une stratégie glucidique anti-mur.",
-    tag: "MARATHON • ALLURE AS42",
-    date: "06 MARS 2026",
-    readTime: "9 MIN",
-    image: "/images/runner-3.webp",
-    href: "/blog/preparation-marathon-sub-3h-allure-as42/",
-  },
-  {
-    id: "10km-sub-40",
-    title: "Comment courir le 10 km en moins de 40 minutes : Méthode & Séances",
-    desc: "Prérequis de VMA, séances de seuil anaérobie (SV2) et stratégie de pacing pour franchir la barre mythique des 3'59/km.",
-    tag: "10 KM • CHRONO",
-    date: "10 MARS 2026",
-    readTime: "8 MIN",
-    image: "/images/hero-speed-sharp.webp",
-    href: "/blog/courir-10km-moins-40-minutes/",
-  },
-];
+export const BLOG_ARTICLES: Article[] = BLOG_ARTICLES_DATA.map((art) => ({
+  id: art.slug,
+  title: art.title,
+  desc: art.summary,
+  tag: `${art.category.toUpperCase()} • GUIDE`,
+  date: art.date,
+  readTime: art.readTime,
+  image: art.image,
+  href: `/blog/${art.slug}/`,
+}));
 
 export const FAQ_ITEMS: FAQItem[] = [
   {
