@@ -114,9 +114,9 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} ${chivoMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} ${chivoMono.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#0c0c0b] text-[#f2eee4] selection:bg-[#d4ff00] selection:text-black">
+      <body className="min-h-screen flex flex-col bg-[#0c0c0b] text-[#f2eee4] selection:bg-[#d4ff00] selection:text-black">
         <CustomCursor />
         {children}
       </body>

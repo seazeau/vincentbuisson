@@ -47,7 +47,7 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-[100dvh] w-full flex flex-col justify-between overflow-x-hidden pt-16 sm:pt-20 pb-4 sm:pb-6 select-none perspective-[1200px]"
+      className="relative min-h-[100dvh] w-full flex flex-col justify-between overflow-hidden pt-16 sm:pt-20 pb-4 sm:pb-6 select-none perspective-[1200px]"
     >
       {/* 1. Vincent Buisson Running Background with 3D Mouse Parallax & Cinematic Lighting */}
       <div
@@ -190,8 +190,8 @@ export default function Hero() {
       {/* 3. Bottom Row: Blog Highlight */}
       <div className="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-8 flex flex-col sm:flex-row items-end justify-end pointer-events-none">
         
-        {/* Mobile & Tablet (< lg): Clean Single Article Teaser Card (no 3D overlap, fits viewport cleanly) */}
-        <div className="lg:hidden w-full pointer-events-auto mt-3">
+        {/* Mobile & Tablet (< lg): Clean Single Article Teaser Card + Action Button */}
+        <div className="lg:hidden w-full pointer-events-auto mt-3 flex flex-col items-center gap-2">
           <Link
             href={blogCards[0].href}
             className="w-full max-w-md mx-auto bg-[#fbfaf6] text-black rounded-2xl p-2.5 shadow-2xl border border-black/10 flex items-center gap-3 active:scale-[0.98] transition-all"
@@ -217,17 +217,25 @@ export default function Hero() {
             </div>
             <ArrowRight className="w-4 h-4 text-black shrink-0 mr-1" />
           </Link>
+
+          <Link
+            href="/blog/"
+            className="bg-white/90 hover:bg-white text-black px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-md active:scale-95 transition-all"
+          >
+            <span>LIRE LES ARTICLES DU BLOG</span>
+            <ArrowRight className="w-3 h-3 stroke-[2]" />
+          </Link>
         </div>
 
         {/* Large Desktop (>= lg): Interactive 3D Stacked Card Deck fanning horizontally */}
-        <div
-          className="hidden lg:flex relative pointer-events-auto flex-col items-end group"
-          onMouseEnter={() => setCardsExpanded(true)}
-          onMouseLeave={() => setCardsExpanded(false)}
-          onClick={() => setCardsExpanded(!cardsExpanded)}
-        >
+        <div className="hidden lg:flex relative pointer-events-auto flex-col items-end">
           {/* Deck Container with 3D Perspective */}
-          <div className="relative w-[380px] h-28 cursor-pointer perspective-[1000px]">
+          <div
+            className="relative w-[380px] h-28 cursor-pointer perspective-[1000px] group"
+            onMouseEnter={() => setCardsExpanded(true)}
+            onMouseLeave={() => setCardsExpanded(false)}
+            onClick={() => setCardsExpanded(!cardsExpanded)}
+          >
             {blogCards.map((card, idx) => {
               const total = blogCards.length;
               // Horizontal fan spread instead of shooting upwards
@@ -284,10 +292,10 @@ export default function Hero() {
             })}
           </div>
 
-          {/* Underneath Deck: Blog Action Button */}
+          {/* Underneath Deck: Blog Action Button pointing directly to /blog/ */}
           <Link
-            href="/#insights"
-            className="mt-2 bg-white hover:bg-neutral-200 text-black px-4 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-xl hover:scale-105 transition-all"
+            href="/blog/"
+            className="mt-2 bg-white hover:bg-neutral-200 text-black px-4 py-2 rounded-full text-[11px] font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-xl hover:scale-105 transition-all cursor-pointer z-30 pointer-events-auto"
           >
             <span>LIRE LES ARTICLES DU BLOG</span>
             <ArrowRight className="w-3.5 h-3.5 stroke-[2]" />
