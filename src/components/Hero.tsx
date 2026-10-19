@@ -9,36 +9,57 @@ import { BLOG_ARTICLES } from "@/data/siteContent";
 export default function Hero() {
   const [cardsExpanded, setCardsExpanded] = useState(false);
   const heroRef = useRef<HTMLElement>(null);
-  const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
+  const bgRef = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Only activate for non-touch fine pointer devices (desktop mouse)
+    if (!window.matchMedia("(pointer: fine)").matches) return;
+
     let targetX = 0;
     let targetY = 0;
     let currentX = 0;
     let currentY = 0;
-    let animId: number;
+    let animId: number | null = null;
+    let isRunning = false;
+
+    const render = () => {
+      const dx = targetX - currentX;
+      const dy = targetY - currentY;
+      currentX += dx * 0.08;
+      currentY += dy * 0.08;
+
+      if (bgRef.current) {
+        bgRef.current.style.transform = `translate3d(${currentX * -20}px, ${currentY * -14}px, 0) scale(1.05)`;
+      }
+      if (titleRef.current) {
+        titleRef.current.style.transform = `perspective(1000px) rotateX(${currentY * -5}deg) rotateY(${currentX * 5}deg)`;
+      }
+
+      if (Math.abs(dx) > 0.0005 || Math.abs(dy) > 0.0005) {
+        animId = requestAnimationFrame(render);
+      } else {
+        isRunning = false;
+        animId = null;
+      }
+    };
 
     const handleMouseMove = (e: MouseEvent) => {
       const { innerWidth, innerHeight } = window;
-      // Normalize to -1 -> +1
       targetX = (e.clientX / innerWidth) * 2 - 1;
       targetY = (e.clientY / innerHeight) * 2 - 1;
+
+      if (!isRunning) {
+        isRunning = true;
+        animId = requestAnimationFrame(render);
+      }
     };
 
     window.addEventListener("mousemove", handleMouseMove, { passive: true });
 
-    const loop = () => {
-      currentX += (targetX - currentX) * 0.08;
-      currentY += (targetY - currentY) * 0.08;
-      setMouseOffset({ x: currentX, y: currentY });
-      animId = requestAnimationFrame(loop);
-    };
-
-    animId = requestAnimationFrame(loop);
-
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      cancelAnimationFrame(animId);
+      if (animId) cancelAnimationFrame(animId);
     };
   }, []);
 
@@ -51,9 +72,10 @@ export default function Hero() {
     >
       {/* 1. Vincent Buisson Running Background with 3D Mouse Parallax & Cinematic Lighting */}
       <div
-        className="absolute inset-0 z-0 transition-transform duration-100 ease-out scale-105 pointer-events-none"
+        ref={bgRef}
+        className="absolute inset-0 z-0 transition-transform duration-100 ease-out scale-105 pointer-events-none will-change-transform"
         style={{
-          transform: `translate3d(${mouseOffset.x * -20}px, ${mouseOffset.y * -14}px, 0)`,
+          transform: "translate3d(0px, 0px, 0) scale(1.05)",
         }}
       >
         <Image
@@ -64,17 +86,18 @@ export default function Hero() {
           sizes="100vw"
           className="object-cover object-[center_28%] contrast-[1.05] brightness-[0.82]"
         />
-        {/* Authentic 35mm Vintage Analog Film Grain */}
-        <div className="absolute inset-0 bg-vintage-grain opacity-20 mix-blend-overlay pointer-events-none" />
+        {/* Lightweight noise texture (fast GPU render) */}
+        <div className="absolute inset-0 bg-noise opacity-25 mix-blend-overlay pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/35 to-[#0c0c0b] pointer-events-none" />
         <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-[#0c0c0b] via-[#0c0c0b]/90 to-transparent pointer-events-none" />
       </div>
 
       {/* 2. Centerpiece Bold Typography with 3D Spatial Tilt (Scaled down to pull everything up) */}
       <div
-        className="relative z-10 my-auto flex flex-col items-center justify-center text-center px-4 w-full max-w-7xl mx-auto transition-transform duration-100 ease-out"
+        ref={titleRef}
+        className="relative z-10 my-auto flex flex-col items-center justify-center text-center px-4 w-full max-w-7xl mx-auto transition-transform duration-100 ease-out will-change-transform"
         style={{
-          transform: `perspective(1000px) rotateX(${mouseOffset.y * -5}deg) rotateY(${mouseOffset.x * 5}deg)`,
+          transform: "perspective(1000px) rotateX(0deg) rotateY(0deg)",
           transformStyle: "preserve-3d",
         }}
       >

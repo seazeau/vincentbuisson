@@ -8,12 +8,13 @@ export default function StickyMobileBar() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    let isVisible = false;
     const handleScroll = () => {
       // Show when scrolled past 300px (past top hero fold)
-      if (window.scrollY > 300) {
-        setVisible(true);
-      } else {
-        setVisible(false);
+      const shouldBeVisible = window.scrollY > 300;
+      if (shouldBeVisible !== isVisible) {
+        isVisible = shouldBeVisible;
+        setVisible(shouldBeVisible);
       }
     };
 
