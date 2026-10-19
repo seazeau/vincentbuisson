@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Caveat, Chivo_Mono } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -117,7 +116,6 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} ${chivoMono.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-[#0c0c0b] text-[#f2eee4] selection:bg-[#d4ff00] selection:text-black">
-        <CustomCursor />
         {children}
       </body>
     </html>

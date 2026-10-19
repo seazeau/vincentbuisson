@@ -122,26 +122,26 @@ export default function TestimonialsSection() {
         </div>
       </div>
 
-      {/* 3D Arc Stage Viewport */}
-      <div className="w-full h-[290px] sm:h-[320px] flex items-center justify-center [perspective:1200px] relative z-10 px-4">
-        <div className="relative w-[280px] sm:w-[320px] h-[210px] sm:h-[225px] [transform-style:preserve-3d] flex items-center justify-center">
+      {/* Stage Viewport */}
+      <div className="w-full h-[290px] sm:h-[320px] flex items-center justify-center relative z-10 px-4">
+        <div className="relative w-[280px] sm:w-[320px] h-[210px] sm:h-[225px] flex items-center justify-center">
           {ATHLETE_TESTIMONIALS.map((t, idx) => {
             const diff = (idx - activeIndex + ATHLETE_TESTIMONIALS.length) % ATHLETE_TESTIMONIALS.length;
             const isCenter = diff === 0;
             const isRight = diff === 1;
             const isLeft = diff === 2;
 
-            let transformClass = "translate3d(0, 0, 40px) rotateY(0deg) scale(1)";
+            let transformClass = "translate3d(0, 0, 0) scale(1)";
             let opacity = 1;
             let zIndex = 30;
 
             if (isRight) {
-              transformClass = "translate3d(min(270px, 32vw), 0, -50px) rotateY(-22deg) scale(0.9)";
-              opacity = 0.6;
+              transformClass = "translate3d(min(270px, 32vw), 0, 0) scale(0.92)";
+              opacity = 0.5;
               zIndex = 10;
             } else if (isLeft) {
-              transformClass = "translate3d(max(-270px, -32vw), 0, -50px) rotateY(22deg) scale(0.9)";
-              opacity = 0.6;
+              transformClass = "translate3d(max(-270px, -32vw), 0, 0) scale(0.92)";
+              opacity = 0.5;
               zIndex = 10;
             }
 
@@ -149,7 +149,7 @@ export default function TestimonialsSection() {
               <div
                 key={idx}
                 onClick={() => setActiveIndex(idx)}
-                className={`absolute inset-0 bg-white text-black rounded-2xl p-4 sm:p-5 shadow-[0_20px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between [transform-style:preserve-3d] border border-black/10 transition-all duration-500 ease-out select-none ${
+                className={`absolute inset-0 bg-white text-black rounded-2xl p-4 sm:p-5 shadow-[0_20px_40px_rgba(0,0,0,0.6)] flex flex-col justify-between border border-black/10 transition-all duration-300 ease-out select-none ${
                   isCenter ? "cursor-default" : "cursor-pointer hover:opacity-80"
                 }`}
                 style={{

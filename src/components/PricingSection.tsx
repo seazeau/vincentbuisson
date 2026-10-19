@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import { Check, ArrowUpRight, ShieldCheck, Zap, Sparkles, Clock, HeartHandshake } from "lucide-react";
 import { PLANS } from "@/data/siteContent";
-import { motion } from "framer-motion";
 import Tilt3DCard from "./Tilt3DCard";
 
 export default function PricingSection() {
@@ -33,26 +32,18 @@ export default function PricingSection() {
           </p>
         </div>
 
-        {/* Pricing Cards Grid (White Animated Cards) */}
+        {/* Pricing Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
-          {PLANS.map((plan, idx) => {
+          {PLANS.map((plan) => {
             const isPopular = plan.popular;
 
             return (
-              <motion.div
-                key={plan.id}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.55, delay: idx * 0.15, ease: "easeOut" }}
-                className="h-full"
-              >
+              <div key={plan.id} className="h-full">
                 <Tilt3DCard
-                  maxTilt={6}
-                  className={`h-full rounded-3xl p-8 sm:p-10 flex flex-col justify-between transition-all duration-300 relative group cursor-pointer ${
+                  className={`h-full rounded-3xl p-8 sm:p-10 flex flex-col justify-between transition-all duration-200 relative group cursor-pointer ${
                     isPopular
-                      ? "bg-white text-black border-2 border-black shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:shadow-[0_25px_60px_rgba(255,255,255,0.2)] hover:-translate-y-2"
-                      : "bg-[#fbfaf6] hover:bg-white text-black border border-black/10 shadow-[0_15px_35px_rgba(0,0,0,0.15)] hover:shadow-[0_25px_50px_rgba(255,255,255,0.12)] hover:-translate-y-2"
+                      ? "bg-white text-black border-2 border-black shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:shadow-[0_25px_60px_rgba(255,255,255,0.2)] hover:-translate-y-1"
+                      : "bg-[#fbfaf6] hover:bg-white text-black border border-black/10 shadow-[0_15px_35px_rgba(0,0,0,0.15)] hover:shadow-[0_25px_50px_rgba(255,255,255,0.12)] hover:-translate-y-1"
                   }`}
                 >
                 {/* Plan Badge */}
@@ -155,7 +146,7 @@ export default function PricingSection() {
                   </p>
                 </div>
               </Tilt3DCard>
-            </motion.div>
+            </div>
           );
         })}
       </div>

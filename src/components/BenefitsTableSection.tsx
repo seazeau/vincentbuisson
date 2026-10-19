@@ -3,7 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import { Watch, MessageSquare, Zap, ArrowRight, Sparkles, Check } from "lucide-react";
-import { motion } from "framer-motion";
 import Tilt3DCard from "./Tilt3DCard";
 
 const BENEFIT_CARDS = [
@@ -55,27 +54,19 @@ export default function BenefitsTableSection() {
           </p>
         </div>
 
-        {/* 3 Animated White Cards Grid */}
+        {/* 3 White Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {BENEFIT_CARDS.map((card, idx) => {
             const Icon = card.icon;
             return (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 35 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, delay: idx * 0.12, ease: "easeOut" }}
-                className="h-full"
-              >
+              <div key={idx} className="h-full">
                 <Tilt3DCard
-                  maxTilt={8}
-                  className="h-full bg-[#fbfaf6] hover:bg-white text-black rounded-3xl p-8 sm:p-9 border border-black/10 shadow-[0_15px_35px_rgba(0,0,0,0.25)] hover:shadow-[0_25px_50px_rgba(255,255,255,0.12)] hover:-translate-y-2.5 transition-all duration-300 flex flex-col justify-between group cursor-pointer"
+                  className="h-full bg-[#fbfaf6] hover:bg-white text-black rounded-3xl p-8 sm:p-9 border border-black/10 shadow-[0_15px_35px_rgba(0,0,0,0.25)] hover:shadow-[0_25px_50px_rgba(255,255,255,0.12)] hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between group cursor-pointer"
                 >
                   <div>
                     {/* Top Row: Icon & Number */}
                     <div className="flex items-center justify-between mb-6">
-                      <div className="w-12 h-12 rounded-2xl bg-black text-white flex items-center justify-center border border-black/10 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                      <div className="w-12 h-12 rounded-2xl bg-black text-white flex items-center justify-center border border-black/10 group-hover:scale-105 transition-transform duration-200 shadow-md">
                         <Icon className="w-5 h-5 stroke-[2]" />
                       </div>
                       <div className="flex items-center gap-2">
@@ -109,7 +100,7 @@ export default function BenefitsTableSection() {
                     </span>
                   </div>
                 </Tilt3DCard>
-              </motion.div>
+              </div>
             );
           })}
         </div>

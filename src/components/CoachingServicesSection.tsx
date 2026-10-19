@@ -117,17 +117,13 @@ export default function CoachingServicesSection() {
           {pillars.map((item, idx) => {
             const Icon = item.icon;
             return (
-              <div key={idx} className={`transition-all duration-300 ${item.tilt} ${item.float} hover:rotate-0 hover:z-30 hover:animate-none`}>
+              <div key={idx} className="h-full">
                 <Tilt3DCard
-                  maxTilt={14}
-                  glare={true}
-                  className="h-full bg-[#fbfaf6] text-black rounded-3xl p-6 sm:p-8 shadow-[0_25px_60px_rgba(0,0,0,0.4)] border border-black/10 flex flex-col justify-between group hover:border-[#d4ff00] hover:shadow-[0_35px_80px_rgba(212,255,0,0.25)] transition-all duration-300 min-h-[auto] sm:min-h-[380px] [transform-style:preserve-3d]"
+                  className="h-full bg-[#fbfaf6] text-black rounded-3xl p-6 sm:p-8 shadow-[0_15px_35px_rgba(0,0,0,0.25)] border border-black/10 flex flex-col justify-between group hover:border-[#d4ff00] hover:shadow-[0_20px_45px_rgba(212,255,0,0.15)] hover:-translate-y-1 transition-all duration-200 min-h-[auto] sm:min-h-[380px]"
                 >
-                  {/* Top Row: Number & Category Badge with 3D Pop-Out */}
-                  <div className="[transform-style:preserve-3d]">
-                    <div
-                      className="flex items-center justify-between mb-6 transition-transform duration-300 group-hover:[transform:translateZ(25px)]"
-                    >
+                  {/* Top Row: Number & Category Badge */}
+                  <div>
+                    <div className="flex items-center justify-between mb-6">
                       <span className="inline-block font-mono-tech text-xs font-black bg-black text-white px-3 py-1 rounded-lg group-hover:bg-[#d4ff00] group-hover:text-black transition-colors shadow-md">
                         {item.num}
                       </span>
@@ -136,25 +132,19 @@ export default function CoachingServicesSection() {
                       </span>
                     </div>
 
-                    {/* Title with 3D Pop-Out */}
-                    <h3
-                      className="text-2xl sm:text-[26px] font-black uppercase tracking-tight text-black leading-tight mb-4 group-hover:text-[#111] transition-transform duration-300 group-hover:[transform:translateZ(35px)]"
-                    >
+                    {/* Title */}
+                    <h3 className="text-2xl sm:text-[26px] font-black uppercase tracking-tight text-black leading-tight mb-4">
                       {item.title}
                     </h3>
 
                     {/* Description */}
-                    <p
-                      className="text-xs sm:text-sm text-neutral-700 leading-relaxed font-normal transition-transform duration-300 group-hover:[transform:translateZ(18px)]"
-                    >
+                    <p className="text-xs sm:text-sm text-neutral-700 leading-relaxed font-normal">
                       {item.desc}
                     </p>
                   </div>
 
                   {/* Bottom Row: Highlight badge + Circular Action Button */}
-                  <div
-                    className="pt-6 border-t border-black/10 flex items-center justify-between mt-6 transition-transform duration-300 group-hover:[transform:translateZ(28px)]"
-                  >
+                  <div className="pt-6 border-t border-black/10 flex items-center justify-between mt-6">
                     <span className="text-[10px] font-mono-tech uppercase font-bold text-neutral-600 flex items-center gap-1.5">
                       <Icon className="w-3.5 h-3.5 text-black" />
                       {item.badge}
@@ -162,7 +152,7 @@ export default function CoachingServicesSection() {
 
                     <Link
                       href="/contact/"
-                      className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center group-hover:bg-[#d4ff00] group-hover:text-black transition-all duration-300 group-hover:scale-125 shadow-lg group-hover:[transform:translateZ(40px)]"
+                      className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center group-hover:bg-[#d4ff00] group-hover:text-black transition-all duration-200 shadow-lg"
                       aria-label={`En savoir plus sur ${item.title}`}
                     >
                       <ArrowRight className="w-4 h-4 stroke-[2.5]" />

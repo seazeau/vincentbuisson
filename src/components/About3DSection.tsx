@@ -50,23 +50,20 @@ export default function About3DSection() {
         {/* 2-Column Showcase: Left = Coach Photo 3D Tilt Card, Right = Clean Bold Manifesto */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* LEFT: 3D Tilt Coach Card with Vincent's Photo */}
+          {/* LEFT: Coach Card with Vincent's Photo */}
           <div className="lg:col-span-5">
-            <div className="lg:-rotate-2 transition-transform duration-500 hover:rotate-0">
-              <Tilt3DCard
-                maxTilt={10}
-                glare={true}
-                className="rounded-3xl bg-[#141412] border border-white/15 overflow-hidden shadow-[0_30px_70px_rgba(0,0,0,0.85)] group relative"
-              >
-                {/* Photo Container */}
-                <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] overflow-hidden bg-neutral-900">
-                  <Image
-                    src="/images/vincent-buisson.webp"
-                    alt="Vincent Buisson - Coach Course à pied & Spécialiste Route"
-                    fill
-                    priority
-                    className="object-cover object-top grayscale group-hover:grayscale-0 contrast-110 transition-all duration-700 group-hover:scale-105"
-                  />
+            <Tilt3DCard
+              className="rounded-3xl bg-[#141412] border border-white/15 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.85)] group relative"
+            >
+              {/* Photo Container */}
+              <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] overflow-hidden bg-neutral-900">
+                <Image
+                  src="/images/vincent-buisson.webp"
+                  alt="Vincent Buisson - Coach Course à pied & Spécialiste Route"
+                  fill
+                  priority
+                  className="object-cover object-top contrast-105"
+                />
                   
                   {/* Subtle Top & Bottom Vignette Gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0e0e0c] via-transparent to-black/40" />
@@ -110,7 +107,6 @@ export default function About3DSection() {
                   <span className="text-neutral-500">Nolio Pro</span>
                 </div>
               </Tilt3DCard>
-            </div>
           </div>
 
           {/* RIGHT: Clear Editorial Presentation */}
