@@ -294,8 +294,8 @@
   {
     "slug": "calculer-zones-frequence-cardiaque-running-karvonen",
     "title": "Calculer ses Zones de Fréquence Cardiaque en Running : FC Max vs Formule de Karvonen",
-    "seoTitle": "Zones Fréquence Cardiaque Running : Calcul FC Max & Karvonen",
-    "seoDescription": "Guide complet pour calculer vos zones cardiaques en course à pied : test terrain de FC Max, formule de Karvonen (FC de réserve), Zone 2 et pièges cardio.",
+    "seoTitle": "Formule de Karvonen : Calcul des Zones de Fréquence Cardiaque Course à Pied (Z1 à Z5)",
+    "seoDescription": "Comment calculer vos zones de fréquence cardiaque en course à pied avec la formule de Karvonen (FC de réserve = FC Max - FC Repos) ? Formule, tableau des 5 zones et exemples BPM.",
     "category": "Physiologie & Allures",
     "readTime": "9 MIN",
     "date": "07 OCTOBRE 2026",
@@ -642,8 +642,8 @@
   {
     "slug": "preparation-marathon-de-paris-2026-parcours-allures-plan",
     "title": "Préparation Marathon de Paris 2026 : Parcours, Allures et Plan Nolio",
-    "seoTitle": "Préparation Marathon de Paris 2026 : Parcours, Allures & Plan Nolio",
-    "seoDescription": "Guide expert pour le Marathon de Paris 2026 : analyse du parcours (Bois de Vincennes, tunnels des quais, Boulogne), allures cibles, gestion du mur et plan Nolio.",
+    "seoTitle": "Marathon de Paris 2026 : Dénivelé, Parcours, Allures Cibles & Plan d'Entraînement",
+    "seoDescription": "Tout sur le parcours et le dénivelé du Marathon de Paris (+230m D+, côte de Trocadéro, tunnels des quais, bois de Vincennes/Boulogne). Stratégie de pacing et préparation spécifique.",
     "category": "Marathon",
     "readTime": "10 MIN",
     "date": "17 MARS 2026",
@@ -924,8 +924,8 @@
   {
     "slug": "endurance-fondamentale-zone-2-running",
     "title": "L'Endurance Fondamentale : Le Secret pour Courir Plus Vite en Courant Lentement",
-    "seoTitle": "Endurance Fondamentale Course à Pied (Zone 2) : Allure, FC et Méthode 80/20",
-    "seoDescription": "Comment courir en endurance fondamentale (Zone 2) sans marcher ? Calcul de la fréquence cardiaque (70-75% FCM), allure EF et bienfaits physiologiques pour progresser.",
+    "seoTitle": "Courir en Endurance Fondamentale (BPM, Zone 2 ou 3 & Allure) : Le Guide Complet",
+    "seoDescription": "Quel BPM pour courir en endurance fondamentale (Zone 2 vs Zone 3) ? Calculez votre fréquence cardiaque exacte (70-75% FCM), votre allure EF et progressez avec la méthode 80/20.",
     "category": "Physiologie & Allures",
     "readTime": "7 MIN",
     "date": "14 MARS 2026",
@@ -1234,8 +1234,8 @@
   {
     "slug": "preparation-marathon-sub-3h-allure-as42",
     "title": "Préparation Marathon Sub-3h : Allure 4'15/km, Séances et Stratégie",
-    "seoTitle": "Prépa Marathon Sub-3h : Allure 4'15/km, Séances Clés & Pacing",
-    "seoDescription": "Guide complet pour courir le marathon en moins de 3 heures (2h59) : allure 4'15/km, stratégie anti-mur (60g glucides/h), sorties longues et plan d'entraînement.",
+    "seoTitle": "Marathon Sub 3h Allure (4'15/km) : Plan d'Entraînement, Temps de Passage & Séances AS42",
+    "seoDescription": "Quelle allure pour un marathon sub 3h (4'15\"/km - 14,1 km/h) ? Tableau des temps de passage, prérequis VMA/Semi (1h25), volume hebdomadaire et les 4 séances clés AS42.",
     "category": "Marathon",
     "readTime": "9 MIN",
     "date": "06 MARS 2026",

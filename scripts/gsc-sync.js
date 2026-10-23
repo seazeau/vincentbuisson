@@ -29,7 +29,7 @@ async function getAccessToken(serviceAccount) {
   const header = { alg: 'RS256', typ: 'JWT' };
   const payload = {
     iss: serviceAccount.client_email,
-    scope: 'https://www.googleapis.com/auth/webmasters.readonly',
+    scope: 'https://www.googleapis.com/auth/webmasters',
     aud: 'https://oauth2.googleapis.com/token',
     exp: now + 3600,
     iat: now,
@@ -109,7 +109,19 @@ async function main() {
   console.log(`🔑 Authentification avec ${serviceAccount.client_email}...`);
   const token = await getAccessToken(serviceAccount);
 
-  let activeSiteUrl = SITE_URL;
+  // List accessible sites first
+  const sitesRes = await fetch('https://www.googleapis.com/webmasters/v3/sites', {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  const sitesData = await sitesRes.json();
+  const siteEntries = sitesData.siteEntry || [];
+  console.log(
+    `🌐 Propriétés accessibles (${siteEntries.length}) :`,
+    siteEntries.map((s) => `${s.siteUrl} (${s.permissionLevel})`).join(', ') || 'Aucune'
+  );
+
+  let activeSiteUrl =
+    siteEntries.find((s) => s.siteUrl.includes('vincentbuisson.fr'))?.siteUrl || SITE_URL;
   let queriesData;
 
   try {
@@ -136,6 +148,17 @@ async function main() {
 
   console.log(`✅ Synchronisation Google Search Console réussie (${activeSiteUrl}) !`);
   console.log(`📊 ${report.queries.length} requêtes et ${report.pages.length} pages sauvegardées dans gsc-report.json`);
+
+  // Automatically submit sitemap.xml to Google Search Console
+  const sitemapUrl = 'https://vincentbuisson.fr/sitemap.xml';
+  const sitemapEndpoint = `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(activeSiteUrl)}/sitemaps/${encodeURIComponent(sitemapUrl)}`;
+  const smRes = await fetch(sitemapEndpoint, {
+    method: 'PUT',
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (smRes.ok) {
+    console.log(`🚀 Sitemap soumis automatiquement à Google Search Console : ${sitemapUrl}`);
+  }
 }
 
 main().catch((err) => {
