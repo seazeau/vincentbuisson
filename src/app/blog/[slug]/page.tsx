@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -5,6 +6,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FreeAuditBanner from "@/components/FreeAuditBanner";
+import StickyMobileBar from "@/components/StickyMobileBar";
 import { BLOG_ARTICLES_DATA, type BlogArticle } from "@/data/blogArticlesData";
 import {
   Clock,
@@ -301,27 +303,65 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           {/* Content sections */}
           <div className="space-y-12 text-sm sm:text-base text-neutral-300 leading-relaxed">
-            {article.sections.map((sec) => (
-              <section key={sec.id} id={sec.id} className="scroll-mt-32 space-y-4">
-                <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-white pt-2 border-b border-white/5 pb-2">
-                  {sec.heading}
-                </h2>
-                {sec.body.map((paragraph, pIdx) => (
-                  <p key={pIdx} className="leading-relaxed">
-                    {paragraph}
-                  </p>
-                ))}
-                {sec.callout && (
-                  <div className="bg-white/5 border-l-4 border-[#d4ff00] p-4 sm:p-5 rounded-r-2xl my-6">
-                    <div className="text-xs font-mono-tech uppercase text-[#d4ff00] font-bold mb-1">
-                      {sec.callout.title}
+            {article.sections.map((sec, sIdx) => (
+              <React.Fragment key={sec.id}>
+                <section id={sec.id} className="scroll-mt-32 space-y-4">
+                  <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-white pt-2 border-b border-white/5 pb-2">
+                    {sec.heading}
+                  </h2>
+                  {sec.body.map((paragraph, pIdx) => (
+                    <p key={pIdx} className="leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
+                  {sec.callout && (
+                    <div className="bg-white/5 border-l-4 border-[#d4ff00] p-4 sm:p-5 rounded-r-2xl my-6">
+                      <div className="text-xs font-mono-tech uppercase text-[#d4ff00] font-bold mb-1">
+                        {sec.callout.title}
+                      </div>
+                      <div className="text-xs sm:text-sm text-neutral-200 leading-relaxed font-mono-tech">
+                        {sec.callout.text}
+                      </div>
                     </div>
-                    <div className="text-xs sm:text-sm text-neutral-200 leading-relaxed font-mono-tech">
-                      {sec.callout.text}
+                  )}
+                </section>
+
+                {/* High-Conversion Mid-Article Lead Magnet (after 2nd section) */}
+                {sIdx === 1 && (
+                  <aside className="bg-[#fbfaf6] text-black rounded-3xl p-6 sm:p-8 border-2 border-[#d4ff00] shadow-2xl my-10">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                      <div className="space-y-2">
+                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black text-[#d4ff00] text-[10px] font-mono-tech font-bold uppercase tracking-wider">
+                          <Sparkles className="w-3 h-3" />
+                          <span>DIAGNOSTIC RUNNING OFFERT SOUS 24H</span>
+                        </div>
+                        <h3 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-black leading-tight">
+                          Vous voulez calibrer vos allures exactes sur Nolio ?
+                        </h3>
+                        <p className="text-xs sm:text-sm text-neutral-700 font-mono-tech leading-relaxed max-w-xl">
+                          Ne courez plus au hasard avec des plans PDF génériques. J&apos;analyse gratuitement votre profil, vos chronos et vos disponibilités pour construire votre feuille de route personnalisée (dès 70 €/mois).
+                        </p>
+                      </div>
+                      <div className="flex flex-col sm:flex-row md:flex-col gap-2.5 shrink-0">
+                        <Link
+                          href="/contact/"
+                          className="inline-flex items-center justify-center gap-2 bg-black text-white hover:bg-neutral-800 px-6 py-3.5 rounded-full text-xs font-black uppercase tracking-wider transition-all shadow-lg"
+                        >
+                          <span>Demander mon bilan offert</span>
+                          <ArrowRight className="w-3.5 h-3.5 text-[#d4ff00]" />
+                        </Link>
+                        <Link
+                          href="/calculateur-allures/"
+                          className="inline-flex items-center justify-center gap-1.5 bg-black/5 hover:bg-black/10 text-black px-5 py-2.5 rounded-full text-[11px] font-mono-tech font-bold uppercase tracking-wider transition-colors text-center"
+                        >
+                          <Calculator className="w-3.5 h-3.5" />
+                          <span>Tester le calculateur d&apos;allures</span>
+                        </Link>
+                      </div>
                     </div>
-                  </div>
+                  </aside>
                 )}
-              </section>
+              </React.Fragment>
             ))}
 
             {/* Workout Box */}
@@ -477,6 +517,54 @@ export default async function BlogPostPage({ params }: PageProps) {
               </div>
             </div>
           )}
+
+          {/* Cross-Links to Money Pages (10 km, Semi-Marathon, Marathon) for SEO Siloing */}
+          <div className="mt-14 pt-10 border-t border-white/10">
+            <h2 className="text-base sm:text-lg font-mono-tech uppercase tracking-wider text-neutral-400 font-bold mb-4">
+              Nos Programmes de Coaching Personnalisés sur Nolio
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <Link
+                href="/coaching-10km/"
+                className="p-4 rounded-2xl bg-[#141412] border border-white/10 hover:border-[#d4ff00] transition-colors flex flex-col justify-between"
+              >
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">VMA &amp; AS10</span>
+                  <h3 className="text-sm font-black uppercase text-white mt-0.5">Coaching 10 km</h3>
+                  <p className="text-[11px] text-neutral-400 mt-1">Viser Sub-50&apos;, Sub-45&apos;, Sub-40&apos; ou Sub-35&apos;</p>
+                </div>
+                <span className="text-[11px] font-mono-tech text-white font-bold mt-3 inline-flex items-center gap-1">
+                  Découvrir la prépa 10 km →
+                </span>
+              </Link>
+              <Link
+                href="/coaching-semi-marathon/"
+                className="p-4 rounded-2xl bg-[#141412] border border-white/10 hover:border-[#d4ff00] transition-colors flex flex-col justify-between"
+              >
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">SEUIL SV2 &amp; TEMPO</span>
+                  <h3 className="text-sm font-black uppercase text-white mt-0.5">Prépa Semi-Marathon</h3>
+                  <p className="text-[11px] text-neutral-400 mt-1">Viser Sub-2h, Sub-1h45 ou Sub-1h30</p>
+                </div>
+                <span className="text-[11px] font-mono-tech text-white font-bold mt-3 inline-flex items-center gap-1">
+                  Découvrir la prépa Semi →
+                </span>
+              </Link>
+              <Link
+                href="/coaching-marathon/"
+                className="p-4 rounded-2xl bg-[#141412] border border-white/10 hover:border-[#d4ff00] transition-colors flex flex-col justify-between"
+              >
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">ANTI-MUR &amp; AS42</span>
+                  <h3 className="text-sm font-black uppercase text-white mt-0.5">Prépa Marathon</h3>
+                  <p className="text-[11px] text-neutral-400 mt-1">Viser Finisher, Sub-4h, Sub-3h30 ou Sub-3h</p>
+                </div>
+                <span className="text-[11px] font-mono-tech text-white font-bold mt-3 inline-flex items-center gap-1">
+                  Découvrir la prépa Marathon →
+                </span>
+              </Link>
+            </div>
+          </div>
         </article>
 
         {/* Free Audit Banner at bottom */}
@@ -485,6 +573,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       </main>
 
+      <StickyMobileBar />
       <Footer />
     </>
   );

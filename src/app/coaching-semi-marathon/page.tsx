@@ -187,24 +187,132 @@ export default function CoachingSemiMarathonPage() {
             </div>
           </Tilt3DCard>
 
-          {/* Guide Blog Recommandé */}
-          <div className="bg-[#181816] border border-[#d4ff00]/30 rounded-3xl p-6 sm:p-8 mb-24 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
-            <div>
-              <span className="text-[11px] font-mono-tech uppercase text-[#d4ff00] font-bold">GUIDE STRATÉGIQUE 21,1 KM</span>
-              <h3 className="text-xl sm:text-2xl font-black uppercase text-white mt-1">
-                Comment Définir et Tenir son Allure Cible le Jour J
-              </h3>
-              <p className="text-xs sm:text-sm text-neutral-400 font-mono-tech mt-1">
-                Pacing au kilomètre, fractionné au seuil et ravitaillements pour éviter l&apos;explosion au 16ème km.
+          {/* Tableau SEO des Allures Cibles Semi-Marathon (21,0975 km) */}
+          <div className="bg-[#141412] border border-[#2a2a26] rounded-3xl p-6 sm:p-10 mb-20 overflow-hidden shadow-2xl">
+            <div className="mb-6">
+              <span className="text-xs font-mono-tech uppercase tracking-widest text-[#d4ff00]">
+                REPÈRES CHRONOMÉTRIQUES &amp; PACING 21,1 KM
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-black uppercase text-white mt-1">
+                Tableau des Allures Semi-Marathon (Sub-2h, 1h45, 1h30, 1h20)
+              </h2>
+              <p className="text-xs sm:text-sm text-[#a0a095] font-mono-tech mt-2 max-w-3xl">
+                Repères d&apos;allure cible (AS21), temps de passage au 10e km et séances types de seuil programmées sur Nolio :
               </p>
             </div>
-            <Link
-              href="/blog/allure-cible-semi-marathon-pacing/"
-              className="flex-shrink-0 inline-flex items-center gap-2 bg-[#d4ff00] text-black px-5 py-3 rounded-full text-xs font-black uppercase tracking-wider hover:bg-white transition-colors shadow-lg"
-            >
-              <span>Lire le guide Semi</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </Link>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse font-mono-tech text-xs sm:text-sm">
+                <thead>
+                  <tr className="border-b border-white/15 text-[#d4ff00] uppercase text-[11px]">
+                    <th className="py-3.5 px-4">Objectif Semi</th>
+                    <th className="py-3.5 px-4">Allure Cible (AS21)</th>
+                    <th className="py-3.5 px-4">Vitesse</th>
+                    <th className="py-3.5 px-4">Passage au 10 km</th>
+                    <th className="py-3.5 px-4">Séance Clé Seuil / AS21</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/10 text-neutral-300">
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-2h00</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">5&apos;41&quot; /km</td>
+                    <td className="py-3.5 px-4">10,55 km/h</td>
+                    <td className="py-3.5 px-4">56&apos;50&quot;</td>
+                    <td className="py-3.5 px-4">3 × 2000m à 5&apos;40/km (r=2&apos;)</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-1h50</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">5&apos;12&quot; /km</td>
+                    <td className="py-3.5 px-4">11,51 km/h</td>
+                    <td className="py-3.5 px-4">52&apos;05&quot;</td>
+                    <td className="py-3.5 px-4">3 × 3000m à 5&apos;12/km (r=2&apos;)</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-1h45</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">4&apos;58&quot; /km</td>
+                    <td className="py-3.5 px-4">12,06 km/h</td>
+                    <td className="py-3.5 px-4">49&apos;45&quot;</td>
+                    <td className="py-3.5 px-4">3 × 3000m à 4&apos;58/km (r=2&apos;)</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-1h30</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">4&apos;15&quot; /km</td>
+                    <td className="py-3.5 px-4">14,07 km/h</td>
+                    <td className="py-3.5 px-4">42&apos;35&quot;</td>
+                    <td className="py-3.5 px-4">3 × 4000m à 4&apos;15/km (r=2&apos;)</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-1h20</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">3&apos;47&quot; /km</td>
+                    <td className="py-3.5 px-4">15,82 km/h</td>
+                    <td className="py-3.5 px-4">37&apos;55&quot;</td>
+                    <td className="py-3.5 px-4">3 × 5000m à 3&apos;47/km (r=2&apos;)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 3 Guides Techniques Semi-Marathon Recommandés */}
+          <div className="mb-24">
+            <h2 className="text-2xl sm:text-3xl font-black uppercase text-white mb-6">
+              Nos Dossiers Complets pour Préparer votre Semi-Marathon
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Link
+                href="/blog/allure-cible-semi-marathon-pacing/"
+                className="bg-[#181816] border border-[#d4ff00]/30 hover:border-[#d4ff00] rounded-3xl p-6 flex flex-col justify-between transition-all group"
+              >
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">PACING &amp; AS21</span>
+                  <h3 className="text-lg font-black uppercase text-white mt-1 group-hover:text-[#d4ff00] transition-colors">
+                    Allure Semi-Marathon : Calcul, Tableaux &amp; Pacing au Kilomètre
+                  </h3>
+                  <p className="text-xs text-neutral-400 font-mono-tech mt-2">
+                    Comment définir et tenir son allure cible sur 21,1 km sans exploser au 16e kilomètre.
+                  </p>
+                </div>
+                <span className="text-xs font-mono-tech font-bold text-white mt-4 inline-flex items-center gap-1">
+                  Lire le guide Allure Semi <ArrowUpRight className="w-3.5 h-3.5 text-[#d4ff00]" />
+                </span>
+              </Link>
+
+              <Link
+                href="/blog/semi-marathon-en-1h45-allure-plan/"
+                className="bg-[#181816] border border-white/10 hover:border-[#d4ff00] rounded-3xl p-6 flex flex-col justify-between transition-all group"
+              >
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">ALLURE 4&apos;58/KM</span>
+                  <h3 className="text-lg font-black uppercase text-white mt-1 group-hover:text-[#d4ff00] transition-colors">
+                    Semi-Marathon en 1h45 : Plan d&apos;Entraînement &amp; Séances Clés
+                  </h3>
+                  <p className="text-xs text-neutral-400 font-mono-tech mt-2">
+                    Passer sous la barre symbolique des 5&apos;00/km grâce au travail de seuil et aux sorties longues.
+                  </p>
+                </div>
+                <span className="text-xs font-mono-tech font-bold text-white mt-4 inline-flex items-center gap-1">
+                  Lire le guide Sub-1h45 <ArrowUpRight className="w-3.5 h-3.5 text-[#d4ff00]" />
+                </span>
+              </Link>
+
+              <Link
+                href="/blog/semi-marathon-moins-1h30-allure-seances-plan/"
+                className="bg-[#181816] border border-white/10 hover:border-[#d4ff00] rounded-3xl p-6 flex flex-col justify-between transition-all group"
+              >
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">ALLURE 4&apos;15/KM</span>
+                  <h3 className="text-lg font-black uppercase text-white mt-1 group-hover:text-[#d4ff00] transition-colors">
+                    Semi-Marathon en moins d&apos;1h30 : Allure, Plan &amp; Séances
+                  </h3>
+                  <p className="text-xs text-neutral-400 font-mono-tech mt-2">
+                    Le protocole complet pour casser les 90 minutes (VMA, seuil SV2 et blocs de 3 × 4000m).
+                  </p>
+                </div>
+                <span className="text-xs font-mono-tech font-bold text-white mt-4 inline-flex items-center gap-1">
+                  Lire le guide Sub-1h30 <ArrowUpRight className="w-3.5 h-3.5 text-[#d4ff00]" />
+                </span>
+              </Link>
+            </div>
           </div>
 
           {/* Pace Calculator Module */}

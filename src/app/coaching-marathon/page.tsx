@@ -187,31 +187,130 @@ export default function CoachingMarathonPage() {
             </div>
           </Tilt3DCard>
 
-          {/* Guides Blog Marathon Recommandés */}
-          <div className="bg-[#181816] border border-[#d4ff00]/30 rounded-3xl p-6 sm:p-8 mb-24 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
-            <div>
-              <span className="text-[11px] font-mono-tech uppercase text-[#d4ff00] font-bold">DOSSIER TECHNIQUE MARATHON</span>
-              <h3 className="text-xl sm:text-2xl font-black uppercase text-white mt-1">
-                Préparation Marathon Sub-3h &amp; Gestion de l&apos;Affûtage
-              </h3>
-              <p className="text-xs sm:text-sm text-neutral-400 font-mono-tech mt-1">
-                Retrouvez nos protocoles complets : allure spécifique AS42 (4&apos;15/km), nutrition anti-mur et gestion des 3 dernières semaines.
+          {/* Tableau SEO des Allures Cibles Marathon (42,195 km) */}
+          <div className="bg-[#141412] border border-[#2a2a26] rounded-3xl p-6 sm:p-10 mb-20 overflow-hidden shadow-2xl">
+            <div className="mb-6">
+              <span className="text-xs font-mono-tech uppercase tracking-widest text-[#d4ff00]">
+                REPÈRES CHRONOMÉTRIQUES &amp; PASSAGES 42,195 KM
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-black uppercase text-white mt-1">
+                Tableau des Allures Marathon (Sub-4h, 3h45, 3h30, 3h15, Sub-3h)
+              </h2>
+              <p className="text-xs sm:text-sm text-[#a0a095] font-mono-tech mt-2 max-w-3xl">
+                Repères d&apos;allure spécifique marathon (AS42), temps de passage au semi-marathon et sorties longues types sur Nolio :
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row items-center gap-3 flex-shrink-0">
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse font-mono-tech text-xs sm:text-sm">
+                <thead>
+                  <tr className="border-b border-white/15 text-[#d4ff00] uppercase text-[11px]">
+                    <th className="py-3.5 px-4">Objectif Marathon</th>
+                    <th className="py-3.5 px-4">Allure Cible (AS42)</th>
+                    <th className="py-3.5 px-4">Vitesse</th>
+                    <th className="py-3.5 px-4">Passage au Semi</th>
+                    <th className="py-3.5 px-4">Sortie Longue Spécifique</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/10 text-neutral-300">
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-4h00</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">5&apos;41&quot; /km</td>
+                    <td className="py-3.5 px-4">10,55 km/h</td>
+                    <td className="py-3.5 px-4">1h59&apos;50&quot;</td>
+                    <td className="py-3.5 px-4">2h15 dont 2 × 25&apos; à 5&apos;40/km</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-3h45</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">5&apos;19&quot; /km</td>
+                    <td className="py-3.5 px-4">11,25 km/h</td>
+                    <td className="py-3.5 px-4">1h52&apos;20&quot;</td>
+                    <td className="py-3.5 px-4">2h20 dont 3 × 4000m à 5&apos;19/km</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-3h30</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">4&apos;58&quot; /km</td>
+                    <td className="py-3.5 px-4">12,06 km/h</td>
+                    <td className="py-3.5 px-4">1h44&apos;55&quot;</td>
+                    <td className="py-3.5 px-4">28 km dont 3 × 5000m à 4&apos;58/km</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-3h15</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">4&apos;37&quot; /km</td>
+                    <td className="py-3.5 px-4">12,98 km/h</td>
+                    <td className="py-3.5 px-4">1h37&apos;25&quot;</td>
+                    <td className="py-3.5 px-4">30 km dont 2 × 7000m à 4&apos;37/km</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-3h00</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">4&apos;15&quot; /km</td>
+                    <td className="py-3.5 px-4">14,07 km/h</td>
+                    <td className="py-3.5 px-4">1h29&apos;50&quot;</td>
+                    <td className="py-3.5 px-4">32 km dont 3 × 6000m à 4&apos;15/km</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 3 Guides Techniques Marathon Recommandés */}
+          <div className="mb-24">
+            <h2 className="text-2xl sm:text-3xl font-black uppercase text-white mb-6">
+              Nos Dossiers Complets pour Réussir votre Marathon
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Link
+                href="/blog/marathon-en-3h30-allure-plan-entrainement/"
+                className="bg-[#181816] border border-[#d4ff00]/30 hover:border-[#d4ff00] rounded-3xl p-6 flex flex-col justify-between transition-all group"
+              >
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">ALLURE 4&apos;58/KM</span>
+                  <h3 className="text-lg font-black uppercase text-white mt-1 group-hover:text-[#d4ff00] transition-colors">
+                    Marathon en 3h30 : Allure, Plan d&apos;Entraînement &amp; Sorties Longues
+                  </h3>
+                  <p className="text-xs text-neutral-400 font-mono-tech mt-2">
+                    Passer sous la barre des 5&apos;00/km sur 42,195 km : volume hebdo, séances AS42 et nutrition anti-mur.
+                  </p>
+                </div>
+                <span className="text-xs font-mono-tech font-bold text-white mt-4 inline-flex items-center gap-1">
+                  Lire le guide Marathon 3h30 <ArrowUpRight className="w-3.5 h-3.5 text-[#d4ff00]" />
+                </span>
+              </Link>
+
               <Link
                 href="/blog/preparation-marathon-sub-3h-allure-as42/"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#d4ff00] text-black px-5 py-3 rounded-full text-xs font-black uppercase tracking-wider hover:bg-white transition-colors shadow-lg"
+                className="bg-[#181816] border border-white/10 hover:border-[#d4ff00] rounded-3xl p-6 flex flex-col justify-between transition-all group"
               >
-                <span>Guide Sub-3h</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">ALLURE 4&apos;15/KM</span>
+                  <h3 className="text-lg font-black uppercase text-white mt-1 group-hover:text-[#d4ff00] transition-colors">
+                    Prépa Marathon Sub-3h : Allure AS42, Séances Clés &amp; Pacing
+                  </h3>
+                  <p className="text-xs text-neutral-400 font-mono-tech mt-2">
+                    Les prérequis physiologiques (sub-1h25 au semi), sorties longues spécifiques et glucides/heure.
+                  </p>
+                </div>
+                <span className="text-xs font-mono-tech font-bold text-white mt-4 inline-flex items-center gap-1">
+                  Lire le guide Sub-3h <ArrowUpRight className="w-3.5 h-3.5 text-[#d4ff00]" />
+                </span>
               </Link>
+
               <Link
-                href="/blog/affutage-marathon-tapering-3-semaines/"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-5 py-3 rounded-full text-xs font-black uppercase tracking-wider transition-colors border border-white/10"
+                href="/blog/preparation-marathon-de-paris-2026-parcours-allures-plan/"
+                className="bg-[#181816] border border-white/10 hover:border-[#d4ff00] rounded-3xl p-6 flex flex-col justify-between transition-all group"
               >
-                <span>Affûtage 21j</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">PARCOURS &amp; STRATÉGIE</span>
+                  <h3 className="text-lg font-black uppercase text-white mt-1 group-hover:text-[#d4ff00] transition-colors">
+                    Préparation Marathon de Paris : Analyse du Parcours &amp; Plan
+                  </h3>
+                  <p className="text-xs text-neutral-400 font-mono-tech mt-2">
+                    Gérer le faux-plat de Bastille, les tunnels des quais et la relance du Bois de Boulogne.
+                  </p>
+                </div>
+                <span className="text-xs font-mono-tech font-bold text-white mt-4 inline-flex items-center gap-1">
+                  Lire le guide Marathon de Paris <ArrowUpRight className="w-3.5 h-3.5 text-[#d4ff00]" />
+                </span>
               </Link>
             </div>
           </div>

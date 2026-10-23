@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --webpack",
     "admin": "node scripts/admin-server.js",
+    "gsc": "node scripts/gsc-sync.js",
     "sitemap": "node scripts/generate-sitemap.js",
     "prebuild": "node scripts/generate-sitemap.js",
     "build": "next build",

@@ -187,24 +187,132 @@ export default function Coaching10kmPage() {
             </div>
           </Tilt3DCard>
 
-          {/* Guide Blog Recommandé */}
-          <div className="bg-[#181816] border border-[#d4ff00]/30 rounded-3xl p-6 sm:p-8 mb-24 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
-            <div>
-              <span className="text-[11px] font-mono-tech uppercase text-[#d4ff00] font-bold">GUIDE TECHNIQUE 10 KM</span>
-              <h3 className="text-xl sm:text-2xl font-black uppercase text-white mt-1">
-                Comment courir le 10 km en moins de 40 minutes : Méthode &amp; Séances
-              </h3>
-              <p className="text-xs sm:text-sm text-neutral-400 font-mono-tech mt-1">
-                Prérequis de VMA, blocs au seuil SV2 et stratégie de négative split décryptés par Vincent.
+          {/* Tableau SEO des Allures Cibles 10 km & Prérequis VMA (Featured Snippet Target) */}
+          <div className="bg-[#141412] border border-[#2a2a26] rounded-3xl p-6 sm:p-10 mb-20 overflow-hidden shadow-2xl">
+            <div className="mb-6">
+              <span className="text-xs font-mono-tech uppercase tracking-widest text-[#d4ff00]">
+                REPÈRES PHYSIOLOGIQUES &amp; ALLURES CIBLES 10 KM
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-black uppercase text-white mt-1">
+                Tableau des Allures 10 km (Sub-50&apos;, Sub-45&apos;, Sub-40&apos;, Sub-35&apos;)
+              </h2>
+              <p className="text-xs sm:text-sm text-[#a0a095] font-mono-tech mt-2 max-w-3xl">
+                Chaque objectif chronométrique sur 10 km exige une VMA minimale et une séance spécifique AS10 adaptée sur Nolio :
               </p>
             </div>
-            <Link
-              href="/blog/courir-10km-moins-40-minutes/"
-              className="flex-shrink-0 inline-flex items-center gap-2 bg-[#d4ff00] text-black px-5 py-3 rounded-full text-xs font-black uppercase tracking-wider hover:bg-white transition-colors shadow-lg"
-            >
-              <span>Lire le guide 10 km</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </Link>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse font-mono-tech text-xs sm:text-sm">
+                <thead>
+                  <tr className="border-b border-white/15 text-[#d4ff00] uppercase text-[11px]">
+                    <th className="py-3.5 px-4">Objectif 10 km</th>
+                    <th className="py-3.5 px-4">Allure Cible (AS10)</th>
+                    <th className="py-3.5 px-4">Vitesse</th>
+                    <th className="py-3.5 px-4">VMA Recommandée</th>
+                    <th className="py-3.5 px-4">Séance Clé Nolio</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/10 text-neutral-300">
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Moins de 55 min</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">5&apos;30&quot; /km</td>
+                    <td className="py-3.5 px-4">10,9 km/h</td>
+                    <td className="py-3.5 px-4">12,5 à 13,0 km/h</td>
+                    <td className="py-3.5 px-4">4 × 1000m à 5&apos;28/km (r=2&apos;)</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-50 min</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">5&apos;00&quot; /km</td>
+                    <td className="py-3.5 px-4">12,0 km/h</td>
+                    <td className="py-3.5 px-4">13,5 à 14,0 km/h</td>
+                    <td className="py-3.5 px-4">5 × 1000m à 4&apos;58/km (r=1&apos;30)</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-45 min</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">4&apos;30&quot; /km</td>
+                    <td className="py-3.5 px-4">13,3 km/h</td>
+                    <td className="py-3.5 px-4">15,0 à 15,5 km/h</td>
+                    <td className="py-3.5 px-4">5 × 1000m à 4&apos;28/km (r=1&apos;30)</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-40 min</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">4&apos;00&quot; /km</td>
+                    <td className="py-3.5 px-4">15,0 km/h</td>
+                    <td className="py-3.5 px-4">16,8 à 17,2 km/h</td>
+                    <td className="py-3.5 px-4">6 × 1000m à 3&apos;58/km (r=1&apos;15)</td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02]">
+                    <td className="py-3.5 px-4 font-black text-white">Sub-35 min</td>
+                    <td className="py-3.5 px-4 text-[#d4ff00] font-bold">3&apos;30&quot; /km</td>
+                    <td className="py-3.5 px-4">17,1 km/h</td>
+                    <td className="py-3.5 px-4">19,0 à 19,5 km/h</td>
+                    <td className="py-3.5 px-4">3 × 2000m + 1000m à 3&apos;28/km</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 3 Guides Techniques 10 km Recommandés */}
+          <div className="mb-24">
+            <h2 className="text-2xl sm:text-3xl font-black uppercase text-white mb-6">
+              Nos Dossiers Complets pour Préparer votre 10 km
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Link
+                href="/blog/courir-10km-moins-50-minutes-plan/"
+                className="bg-[#181816] border border-white/10 hover:border-[#d4ff00] rounded-3xl p-6 flex flex-col justify-between transition-all group"
+              >
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">ALLURE 5&apos;00/KM</span>
+                  <h3 className="text-lg font-black uppercase text-white mt-1 group-hover:text-[#d4ff00] transition-colors">
+                    Courir un 10 km en moins de 50 minutes : Plan &amp; Séances
+                  </h3>
+                  <p className="text-xs text-neutral-400 font-mono-tech mt-2">
+                    Structurer 3 séances par semaine, VMA requise et gestion de course pour passer sous les 50&apos;.
+                  </p>
+                </div>
+                <span className="text-xs font-mono-tech font-bold text-white mt-4 inline-flex items-center gap-1">
+                  Lire le guide Sub-50&apos; <ArrowUpRight className="w-3.5 h-3.5 text-[#d4ff00]" />
+                </span>
+              </Link>
+
+              <Link
+                href="/blog/courir-10km-moins-45-minutes-allure-plan/"
+                className="bg-[#181816] border border-white/10 hover:border-[#d4ff00] rounded-3xl p-6 flex flex-col justify-between transition-all group"
+              >
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">ALLURE 4&apos;30/KM</span>
+                  <h3 className="text-lg font-black uppercase text-white mt-1 group-hover:text-[#d4ff00] transition-colors">
+                    Courir le 10 km en moins de 45 minutes : Allure &amp; Plan
+                  </h3>
+                  <p className="text-xs text-neutral-400 font-mono-tech mt-2">
+                    Maîtriser l&apos;allure 4&apos;30/km (13,3 km/h), développer son seuil SV2 et réussir ses 5 × 1000m.
+                  </p>
+                </div>
+                <span className="text-xs font-mono-tech font-bold text-white mt-4 inline-flex items-center gap-1">
+                  Lire le guide Sub-45&apos; <ArrowUpRight className="w-3.5 h-3.5 text-[#d4ff00]" />
+                </span>
+              </Link>
+
+              <Link
+                href="/blog/courir-10km-moins-40-minutes/"
+                className="bg-[#181816] border border-[#d4ff00]/30 hover:border-[#d4ff00] rounded-3xl p-6 flex flex-col justify-between transition-all group"
+              >
+                <div>
+                  <span className="text-[10px] font-mono-tech uppercase text-[#d4ff00] font-bold">ALLURE 4&apos;00/KM</span>
+                  <h3 className="text-lg font-black uppercase text-white mt-1 group-hover:text-[#d4ff00] transition-colors">
+                    Courir le 10 km en moins de 40 minutes : Méthode &amp; Séances
+                  </h3>
+                  <p className="text-xs text-neutral-400 font-mono-tech mt-2">
+                    Prérequis VMA (16,8+ km/h), blocs au seuil anaérobie et stratégie de negative split.
+                  </p>
+                </div>
+                <span className="text-xs font-mono-tech font-bold text-white mt-4 inline-flex items-center gap-1">
+                  Lire le guide Sub-40&apos; <ArrowUpRight className="w-3.5 h-3.5 text-[#d4ff00]" />
+                </span>
+              </Link>
+            </div>
           </div>
 
           {/* Pace Calculator Module */}
