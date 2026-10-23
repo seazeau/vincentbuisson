@@ -1,11 +1,8 @@
 /**
  * Script de synchronisation directe Google Search Console -> Projet local
  * Zéro dépendance externe (utilise crypto + fetch natifs de Node.js).
- *
- * Configuration :
- * 1. Créez un compte de service Google Cloud et téléchargez la clé JSON à la racine sous le nom `gsc-key.json`.
- * 2. Ajoutez l'email du compte de service (`client_email` dans gsc-key.json) comme utilisateur "Lecteur" dans votre propriété Google Search Console.
- * 3. Lancez : npm run gsc
+ * Synchronise vincentbuisson.fr + tout l'écosystème (runpassion.fr, runvaucluse.fr)
+ * et soumet automatiquement leurs sitemaps respectifs.
  */
 
 const fs = require('fs');
@@ -13,8 +10,6 @@ const path = require('path');
 const crypto = require('crypto');
 
 const KEY_FILE = path.join(process.cwd(), 'gsc-key.json');
-const SITE_URL = process.env.GSC_SITE_URL || 'sc-domain:vincentbuisson.fr';
-const FALLBACK_SITE_URL = 'https://vincentbuisson.fr/';
 
 function base64url(input) {
   return Buffer.from(input)
@@ -64,7 +59,7 @@ async function getAccessToken(serviceAccount) {
   return data.access_token;
 }
 
-async function queryGSC(accessToken, siteUrl, dimensions, rowLimit = 100) {
+async function queryGSC(accessToken, siteUrl, dimensions, rowLimit = 250) {
   const endDate = new Date().toISOString().split('T')[0];
   const startDateObj = new Date();
   startDateObj.setDate(startDateObj.getDate() - 90);
@@ -93,15 +88,22 @@ async function queryGSC(accessToken, siteUrl, dimensions, rowLimit = 100) {
   return res.json();
 }
 
+async function submitSitemap(accessToken, siteUrl) {
+  const domain = siteUrl.replace('sc-domain:', '').replace(/^https?:\/\//, '').replace(/\/$/, '');
+  const sitemapUrl = `https://${domain}/sitemap.xml`;
+  const endpoint = `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/sitemaps/${encodeURIComponent(sitemapUrl)}`;
+  const res = await fetch(endpoint, {
+    method: 'PUT',
+    headers: { Authorization: `Bearer ${accessToken}` },
+  });
+  if (res.ok) {
+    console.log(`🚀 Sitemap soumis : ${sitemapUrl} (${siteUrl})`);
+  }
+}
+
 async function main() {
   if (!fs.existsSync(KEY_FILE)) {
-    console.log('\n⚠️  Fichier `gsc-key.json` introuvable à la racine du projet.');
-    console.log('Pour connecter Google Search Console en 2 minutes :');
-    console.log('1. Allez sur https://console.cloud.google.com/apis/library/searchconsole.googleapis.com et activez "Google Search Console API".');
-    console.log('2. Dans "Identifiants" (Credentials) -> "Créer des identifiants" -> "Compte de service" (Service Account).');
-    console.log('3. Créez une clé JSON pour ce compte de service et enregistrez-la sous le nom `gsc-key.json` à la racine du projet.');
-    console.log('4. Copiez l\'adresse `client_email` du fichier JSON et ajoutez-la dans Google Search Console (Paramètres -> Utilisateurs et autorisations -> Ajouter un utilisateur -> Lecteur).');
-    console.log('5. Relancez `npm run gsc` !\n');
+    console.error('❌ Fichier gsc-key.json introuvable à la racine du projet.');
     process.exit(1);
   }
 
@@ -109,7 +111,6 @@ async function main() {
   console.log(`🔑 Authentification avec ${serviceAccount.client_email}...`);
   const token = await getAccessToken(serviceAccount);
 
-  // List accessible sites first
   const sitesRes = await fetch('https://www.googleapis.com/webmasters/v3/sites', {
     headers: { Authorization: `Bearer ${token}` },
   });
@@ -120,45 +121,43 @@ async function main() {
     siteEntries.map((s) => `${s.siteUrl} (${s.permissionLevel})`).join(', ') || 'Aucune'
   );
 
-  let activeSiteUrl =
-    siteEntries.find((s) => s.siteUrl.includes('vincentbuisson.fr'))?.siteUrl || SITE_URL;
-  let queriesData;
+  const allSitesReport = {};
 
-  try {
-    queriesData = await queryGSC(token, activeSiteUrl, ['query'], 250);
-  } catch {
-    console.log(`ℹ️  Propriété domaine (${SITE_URL}) non trouvée, essai avec ${FALLBACK_SITE_URL}...`);
-    activeSiteUrl = FALLBACK_SITE_URL;
-    queriesData = await queryGSC(token, activeSiteUrl, ['query'], 250);
+  for (const entry of siteEntries) {
+    const siteUrl = entry.siteUrl;
+    const queriesData = await queryGSC(token, siteUrl, ['query'], 250);
+    const pagesData = await queryGSC(token, siteUrl, ['page'], 250);
+    const queryPageData = await queryGSC(token, siteUrl, ['query', 'page'], 500);
+
+    const queries = queriesData.rows || [];
+    const pages = pagesData.rows || [];
+    const totalClicks = pages.reduce((acc, r) => acc + (r.clicks || 0), 0);
+    const totalImpressions = pages.reduce((acc, r) => acc + (r.impressions || 0), 0);
+
+    allSitesReport[siteUrl] = {
+      totalClicks,
+      totalImpressions,
+      queriesCount: queries.length,
+      pagesCount: pages.length,
+      topQueries: queries.slice(0, 25),
+      topPages: pages.slice(0, 25),
+      queryPages: queryPageData.rows || [],
+    };
+
+    console.log(
+      `📊 ${siteUrl} : ${totalClicks} clics | ${totalImpressions} impressions | ${queries.length} requêtes | ${pages.length} pages`
+    );
+
+    await submitSitemap(token, siteUrl);
   }
-
-  const pagesData = await queryGSC(token, activeSiteUrl, ['page'], 250);
-  const queryPageData = await queryGSC(token, activeSiteUrl, ['query', 'page'], 500);
-
-  const report = {
-    syncedAt: new Date().toISOString(),
-    siteUrl: activeSiteUrl,
-    queries: queriesData.rows || [],
-    pages: pagesData.rows || [],
-    queryPages: queryPageData.rows || [],
-  };
 
   const outPath = path.join(process.cwd(), 'gsc-report.json');
-  fs.writeFileSync(outPath, JSON.stringify(report, null, 2), 'utf8');
-
-  console.log(`✅ Synchronisation Google Search Console réussie (${activeSiteUrl}) !`);
-  console.log(`📊 ${report.queries.length} requêtes et ${report.pages.length} pages sauvegardées dans gsc-report.json`);
-
-  // Automatically submit sitemap.xml to Google Search Console
-  const sitemapUrl = 'https://vincentbuisson.fr/sitemap.xml';
-  const sitemapEndpoint = `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(activeSiteUrl)}/sitemaps/${encodeURIComponent(sitemapUrl)}`;
-  const smRes = await fetch(sitemapEndpoint, {
-    method: 'PUT',
-    headers: { Authorization: `Bearer ${token}` },
-  });
-  if (smRes.ok) {
-    console.log(`🚀 Sitemap soumis automatiquement à Google Search Console : ${sitemapUrl}`);
-  }
+  fs.writeFileSync(
+    outPath,
+    JSON.stringify({ syncedAt: new Date().toISOString(), sites: allSitesReport }, null, 2),
+    'utf8'
+  );
+  console.log(`✅ Rapport complet multi-sites sauvegardé dans gsc-report.json`);
 }
 
 main().catch((err) => {
