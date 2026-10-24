@@ -168,14 +168,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* 4. Spécialités par Distance (10 km, Semi-Marathon, Marathon + Liens profonds SEO) */}
+        {/* 4. LES FORMULES DE COACHING (Tarifs 90€ et 70€/mois) */}
+        <PricingSection />
+
+        {/* 5. Spécialités par Distance (10 km, Semi-Marathon, Marathon + Liens profonds SEO) */}
         <DistancesSection />
 
-        {/* 5. Témoignages des Athlètes */}
+        {/* 6. Témoignages des Athlètes */}
         <TestimonialsSection />
-
-        {/* 6. LES FORMULES DE COACHING (Tarifs 90€ et 70€/mois) */}
-        <PricingSection />
 
         {/* 7. Calculateur d'Allures Interactif */}
         <section id="calculateur" className="py-14 sm:py-20 bg-[#0c0c0b] border-b border-[#222220] scroll-mt-24">

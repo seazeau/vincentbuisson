@@ -77,6 +77,7 @@ export default function DistancesSection() {
 
   return (
     <section id="distances" className="py-16 sm:py-24 bg-[#0e0e0c] relative overflow-hidden border-b border-white/5">
+      <span id="plans" className="sr-only" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-16">
