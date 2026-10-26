@@ -1532,5 +1532,377 @@
     ],
     "relatedServiceUrl": "/coaching-semi-marathon/",
     "relatedServiceLabel": "Découvrir la préparation semi-marathon"
+  },
+  {
+    "slug": "semi-marathon-en-1h40-allure-plan",
+    "title": "Semi-Marathon en 1h40 (4'44\"/km) : Plan d'Entraînement, VMA & Séances Clés",
+    "seoTitle": "Semi-Marathon en 1h40 (4'44/km) : Plan, Temps de Passage & VMA Requise",
+    "seoDescription": "Comment courir un semi-marathon en 1h40 (allure 4'44\"/km) ? Découvrez la VMA minimale requise (15 km/h), le tableau des temps de passage et les 3 séances clés AS21 sur Nolio.",
+    "category": "Semi-Marathon",
+    "readTime": "9 MIN",
+    "date": "27 OCTOBRE 2026",
+    "publishedAt": "2026-10-27",
+    "image": "/images/runner-1.webp",
+    "summary": "Franchir la barre d'1h40 au semi-marathon (4'44\" au kilomètre soit 12,66 km/h) est le palier intermédiaire décisif entre le coureur régulier et le coureur chevronné. Pour y parvenir, il ne suffit pas d'accumuler les kilomètres : il faut élever votre Seuil Anaérobie (SV2) et apprendre à soutenir 84 à 87 % de votre FCM sur 21,097 km sans faiblir au 16e kilomètre.",
+    "keyTakeaways": [
+      "Allure cible exacte : 4'44\"/km (12,66 km/h), avec un passage au 10e kilomètre en 47'20\".",
+      "Prérequis chronométriques : moins de 44'30\" sur 10 km et une VMA minimale de 15,0 km/h.",
+      "Architecture d'entraînement : 3 à 4 séances par semaine (38 à 48 km/semaine) avec 80 % de volume en Zone 2 stricte.",
+      "Séance reine : les blocs au seuil tempo (ex: 3 x 3000m ou 2 x 4000m à 4'42\"-4'44\"/km) avec récupération active.",
+      "Gestion nutritionnelle : un apport de 40 à 50g de glucides par heure dès le 8e km pour protéger la réserve glycogénique."
+    ],
+    "sections": [
+      {
+        "id": "1-niveau-requis-semi-1h40",
+        "heading": "1. Quel niveau et quelle VMA faut-il pour courir un semi-marathon en 1h40 ?",
+        "body": [
+          "Courir 21,097 km en 1h40 représente une vitesse moyenne de 12,66 km/h, soit une allure de 4'44\" par kilomètre. Sur le plan physiologique, le semi-marathon se dispute juste sous le Seuil Ventilatoire 2 (SV2). Si votre seuil anaérobie est mal calibré, les lactates s'accumulent prématurément et votre allure s'effondre après 65 minutes d'effort.",
+          "Avant de lancer une préparation spécifique de 8 à 10 semaines, voici les repères chronométriques qui valident votre faisabilité :",
+          "• Chrono de référence sur 10 km : Entre 43'30\" et 44'45\" (soit ~4'21\"/km à 4'28\"/km). Si votre record sur 10 km est supérieur à 46 minutes, concentrez-vous d'abord sur un cycle de développement VMA/Seuil.",
+          "• VMA minimale recommandée : 15,0 à 15,5 km/h. À 15,0 km/h de VMA, tenir 12,66 km/h revient à courir à 84,4 % de VMA, ce qui est le ratio idéal pour un athlète bien préparé.",
+          "• Volume hebdomadaire de départ : Courir régulièrement au moins 30 à 35 km par semaine répartis sur 3 séances depuis au moins 2 mois."
+        ],
+        "callout": {
+          "title": "L'œil du coach Vincent Buisson",
+          "text": "L'erreur majeure des coureurs bloqués à 1h42 ou 1h43 est de courir tous leurs footings à 5'00\"/km. Pour débloquer le 1h40, vos footings doivent être courus beaucoup plus lentement (entre 5'45\" et 6'05\"/km en Zone 2) afin de préserver votre fraîcheur nerveuse pour les séances de seuil."
+        }
+      },
+      {
+        "id": "2-temps-de-passage-semi-1h40",
+        "heading": "2. Tableau des temps de passage Semi-Marathon 1h40 (Allure 4'44\"/km)",
+        "body": [
+          "La clé pour réussir 1h40 est un pacing rigoureusement stable (Even Split) ou légèrement progressif (Negative Split). Partir à 4'30\"/km sur les 3 premiers kilomètres sous prétexte que le peloton va vite est la garantie absolue de terminer les 4 derniers kilomètres au ralenti à plus de 5'10\"/km.",
+          "• 5 km : 23'40\" (Fréquence cardiaque sous 82-83 % FCM, sensation de totale aisance)",
+          "• 10 km : 47'20\" (Premier gel glucidique + gorgée d'eau)",
+          "• 15 km : 1h11'00\" (Point de bascule : le cardio monte vers 87-88 % FCM, maintenez la cadence à 175-180 ppm)",
+          "• 20 km : 1h34'40\" (Si les jambes répondent, accélérez progressivement sur les 1 100 derniers mètres)",
+          "• 21,097 km : 1h39'45\" !"
+        ]
+      },
+      {
+        "id": "3-semaine-type-semi-1h40",
+        "heading": "3. Comment structurer sa semaine d'entraînement (3 ou 4 séances) ?",
+        "body": [
+          "Avec 3 séances ciblées par semaine (38 à 42 km), l'objectif 1h40 est tout à fait réalisable. Si vous disposez de 4 créneaux, ajoutez un footing de régénération de 45 minutes.",
+          "• Mardi — Seuil Anaérobie (SV2) ou VMA longue : Séances par intervalles à 4'25\"-4'35\"/km pour rendre l'allure de course (4'44\"/km) mécaniquement et psychologiquement confortable.",
+          "• Jeudi — Endurance Fondamentale (Zone 2) : 50' à 1h00 entre 5'45\" et 6'05\"/km strictly en aisance respiratoire, avec 4 lignes droites dynamiques en fin de séance pour travailler le pied.",
+          "• Dimanche — Sortie Longue avec Blocs Spécifiques AS21 (1h20 à 1h35) : La séance fondamentale où l'on habitue le métabolisme à tenir 4'44\"/km sur organisme pré-fatigué."
+        ]
+      },
+      {
+        "id": "4-seances-cles-semi-1h40",
+        "heading": "4. Les 3 séances clés spécifiques AS21 pour valider 1h40",
+        "body": [
+          "Voici la progression que j'intègre sur Nolio dans les 6 dernières semaines d'un plan 1h40 :",
+          "• 1. Le Tempo Progressif (S-6) : 20' échauffement + 3 x 2500m (Bloc 1 à 4'48\"/km, Bloc 2 à 4'44\"/km, Bloc 3 à 4'40\"/km) avec 2'00\" de récupération trot + 10' souple.",
+          "• 2. Le Bloc Dense Spécifique (S-4) : 25' échauffement + 3 x 3000m à 4'44\"/km (récupération 2'00\" trot lent) + 10' retour au calme. Soit 9 km cumulés à l'allure exacte de la course.",
+          "• 3. La Sortie Longue Test (S-2) : 1h30 au total incluant 45' en Zone 2 + 2 x 4000m à 4'44\"/km (avec 1000m actif à 5'25\"/km entre les deux) + 10' retour au calme."
+        ]
+      }
+    ],
+    "workoutExample": {
+      "title": "Séance Test AS21 Spécifique 1h40 (3 x 3000m à 4'44\"/km)",
+      "warmup": "20 minutes en Endurance Fondamentale souple (6'00\"/km) + gammes dynamiques (talons-fesses, montées de genoux) et 3 accélérations progressives de 80m.",
+      "mainSet": "3 x 3000m en 14'12\" (allure exacte 4'44\"/km) avec récupération de 2'00\" en trottinant très lentement.",
+      "cooldown": "10 minutes de footing de retour au calme à 6'15\"/km pour relâcher les ischios et les mollets.",
+      "coachTips": "Le premier 3000m doit passer sans aucune dette d'oxygène. Si votre fréquence cardiaque dépasse 88 % FCM dès le premier bloc, ajustez votre cible vers 1h42-1h43."
+    },
+    "faqs": [
+      {
+        "question": "Quelle est la différence d'entraînement entre 1h45 et 1h40 au semi ?",
+        "answer": "Pour passer de 1h45 (4'58\"/km) à 1h40 (4'44\"/km), le facteur limitant est la puissance au seuil anaérobie (SV2). Il ne suffit plus de faire de longs footings : il faut consacrer 1 séance par semaine à des fractions soutenues (1000m à 3000m) courues entre 4'25\" et 4'40\"/km pour élever la clairance des lactates."
+      },
+      {
+        "question": "Faut-il consommer des gels énergétiques sur semi-marathon en 1h40 ?",
+        "answer": "Oui. À 12,7 km/h, un effort d'1h40 consomme une grande part de vos réserves de glycogène. Absorber un gel énergétique vers le 8e-9e km et un second vers le 15e km maintient la glycémie stable et évite la baisse de tonus musculaire dans le dernier tiers de la course."
+      }
+    ],
+    "relatedSlugs": [
+      "semi-marathon-en-1h45-allure-plan",
+      "semi-marathon-moins-1h30-allure-seances-plan",
+      "allure-cible-semi-marathon-pacing",
+      "seuil-lactique-course-a-pied-sv1-sv2"
+    ],
+    "relatedServiceUrl": "/coaching-semi-marathon/",
+    "relatedServiceLabel": "Découvrir le Coaching Semi-Marathon sur-mesure"
+  },
+  {
+    "slug": "marathon-en-3h45-allure-plan-entrainement",
+    "title": "Marathon en 3h45 (5'20\"/km) : Allure, Plan d'Entraînement et Stratégie",
+    "seoTitle": "Marathon en 3h45 (Allure 5'20/km) : Plan, Temps de Passage & VMA",
+    "seoDescription": "Comment courir un marathon en 3h45 (allure 5'20\"/km) ? Prérequis sur 10 km et semi, tableau des temps de passage, sorties longues et séances clés AS42.",
+    "category": "Marathon",
+    "readTime": "10 MIN",
+    "date": "30 OCTOBRE 2026",
+    "publishedAt": "2026-10-30",
+    "image": "/images/hero-race-sharp.webp",
+    "summary": "Boucler un marathon en 3h45 demande de tenir une vitesse moyenne de 11,25 km/h, soit une allure métronome de 5'20\" par kilomètre pendant 42,195 km. Découvrez comment construire la caisse aérobie et l'endurance musculaire indispensables pour franchir la ligne d'arrivée avec le sourire et sans heurter le mur.",
+    "keyTakeaways": [
+      "Allure cible marathon : 5'20\"/km (11,25 km/h) avec un passage au semi-marathon en 1h52'25\".",
+      "Prérequis recommandés : un 10 km couru en moins de 48'00\" et un semi-marathon validé en moins de 1h47'00\".",
+      "VMA minimale requise : 13,8 à 14,5 km/h (l'allure marathon représente 78 à 81 % de votre VMA).",
+      "Sorties longues progressives plafonnées à 2h15-2h20 (environ 24-26 km) avec blocs AS42 intégrés.",
+      "Nutrition obligatoire : 45 à 60 g de glucides par heure dès la 30e minute de course."
+    ],
+    "sections": [
+      {
+        "id": "1-prerequis-marathon-3h45",
+        "heading": "1. Quels sont les prérequis pour viser 3h45 au marathon (5'20\"/km) ?",
+        "body": [
+          "Courir un marathon en 3h45 correspond à une allure de 5'20\" par kilomètre. Pour réussir cet objectif, la VMA pure n'est pas l'élément déterminant : ce qui compte en premier lieu est votre indice d'endurance aérobie, votre capacité à utiliser les lipides à l'effort et la robustesse mécanique de vos quadriceps et mollets face aux chocs répétés.",
+          "Voici les repères chronométriques recommandés avant d'attaquer une préparation spécifique de 12 semaines :",
+          "• Chrono de référence sur Semi-Marathon : Entre 1h44'00\" et 1h47'00\" (soit ~4'56\"/km à 5'04\"/km). Si votre semi est supérieur à 1h50, votre marge de manœuvre sur marathon sera trop mince.",
+          "• Chrono de référence sur 10 km : Entre 46'30\" et 48'30\" (soit ~4'39\"/km à 4'51\"/km).",
+          "• VMA estimée : 13,8 km/h à 14,5 km/h minimum.",
+          "• Base kilométrique : Avoir couru 30 à 40 km par semaine de façon régulière au cours des 3 derniers mois."
+        ],
+        "callout": {
+          "title": "L'œil du coach Vincent Buisson",
+          "text": "Ne préparez pas un marathon en 3h45 si votre record sur semi-marathon est de 1h52. Vous risqueriez de courir votre marathon au-dessus de votre seuil aérobie (SV1), ce qui provoque l'épuisement total du glycogène avant le 30e kilomètre."
+        }
+      },
+      {
+        "id": "2-temps-de-passage-marathon-3h45",
+        "heading": "2. Tableau des temps de passage Marathon 3h45 (5'20\"/km)",
+        "body": [
+          "Sur marathon, chaque seconde gagnée trop vite dans les 15 premiers kilomètres coûte deux minutes dans les 10 derniers. Respectez ce découpage kilométrique à la lettre :",
+          "• 5 km : 26'40\" (Fréquence cardiaque stabilisée sous 78-80 % FCM, aisance totale)",
+          "• 10 km : 53'20\" (Premier gel glucidique + verre d'eau au ravitaillement)",
+          "• 15 km : 1h20'00\"",
+          "• Semi-Marathon (21,1 km) : 1h52'25\" à 1h52'45\" (Even Split parfait)",
+          "• 30 km : 2h40'00\" (Le véritable marathon commence : relâchez les épaules, surveillez la cadence)",
+          "• 35 km : 3h06'40\" (Maintenez la concentration mentale, chaque kilomètre compte)",
+          "• 42,195 km : 3h44'50\" !"
+        ]
+      },
+      {
+        "id": "3-volume-hebdomadaire-3h45",
+        "heading": "3. Volume hebdomadaire et structure de l'entraînement",
+        "body": [
+          "Pour 3h45, une programmation de 3 à 4 séances par semaine (40 à 55 km hebdomadaires au pic de la préparation) est idéale :",
+          "• Footing 1 — Endurance Fondamentale (45' à 55') : Couru entre 6'15\"/km et 6'40\"/km en Zone 2 stricte (< 75 % FCM).",
+          "• Séance 2 — Seuil Aérobie / AS21 : Pour habituer l'organisme à des allures plus dynamiques (entre 4'55\" et 5'05\"/km sur des fractions de 1500m à 3000m).",
+          "• Séance 3 (Optionnelle) — Récupération active ou Footing facile (40') ou 1h de vélo en moulinant.",
+          "• Séance 4 — La Sortie Longue Dominicale avec Blocs AS42 (1h45 à 2h20) : C'est la clé de voûte de votre préparation."
+        ]
+      },
+      {
+        "id": "4-seances-cles-as42-3h45",
+        "heading": "4. Les 3 séances clés spécifiques AS42 (5'20\"/km)",
+        "body": [
+          "Intégrez ces séances spécifiques au cours de vos 8 dernières semaines de préparation :",
+          "• 1. L'assimilation AS42 (S-7) : 25' échauffement + 3 x 3000m à 5'20\"/km (récupération 3'00\" trot lent) + 10' retour au calme.",
+          "• 2. La Sortie Longue à Blocs Cumulés (S-5) : 45' en Zone 2 (6'25\"/km) + 2 x 5000m à 5'20\"/km (avec 1000m actif à 6'00\"/km entre les blocs) + 15' souple. Total : ~22 km.",
+          "• 3. La Répétition Générale (S-3) : 2h10 comprenant 50' en Zone 2 + 10 km continus à 5'20\"/km avec test complet de votre tenue, de vos chaussures et de votre plan de gels."
+        ]
+      }
+    ],
+    "workoutExample": {
+      "title": "Sortie Longue Spécifique Marathon 3h45 (S-4)",
+      "warmup": "45 minutes en Endurance Fondamentale souple (6'25\"-6'35\"/km, FC < 75 % FCM).",
+      "mainSet": "3 x 4000m à 5'20\"/km (allure cible marathon) avec 1000m de récupération active à 6'05\"/km entre chaque bloc. Prise d'un gel énergétique au début du 1er et du 3e bloc.",
+      "cooldown": "10 minutes de trot très lent (6'45\"/km) pour détendre la chaîne postérieure.",
+      "coachTips": "Ne courez pas vos blocs en 5'05\"/km sous prétexte que vous êtes en forme ! Sur marathon, la discipline d'allure est la seule garantie de ne pas exploser après le 30e kilomètre."
+    },
+    "faqs": [
+      {
+        "question": "Faut-il dépasser 30 km à l'entraînement pour viser 3h45 ?",
+        "answer": "Absolument pas. À 6'20\"/km en footing, courir 30 km prendrait plus de 3 heures d'effort continu, générant des microlésions musculaires dont la récupération prendrait 2 à 3 semaines. Plafonnez votre sortie longue à 2h15 - 2h20 (environ 24 à 26 km max)."
+      },
+      {
+        "question": "Quelle stratégie de ravitaillement adopter pour 3h45 ?",
+        "answer": "Un marathon en 3h45 dure 225 minutes : vous devez consommer entre 45 et 60 g de glucides par heure (soit 1 gel toutes les 40-45 minutes) accompagné de 150 à 200 ml d'eau à chaque poste de ravitaillement."
+      }
+    ],
+    "relatedSlugs": [
+      "marathon-en-3h30-allure-plan-entrainement",
+      "eviter-le-mur-du-marathon-nutrition-allure",
+      "sortie-longue-marathon-duree-blocs-allure",
+      "preparation-marathon-sub-3h-allure-as42"
+    ],
+    "relatedServiceUrl": "/coaching-marathon/",
+    "relatedServiceLabel": "Découvrir le Coaching Marathon sur-mesure"
+  },
+  {
+    "slug": "ravitaillement-marathon-gels-glucides-par-heure",
+    "title": "Ravitaillement Marathon : Combien de Gels et de Glucides par Heure pour Éviter le Mur ?",
+    "seoTitle": "Ravitaillement Marathon : Combien de Glucides et Gels par Heure ?",
+    "seoDescription": "Guide complet de nutrition et ravitaillement marathon : calcul des glucides par heure (40g, 60g ou 90g), plan de prise des gels, hydratation et protocole anti-mur.",
+    "category": "Marathon",
+    "readTime": "8 MIN",
+    "date": "03 NOVEMBRE 2026",
+    "publishedAt": "2026-11-03",
+    "image": "/images/hero-race-sharp.webp",
+    "summary": "Le célèbre « mur du marathon » au 32e kilomètre n'est pas une fatalité : c'est dans 90 % des cas une panne sèche de glycogène hépatique et musculaire. Découvrez le protocole nutritionnel précis pour alimenter votre moteur en continu avec la bonne dose de glucides et d'électrolytes sans troubles digestifs.",
+    "keyTakeaways": [
+      "Les réserves de glycogène stockées dans le foie et les muscles ne dépassent pas 90 à 100 minutes d'effort continu.",
+      "Cible nutritionnelle recommandée : 50 à 65 g de glucides par heure pour un coureur amateur (jusqu'à 90 g/h pour les coureurs d'élite entraînés).",
+      "Rapport glucose/fructose 2:1 pour saturer les transporteurs intestinaux SGLT1 et GLUT5 sans saturation gastrique.",
+      "Hydratation : 400 à 600 ml d'eau par heure enrichie en sodium (400 à 600 mg de sodium/litre).",
+      "Le Gut Training : entraînez votre estomac à assimiler les gels lors de vos sorties longues du dimanche matin."
+    ],
+    "sections": [
+      {
+        "id": "1-pourquoi-le-mur-arrive",
+        "heading": "1. Pourquoi le mur du 32e km arrive-t-il ? (La réalité physiologique)",
+        "body": [
+          "Le corps humain ne peut stocker qu'environ 450 à 500 grammes de glycogène (environ 2 000 kcal), répartis entre les muscles squelettiques et le foie. Or, courir un marathon demande entre 2 800 et 3 600 kcal selon votre poids et votre économie de course.",
+          "Dès que vos réserves de glycogène tombent à un niveau critique, votre organisme est contraint de basculer exclusivement sur la combustion des lipides. Problème : l'oxydation des graisses nécessite 10 % d'oxygène en plus pour fournir la même quantité d'énergie. Résultat : votre allure chute brutalement de 30 à 60 secondes par kilomètre, c'est le mur.",
+          "Pour éviter ce blocage, vous devez apporter des glucides exogènes dès le début de la course, avant même de ressentir la moindre fatigue."
+        ],
+        "callout": {
+          "title": "L'œil du coach Vincent Buisson",
+          "text": "Attendre d'avoir faim ou soif sur marathon pour se ravitailler est la garantie d'exploser. Le glycogène se gère en flux tendu dès les premières foulées."
+        }
+      },
+      {
+        "id": "2-combien-de-glucides-par-heure",
+        "heading": "2. Combien de grammes de glucides par heure selon votre chrono cible ?",
+        "body": [
+          "La capacité d'absorption de votre intestin détermine directement la quantité de carburant disponible :",
+          "• Objectif Marathon en 4h00 à 4h30 : 40 à 50 g de glucides par heure (soit 1 gel de 25-30g toutes les 35-40 minutes).",
+          "• Objectif Marathon en 3h15 à 3h45 : 50 à 65 g de glucides par heure (soit 1 gel riche de 30-35g toutes les 30 minutes).",
+          "• Objectif Marathon Sub-3h : 60 à 80 g de glucides par heure (utilisation combinée de gels énergétiques et de boisson d'effort isotonique).",
+          "Privilégiez les gels associant maltodextrine et fructose : cette combinaison utilise deux transporteurs intestinaux différents (SGLT1 pour le glucose et GLUT5 pour le fructose), ce qui accélère l'absorption et divise par deux les risques de crampes d'estomac."
+        ]
+      },
+      {
+        "id": "3-plan-de-ravitaillement-type",
+        "heading": "3. Le plan de ravitaillement marathon type kilomètre par kilomètre",
+        "body": [
+          "Voici la stratégie que nous validons avec les athlètes sur Nolio :",
+          "• 15 minutes avant le départ : 2 à 3 gorgées d'eau + 1/2 gel d'attente ou pâte de fruits pour stabiliser la glycémie.",
+          "• Km 7 : 1er gel + 2 ou 3 bonnes gorgées d'eau au ravitaillement officiel.",
+          "• Km 14 : 2e gel énergétique + eau.",
+          "• Km 21 (Semi) : 3e gel énergétique + eau + une pincée de sel si la température dépasse 15°C.",
+          "• Km 28 : 4e gel énergétique (moment critique avant la zone du mur).",
+          "• Km 34 : 5e gel (idéalement enrichi en caféine pour stimuler le système nerveux central).",
+          "• Km 38 : Dernier coup de fouet glucidique si nécessaire."
+        ]
+      },
+      {
+        "id": "4-gut-training-entrainer-estomac",
+        "heading": "4. Le « Gut Training » : Comment habituer son estomac à l'entraînement",
+        "body": [
+          "On n'innove jamais le jour J. L'estomac et les intestins sont des organes qui s'adaptent à l'entraînement au même titre que le cœur et les jambes.",
+          "Durant les 8 dernières semaines de préparation, testez votre protocole de gels sur TOUTES vos sorties longues du dimanche matin. Notez les marques qui passent bien (Maurten, Näak, Overstim.s, Ta Energy, Gu) et éliminez immédiatement celles qui créent des inconforts digestifs."
+        ]
+      }
+    ],
+    "workoutExample": {
+      "title": "Séance Sortie Longue avec Répétition Nutritionnelle (2h00)",
+      "warmup": "30 minutes en Zone 2 souple.",
+      "mainSet": "Prise obligatoire d'un gel énergétique à la 30e, 60e et 90e minute avec 150 ml d'eau à chaque prise, tout en courant des blocs à allure marathon (AS42).",
+      "cooldown": "15 minutes de retour au calme très lent.",
+      "coachTips": "Profitez de cette séance pour tester le portage de vos gels (ceinture porte-dossard, short à poches compressives). Ne comptez jamais sur les gels distribués au hasard sur la course."
+    },
+    "faqs": [
+      {
+        "question": "Faut-il boire de l'eau ou de la boisson énergétique avec un gel ?",
+        "answer": "Toujours de l'eau pure ! Un gel énergétique est déjà hypertonique (très concentré en glucides). Si vous l'avalez avec une boisson sucrée, vous provoquez un appel d'eau massif dans l'estomac, ce qui entraîne ballonnements, crampes d'estomac et diarrhées en course."
+      },
+      {
+        "question": "Combien d'eau faut-il boire par ravitaillement ?",
+        "answer": "Buvez environ 120 à 180 ml (soit 3 à 4 bonnes gorgées) à chaque ravitaillement tous les 5 kilomètres. Boire trop d'un coup d'eau pure sans sodium risque de provoquer une hyponatrémie (dilution du sang en sel)."
+      }
+    ],
+    "relatedSlugs": [
+      "eviter-le-mur-du-marathon-nutrition-allure",
+      "marathon-en-3h30-allure-plan-entrainement",
+      "marathon-en-3h45-allure-plan-entrainement",
+      "sortie-longue-marathon-duree-blocs-allure"
+    ],
+    "relatedServiceUrl": "/coaching-marathon/",
+    "relatedServiceLabel": "Découvrir le Coaching Marathon sur-mesure"
+  },
+  {
+    "slug": "seances-seuil-lactique-sv2-running-exemples",
+    "title": "Séances au Seuil Lactique (SV2) : Les 4 Formats Indispensables pour Progresser en Course à Pied",
+    "seoTitle": "Séances au Seuil Lactique (SV2) : Exemples, Allures & Récupérations",
+    "seoDescription": "Quelles sont les meilleures séances au seuil lactique (SV2) ? Exemples concrets (fractions de 1000m, 2000m, tempo continu), calcul de l'allure et programmation Nolio.",
+    "category": "Physiologie & Allures",
+    "readTime": "9 MIN",
+    "date": "06 NOVEMBRE 2026",
+    "publishedAt": "2026-11-06",
+    "image": "/images/runner-1.webp",
+    "summary": "Le Seuil Anaérobie (SV2 ou seuil lactique) est le prédicteur n°1 de votre performance sur 10 km, semi-marathon et marathon. Travailler à cette intensité permet à votre organisme de recycler les ions hydrogène et de repousser l'acidose musculaire. Voici les 4 séances clés indispensables à intégrer dans votre programmation.",
+    "keyTakeaways": [
+      "Le Seuil Anaérobie (SV2) correspond à l'allure que vous êtes capable de maintenir entre 45 et 60 minutes à bloc (environ 85 à 90 % FCM).",
+      "L'objectif du travail au seuil n'est pas de s'épuiser, mais de stimuler la clairance des lactates par les fibres musculaires lentes et le myocarde.",
+      "Format n°1 : Les fractions moyennes (ex: 4 à 5 x 1500m ou 2000m) avec récupération courte (1'30\" trot).",
+      "Format n°2 : Les blocs longs (ex: 3 x 3000m ou 2 x 4000m) pour la préparation semi et marathon.",
+      "Format n°3 : Le tempo continu de 20 à 30 minutes au seuil.",
+      "Ne confondez pas le seuil avec la VMA : au seuil, vous devez toujours terminer votre dernière répétition avec la sensation de pouvoir en faire une de plus."
+    ],
+    "sections": [
+      {
+        "id": "1-quest-ce-que-le-seuil-sv2",
+        "heading": "1. Qu'est-ce que le Seuil Anaérobie (SV2) et pourquoi est-il si déterminant ?",
+        "body": [
+          "Le Seuil Ventilatoire 2 (SV2), souvent appelé « seuil lactique » ou seuil anaérobie, correspond au point d'inflexion physiologique où la production d'acide lactique et d'ions H+ dépasse les capacités de recyclage de votre organisme. Au-delà de cette intensité, l'acidose s'installe rapidement dans les cellules musculaires et vous contraint à ralentir en quelques minutes.",
+          "Pour un coureur régulier, le SV2 se situe généralement entre 85 % et 90 % de la Fréquence Cardiaque Maximale (FCM), soit entre 82 % et 88 % de la VMA.",
+          "En élevant votre seuil grâce à des séances bien dosées, vous permettez à votre corps de courir plus vite pour un même niveau de fatigue et une même dépense d'énergie."
+        ],
+        "callout": {
+          "title": "L'œil du coach Vincent Buisson",
+          "text": "Trop de coureurs courent leurs séances de seuil comme des séances de VMA, en terminant les mains sur les genoux. Une vraie séance de seuil se termine propre, avec du contrôle et une foulée toujours dynamique."
+        }
+      },
+      {
+        "id": "2-comment-calculer-allure-seuil",
+        "heading": "2. Comment calculer précisément votre allure au seuil (SV2) ?",
+        "body": [
+          "Il existe trois manières fiables de déterminer votre allure cible au seuil :",
+          "• Méthode 1 — Par votre chrono sur 10 km : Pour un coureur courant le 10 km entre 40 et 55 minutes, l'allure de seuil (SV2) correspond quasiment à votre allure 10 km (AS10) ou 3 à 5 secondes plus lente par kilomètre.",
+          "• Méthode 2 — Par la Fréquence Cardiaque : Maintenez votre cardio entre 86 % et 89 % de votre FCM (ou 82-86 % de votre Fréquence Cardiaque de Réserve selon Karvonen).",
+          "• Méthode 3 — Le test terrain de 30 minutes (Test de Joe Friel) : Après un bon échauffement, courez 30 minutes seul à bloc. La fréquence cardiaque moyenne des 20 dernières minutes correspond exactement à votre fréquence cardiaque de seuil lactique."
+        ]
+      },
+      {
+        "id": "3-les-4-formats-de-seances-seuil",
+        "heading": "3. Les 4 formats de séances indispensables au Seuil SV2",
+        "body": [
+          "Voici les 4 séances que je programme sur Nolio selon la distance préparée :",
+          "• 1. Les Fractions Courtes au Seuil (Idéal 10 km) : 20' échauffement + 6 x 1000m à allure seuil avec 1'15\" de récupération trottinée très lente + 10' souple.",
+          "• 2. Les Fractions Moyennes (Idéal 10 km & Semi) : 20' échauffement + 4 x 2000m (récupération 1'30\" trot) + 10' retour au calme.",
+          "• 3. Les Blocs Longs (Idéal Semi & Marathon) : 25' échauffement + 3 x 3000m (récupération 2'00\" trot) + 10' souple. Volume total au seuil : 9 km.",
+          "• 4. Le Tempo Continu (Idéal foncier) : 20' échauffement + 25 minutes continues stabilisées à 86-88 % FCM + 10' retour au calme."
+        ]
+      },
+      {
+        "id": "4-erreurs-a-eviter-seuil",
+        "heading": "4. Les 3 erreurs fatales à éviter sur vos séances de seuil",
+        "body": [
+          "• Erreur n°1 : Récupérer à l'arrêt. La récupération au seuil doit TOUJOURS se faire en trottinant très lentement pour forcer le cœur et les muscles à oxyder le lactate circulant.",
+          "• Erreur n°2 : Partir trop vite sur la première répétition. Le premier bloc doit vous donner l'impression d'être en sous-régime.",
+          "• Erreur n°3 : En faire trop souvent. Une seule séance de qualité au seuil par semaine suffit amplement lorsqu'elle est entourée de footings souples en endurance fondamentale."
+        ]
+      }
+    ],
+    "workoutExample": {
+      "title": "Séance de Référence au Seuil Anaérobie (4 x 2000m SV2)",
+      "warmup": "20 minutes en Endurance Fondamentale (Zone 2) très progressive + éducatifs de pied et 3 accélérations progressives sur 80m.",
+      "mainSet": "4 x 2000m à votre allure seuil (environ 88% FCM) avec 1'30\" de trot très lent entre chaque répétition.",
+      "cooldown": "10 minutes de footing de décrassage à très basse intensité.",
+      "coachTips": "Chaque répétition de 2000m doit être réalisée dans le même chrono à 2 secondes près. Si le 4e bloc est 15 secondes plus lent que le 1er, vous êtes parti trop vite."
+    },
+    "faqs": [
+      {
+        "question": "Quelle est la différence entre SV1 et SV2 ?",
+        "answer": "Le SV1 (Seuil Aérobie) marque la fin de l'endurance fondamentale et le début de l'allure marathon (vers 75-80% FCM). Le SV2 (Seuil Anaérobie) marque la limite supérieure de l'effort durable (vers 85-90% FCM) au-delà de laquelle l'acidité musculaire devient incontrôlable."
+      },
+      {
+        "question": "À quelle fréquence placer une séance de seuil dans son plan ?",
+        "answer": "Une séance au seuil par semaine est le rythme optimal pour la grande majorité des coureurs préparant un 10 km, un semi ou un marathon, alternée certaines semaines avec du travail d'allure spécifique ou de VMA."
+      }
+    ],
+    "relatedSlugs": [
+      "seuil-lactique-course-a-pied-sv1-sv2",
+      "endurance-fondamentale-zone-2-running",
+      "calculer-zones-frequence-cardiaque-running-karvonen",
+      "semi-marathon-en-1h45-allure-plan"
+    ],
+    "relatedServiceUrl": "/calculateur-allures/",
+    "relatedServiceLabel": "Calculer vos allures au seuil sur le calculateur"
   }
 ]
