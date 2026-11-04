@@ -1904,5 +1904,101 @@
     ],
     "relatedServiceUrl": "/calculateur-allures/",
     "relatedServiceLabel": "Calculer vos allures au seuil sur le calculateur"
+  },
+  {
+    "slug": "analyse-course-andreas-almgren-marathon-new-york-2026-strava",
+    "title": "Andreas Almgren au Marathon de New York (2h06'01\") : Analyse Strava, Negative Split et Ratio d'Allure Semi",
+    "seoTitle": "Analyse Andreas Almgren Marathon de New York 2026 (2h06'01) : Pointages Officiels & Ratio Allure Semi",
+    "seoDescription": "Décryptage complet de la victoire d'Andreas Almgren au Marathon de New York 2026 en 2h06'01\" : pointages officiels NYRR, negative split (1h04'04 / 1h01'57), attaque en 14'26 au 35e km et comparaison en % d'allure semi-marathon (58'06).",
+    "category": "Marathon",
+    "readTime": "8 MIN",
+    "date": "4 NOVEMBRE 2026",
+    "publishedAt": "2026-11-04",
+    "image": "/images/almgren-nyc-2026.png",
+    "summary": "Pour le tout premier marathon de sa carrière, le Suédois Andreas Almgren a remporté le mythique Marathon de New York en 2h06'01\". Derrière sa publication Strava devenue virale se cache une démonstration tactique et mathématique fascinante : un premier semi couru à 90,7 % de son allure semi-marathon (1h04'04 contre un record d'Europe en 58'06), suivi d'un second semi en 1h01'57\" et d'un 5 km dévastateur en 14'26\" entre le 35e et le 40e kilomètre.",
+    "keyTakeaways": [
+      "Chrono final : 2h06'01\" (2'59\"/km de moyenne) dès son premier marathon, sur le parcours vallonné et sans lièvres de New York.",
+      "Un Negative Split d'école : 1er semi en 1h04'04\" (3'02\"/km) suivi d'un 2e semi supersonique en 1h01'57\" (2'56\"/km), soit 2'07\" plus rapide sur la seconde moitié.",
+      "Les 5 pointages officiels NYRR : 30'52\" au 10 km, 1h04'04\" au semi, 1h45'33\" au 35e km, puis un 5 km d'anthologie en 14'26\" (2'53\"/km) entre le 35e et le 40e km.",
+      "La clé en % d'allure semi-marathon : avec un record d'Europe du semi en 58'06\" (2'45\"/km = 100 %), Almgren a couru la première moitié à seulement 90,7 % de son allure semi (+17 sec/km de marge), avant d'attaquer à 95,4 % de son allure semi après le 35e km.",
+      "La leçon pour tous les marathoniens : plus votre allure semi-marathon est rapide, plus votre allure marathon devient économique en pourcentage d'effort."
+    ],
+    "sections": [
+      {
+        "id": "1-strava-culte-debuts-historiques-new-york",
+        "heading": "1. « I just finished my first marathon. — Cool, did you win? — Yes. »",
+        "body": [
+          "Quelques heures après avoir coupé le ruban à Central Park ce dimanche 1er novembre 2026, Andreas Almgren a partagé sa trace GPS sur Strava (activité n°20819742462) avec une légende déjà entrée dans l'histoire de la course à pied : « I just finished my first marathon. — Cool, did you win? — Yes. » (« Je viens de finir mon premier marathon. — Cool, tu as gagné ? — Oui. »).",
+          "Car l'exploit est hors norme : on ne gagne presque jamais le Marathon de New York au premier essai. Avec ses cinq ponts interminables, l'absence totale de lièvres (pacemakers) et les montagnes russes finales de la 5e Avenue et de Central Park, New York est historiquement un piège redoutable pour les débutants sur la distance.",
+          "Pourtant, le Suédois de 31 ans s'est imposé en 2h06'01\" (2'59\"/km), reléguant l'Italien Yemaneberhan Crippa à 13 secondes et faisant plier les meilleurs spécialistes mondiaux."
+        ],
+        "callout": {
+          "title": "L'œil du coach Vincent Buisson",
+          "text": "Ce que réalise Almgren à New York n'est pas un coup de poker : c'est la traduction mathématique d'une réserve de vitesse colossale construite du 800m (1'45\"59) jusqu'au record d'Europe du semi-marathon (58'06\")."
+        }
+      },
+      {
+        "id": "2-analyse-pointages-officiels-nyrr-negative-split",
+        "heading": "2. Les 5 pointages officiels NYRR : un Negative Split de 2 minutes et 7 secondes",
+        "body": [
+          "Lorsqu'on analyse les pointages officiels du New York Road Runners (NYRR), la course d'Andreas Almgren se découpe en 5 segments clés qui illustrent une montée en puissance chirurgicale :",
+          "• 00 → 10 km en 30'52\" (3'05\"/km) : Départ extrêmement contrôlé dans l'ascension du pont Verrazzano-Narrows puis les premières avenues de Brooklyn. Almgren reste soigneusement abrité au cœur du peloton, sur une base prudente de 2h10'.",
+          "• 10 → 21,1 km — Passage au Semi en 1h04'04\" (3'02\"/km) : Le rythme s'installe légèrement sous les 3'00\"/km après le 10e km, mais la mi-course est franchie sur le pont de Pulaski en 1h04'04\", soit 6 minutes plus lentement que son record personnel sur la distance.",
+          "• 21,1 → 35 km — Passage au 35e km en 1h45'33\" (2'59\"/km sur le segment) : Après le pont de Queensboro, la remontée de First Avenue et le détour par le Bronx écrèment le groupe de tête. Almgren lisse son effort sans jamais répondre par des à-coups.",
+          "• 35 → 40 km en 14'26\" (2'53\"/km) : C'est le K.O. tactique de la course. Dans le faux-plat montant redouté de la 5e Avenue puis l'entrée dans Central Park, Almgren place une attaque longue de 5 kilomètres couverte en 14'26\" (20,8 km/h). Personne ne peut suivre.",
+          "• 40 → 42,195 km — Arrivée en 2h06'01\" (2'56\"/km sur le 2e semi) : Almgren boucle la seconde moitié en 1h01'57\", signant un negative split exceptionnel de 2 minutes et 7 secondes malgré le profil vallonné du final."
+        ]
+      },
+      {
+        "id": "3-comparaison-pourcentage-allure-semi-marathon",
+        "heading": "3. L'analyse en % d'allure semi-marathon : pourquoi 1h04'04\" était une balade pour lui",
+        "body": [
+          "Pour comprendre comment Almgren a pu accélérer aussi violemment au 35e kilomètre, il faut comparer ses vitesses à New York en pourcentage de son allure semi-marathon.",
+          "• Son 100 % Allure Semi-Marathon (58'06\") : Détenteur du record d'Europe du semi-marathon en 58'06\" (établi à Valence), Almgren est capable de tenir 2'45\"/km (21,8 km/h) pendant près d'une heure.",
+          "• Son 1er Semi à New York = 90,7 % de son allure semi (1h04'04\" · 3'02\"/km) : En passant à mi-course en 1h04'04\", Almgren courait 17 secondes par kilomètre plus lentement que son allure semi-marathon. Il évoluait ainsi à seulement 90,7 % de sa vitesse semi, gardant 9,3 % de réserve de vitesse sous le pied pendant plus d'une heure.",
+          "• Son 2e Semi à New York = 93,7 % de son allure semi (1h01'57\" · 2'56\"/km) : Même en accélérant nettement sur la seconde moitié, son allure moyenne sur le retour restait encore 11 secondes par kilomètre moins rapide que son record sur semi.",
+          "• Son attaque du 35e au 40e km = 95,4 % de son allure semi (14'26\" · 2'53\"/km) : Au moment où ses adversaires plafonnaient mécaniquement, Almgren a pu hausser son rythme à 95,4 % de son allure semi-marathon grâce à l'économie musculaire et nerveuse accumulée sur les 35 premiers kilomètres."
+        ],
+        "callout": {
+          "title": "Transposition pour un coureur amateur",
+          "text": "En moyenne, un marathon réussi se court autour de 93 à 95 % de son allure semi-marathon. Courir son premier semi à 90,7 % comme Almgren équivaut, pour un coureur en 1h30 au semi (4'16\"/km), à passer à mi-marathon en 1h39'15\" (4'42\"/km) avant de lâcher les chevaux !"
+        }
+      },
+      {
+        "id": "4-trois-lecons-pour-votre-prochain-marathon",
+        "heading": "4. Les 3 leçons à retenir de sa course pour votre propre marathon",
+        "body": [
+          "Que vous visiez 2h45, 3h15 ou 4h00 sur marathon, la démonstration d'Andreas Almgren à New York contient trois enseignements concrets :",
+          "• Leçon n°1 — Ne tentez jamais de « mettre du temps en banque » au départ : Sur un parcours vallonné comme New York ou Paris, partir 3 à 5 % en dessous de votre allure cible sur les 10 premiers kilomètres (comme ses 30'52\" initiaux) vous protège de la dérive cardiaque et musculaire en fin de course.",
+          "• Leçon n°2 — Améliorez votre chrono sur semi-marathon pour rendre l'allure marathon confortable : Vous ne pourrez jamais courir un marathon en aisance à 4'15\"/km ou 5'00\"/km si votre allure semi-marathon n'est que de 6 ou 7 secondes par kilomètre plus rapide. Élargir l'écart (en %) entre votre allure semi et votre allure marathon est la clé n°1.",
+          "• Leçon n°3 — Travaillez les fins de sorties longues en accélération progressive : La capacité d'Almgren à courir 2'53\"/km entre le 35e et le 40e km se construit grâce à des sorties longues où le bloc d'allure spécifique est placé dans la dernière demi-heure, sur jambes déjà lourdes."
+        ]
+      }
+    ],
+    "workoutExample": {
+      "title": "La Sortie Longue « Finition Central Park » en % d'Allure Semi",
+      "warmup": "1h00 en Endurance Fondamentale souple (environ 75 à 78 % de votre allure semi-marathon, en totale aisance respiratoire).",
+      "mainSet": "30 minutes à 92 % de votre allure semi-marathon (allure marathon prudente), suivies immédiatement de 15 minutes en accélération progressive à 96-97 % de votre allure semi-marathon.",
+      "cooldown": "10 minutes de trot très lent pour relâcher les tensions musculaires.",
+      "coachTips": "Comme Almgren à New York, la clé de cette séance est le relâchement total pendant la première heure. Le bloc final de 15 minutes vous apprend à recruter vos fibres rapides lorsque la fatigue s'installe."
+    },
+    "faqs": [
+      {
+        "question": "Quels sont les pointages officiels et le negative split d'Andreas Almgren au Marathon de New York 2026 ?",
+        "answer": "Andreas Almgren a remporté le Marathon de New York 2026 en 2h06'01\" (2'59\"/km). Ses pointages officiels NYRR sont : 30'52\" au 10 km, 1h04'04\" au semi-marathon, 1h45'33\" au 35e km, puis un segment 35-40 km en 14'26\" (2'53\"/km). Il couvre le second semi en 1h01'57\", soit un negative split de 2 minutes et 7 secondes."
+      },
+      {
+        "question": "À quel pourcentage de son allure semi-marathon Andreas Almgren a-t-il couru à New York ?",
+        "answer": "Avec un record d'Europe du semi-marathon en 58'06\" (2'45\"/km = 100 %), Almgren a couru le premier semi de New York à 90,7 % de son allure semi (1h04'04\", soit 3'02\"/km) et le second semi à 93,7 % (1h01'57\", soit 2'56\"/km), avec une pointe à 95,4 % de son allure semi entre le 35e et le 40e kilomètre (2'53\"/km)."
+      }
+    ],
+    "relatedSlugs": [
+      "allure-cible-semi-marathon-pacing",
+      "preparation-marathon-sub-3h-allure-as42",
+      "endurance-fondamentale-zone-2-running",
+      "ravitaillement-marathon-gels-glucides-par-heure"
+    ],
+    "relatedServiceUrl": "/coaching-marathon/",
+    "relatedServiceLabel": "Découvrir le Coaching Marathon sur-mesure"
   }
 ]
