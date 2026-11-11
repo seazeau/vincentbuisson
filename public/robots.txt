@@ -1,5 +1,24 @@
 User-agent: *
 Allow: /
 
+# Bing & IndexNow
+User-agent: bingbot
+Allow: /
+
+# OpenAI / SearchGPT Live Search Crawlers
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI Live Search Crawler
+User-agent: PerplexityBot
+Allow: /
+
+# Claude / Anthropic Live Search Crawler
+User-agent: Claude-Web
+Allow: /
+
 Sitemap: https://vincentbuisson.fr/sitemap.xml
 Host: https://vincentbuisson.fr
